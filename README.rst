@@ -27,6 +27,7 @@ Each of these scenarios is a branch that can be built independenly from the othe
 * use-py2: use ``python: version: 2``
 * sphinx-1.8: use ``Sphinx<1.9`` as requirement
 * conda-env: use a simple conda environment to build the docs
+* conda-env-py3.7: use a simple conda environment to build the docs with Python 3.7
 * alabaster-theme: use ``alabaster`` as theme
 * typlog-theme: use ``typlog`` as theme
 
