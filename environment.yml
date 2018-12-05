@@ -1,0 +1,6 @@
+name: condabuild
+channels:
+  - conda-forge
+dependencies:
+  - sphinx
+  - sphinx_rtd_theme
