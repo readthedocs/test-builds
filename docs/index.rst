@@ -1,8 +1,10 @@
-.. include:: ../README.rst
+environment-variables
+=====================
 
+These are the environment variables used to build this docs:
 
 .. runblock:: pycon
 
-   >>> # Build at
-   >>> import datetime
-   >>> datetime.datetime.utcnow()  # UTC
+   >>> import os
+   >>> import pprint
+   >>> pprint.pprint(dict(os.environ))
