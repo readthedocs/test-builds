@@ -1,5 +1,9 @@
-.. include:: ../README.rst
+typlog-theme
+============
 
+Use ``typlog-theme`` to build this docs.
+
+Documentation: https://sphinx-typlog-theme.readthedocs.io/en/latest/
 
 .. runblock:: pycon
 
