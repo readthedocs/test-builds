@@ -4,11 +4,11 @@ Test Builds
 This repository is used internally to create different scenarios
 on build configs and trigger many builds on Read the Docs productions.
 
-Each branch should explain on it's `docs/index.rst` what's about and how the
+Each branch should explain on it's ``docs/index.rst`` what's about and how the
 QA process can be considered a success or a failure.
 
 If we need to test a very specific use case, we create a new branch with
-the issue number and the repository, like: `issue-1234-org`, `issue-4321-ext` or similar.
+the issue number and the repository, like: ``issue-1234-org``, ``issue-4321-ext`` or similar.
 
 
 Scenarios
@@ -21,11 +21,11 @@ Each of these scenarios is a branch that can be built independenly from the othe
 * yaml-v2: use a simple YAML for the V2 configuration
 * unicode-filename: has a page (rst) that its filename is unicode
 * ŭñíč°də-branch: the name of the branch is unicode
-* none-formats: use `formats: []` so only HTML is built
-* requirements-not-found: use `requirements_file: .notfound.txt`
-* latest-image-py3.6: use `build: image: latest` and `python: version: 3.6`
-* use-py2: use `python: version: 2`
-* sphinx-1.8: use `Sphinx<1.9` as requirement
+* none-formats: use ``formats: []`` so only HTML is built
+* requirements-not-found: use ``requirements_file: .notfound.txt``
+* latest-image-py3.6: use ``build: image: latest`` and ``python: version: 3.6``
+* use-py2: use ``python: version: 2``
+* sphinx-1.8: use ``Sphinx<1.9`` as requirement
 * conda-env: use a simple conda environment to build the docs
 
 
@@ -35,19 +35,22 @@ Tags
 We also have some tags to have some tests around this.
 
 * tag-v1: points to an specific commit
-* tag-v2: points to the same commit than `tag-v1` ([Delete tags with same commit](https://github.com/rtfd/readthedocs.org/pull/4915))
+* tag-v2: points to the same commit than ``tag-v1`` (`Delete tags with same commit <https://github.com/rtfd/readthedocs.org/pull/4915>`_)
 
 
 Addind a new scenario to the repository
 ---------------------------------------
 
-1. Create a new branch from `master` using an appropiate name
-1. Explain what's the use case in its `docs/index.rst` file
+#. Create a new branch from ``master`` using an appropiate name
+#. Explain what's the use case in its ``docs/index.rst`` file
+
    * How to check if the QA can be considered success or failure
    * Add links to the issue tracker where there are more information
-1. Add or modify the necessary files
+#. Add or modify the necessary files
+
    * Make sure that these files contains the minimum configuration needed:
+   
      * remove auto generated comments
      * configs not used
-1. Push your changes
-1. Modify the `README.rst` file from `master` to add this new branch in the list
+#. Push your changes
+#. Modify the ``README.rst`` file from ``master`` to add this new branch in the list
