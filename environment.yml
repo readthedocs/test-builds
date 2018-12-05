@@ -4,3 +4,5 @@ channels:
 dependencies:
   - sphinx
   - sphinx_rtd_theme
+  - pip:
+      - sphinx-autorun
