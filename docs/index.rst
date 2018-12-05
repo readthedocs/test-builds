@@ -1,5 +1,7 @@
-.. include:: ../README.rst
+alabaster-theme
+===============
 
+Use ``alabaster`` to build this docs.
 
 .. runblock:: pycon
 

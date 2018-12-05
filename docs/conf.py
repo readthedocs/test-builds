@@ -7,4 +7,4 @@ extensions = [
 ]
 
 # Include all your settings here
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'alabaster'
