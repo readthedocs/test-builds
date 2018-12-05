@@ -7,6 +7,12 @@ Install all dependencies via ``conda``.
 
 Build should success without any problem.
 
+.. runblock:: pycon
+
+   >>> # Python Version used
+   >>> import sys
+   >>> print(sys.version)
+
 
 .. runblock:: pycon
 
