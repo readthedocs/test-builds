@@ -30,6 +30,7 @@ Each of these scenarios is a branch that can be built independenly from the othe
 * conda-env-py3.7: use a simple conda environment to build the docs with Python 3.7
 * alabaster-theme: use ``alabaster`` as theme
 * typlog-theme: use ``typlog`` as theme
+* timeout: generate a timeout by sleeping 1000 seconds
 
 
 Tags
