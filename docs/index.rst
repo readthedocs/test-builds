@@ -17,6 +17,13 @@ Build should success without any problem.
 
 .. runblock:: pycon
 
+   >>> # Python Version used
+   >>> import sys
+   >>> print(sys.version)
+
+
+.. runblock:: pycon
+
    >>> # Build at
    >>> import datetime
    >>> datetime.datetime.utcnow()  # UTC
