@@ -8,7 +8,14 @@ formats:
   - pdf
 
 sphinx:
-  builder: htmldir
+
+  # At this moment, the builder has to match to the DB setting from
+  # "Advanced settings" because otherwise we will receive a build
+  # error. This behavior could probably change in the future to take
+  # precedence by the YAML config. More context on this at
+  # https://github.com/rtfd/readthedocs.org/issues/4638
+  builder: html
+
   configuration: docs/conf.py
   fail_on_warning: false
 
