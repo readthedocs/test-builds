@@ -1,4 +1,16 @@
-.. include:: ../README.rst
+use-py2
+=======
+
+Use ``python2`` to build this docs.
+
+Build should succeed without any problem.
+
+YAML file used,
+
+.. literalinclude:: ../readthedocs.yml
+   :language: yaml
+   :linenos:
+
 
 ----
 
