@@ -28,6 +28,7 @@ Each of these scenarios is a branch that can be built independenly from the othe
 * none-formats: use ``formats: []`` so only HTML is built
 * requirements-not-found: use ``requirements_file: .notfound.txt``
 * yaml-v2: use a simple YAML for the V2 configuration
+* use-py2: use ``python: version: 2``
 
 
 To be created
@@ -36,7 +37,6 @@ To be created
 These are some branches that do not exists yet, but we want to create:
 
 * latest-image-py3.6: use ``build: image: latest`` and ``python: version: 3.6``
-* use-py2: use ``python: version: 2``
 * sphinx-1.8: use ``Sphinx<1.9`` as requirement
 
 Tags
