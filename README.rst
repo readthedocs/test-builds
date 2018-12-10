@@ -16,21 +16,21 @@ Scenarios
 
 Each of these scenarios is a branch that can be built independenly from the others.
 
-* alabaster-theme: use ``alabaster`` as theme
-* auto-wipe: used for auto wipe the environment when a config is changed
-* conda-env: use a simple conda environment to build the docs
-* conda-env-py3.7: use a simple conda environment to build the docs with Python 3.7
-* datetime: shows different times (system time, build time, etc)
-* environment-variables: shows all the environment variables used to build the docs
-* huge-build-output: generate megabytes of output data for commands
-* none-formats: use ``formats: []`` so only HTML is built
-* requirements-not-found: use ``requirements_file: .notfound.txt``
-* timeout: generate a timeout by sleeping 1000 seconds
-* typlog-theme: use ``typlog`` as theme
-* unicode-filename: has a page (rst) that its filename is unicode
-* use-py2: use ``python: version: 2``
-* yaml-v2: use a simple YAML for the V2 configuration
-* ŭñíč°də-branch: the name of the branch is unicode
+* `alabaster-theme <https://test-builds.readthedocs.io/en/alabaster-theme/>`_: use ``alabaster`` as theme
+* `auto-wipe <https://test-builds.readthedocs.io/en/auto-wipe/>`_: used for auto wipe the environment when a config is changed
+* `conda-env <https://test-builds.readthedocs.io/en/conda-env/>`_: use a simple conda environment to build the docs
+* `conda-env-py3.7 <https://test-builds.readthedocs.io/en/conda-env-py3.7/>`_: use a simple conda environment to build the docs with Python 3.7
+* `datetime <https://test-builds.readthedocs.io/en/datetime/>`_: shows different times (system time, build time, etc)
+* `environment-variables <https://test-builds.readthedocs.io/en/environment-variables/>`_: shows all the environment variables used to build the docs
+* `huge-build-output <https://test-builds.readthedocs.io/en/huge-build-output/>`_: generate megabytes of output data for commands
+* `none-formats <https://test-builds.readthedocs.io/en/none-formats/>`_: use ``formats: []`` so only HTML is built
+* `requirements-not-found <https://test-builds.readthedocs.io/en/requirements-not-found/>`_: use ``requirements_file: .notfound.txt``
+* `timeout <https://test-builds.readthedocs.io/en/timeout/>`_: generate a timeout by sleeping 1000 seconds
+* `typlog-theme <https://test-builds.readthedocs.io/en/typlog-theme/>`_: use ``typlog`` as theme
+* `unicode-filename <https://test-builds.readthedocs.io/en/unicode-filename/>`_: has a page (rst) that its filename is unicode
+* `use-py2 <https://test-builds.readthedocs.io/en/use-py2/>`_: use ``python: version: 2``
+* `yaml-v2 <https://test-builds.readthedocs.io/en/yaml-v2/>`_: use a simple YAML for the V2 configuration
+* `ŭñíč°də-branch <https://test-builds.readthedocs.io/en/ŭñíč°də-branch/>`_: the name of the branch is unicode
 
 
 To be created
@@ -38,16 +38,16 @@ To be created
 
 These are some branches that do not exists yet, but we want to create:
 
-* latest-image-py3.6: use ``build: image: latest`` and ``python: version: 3.6``
-* sphinx-1.8: use ``Sphinx<1.9`` as requirement
+* `latest-image-py3.6 <https://test-builds.readthedocs.io/en/latest-image-py3.6/>`_: use ``build: image: latest`` and ``python: version: 3.6``
+* `sphinx-1.8 <https://test-builds.readthedocs.io/en/sphinx-1.8/>`_: use ``Sphinx<1.9`` as requirement
 
 Tags
 ----
 
 We also have some tags to have some tests around this.
 
-* tag-v1: points to an specific commit
-* tag-v2: points to the same commit than ``tag-v1`` (`Delete tags with same commit <https://github.com/rtfd/readthedocs.org/pull/4915>`_)
+* `tag-v1 <https://test-builds.readthedocs.io/en/tag-v1/>`_: points to an specific commit
+* `tag-v2 <https://test-builds.readthedocs.io/en/tag-v2/>`_: points to the same commit than ``tag-v1`` (`Delete tags with same commit <https://github.com/rtfd/readthedocs.org/pull/4915>`_)
 
 
 Addind a new scenario to the repository
