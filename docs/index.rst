@@ -1,7 +1,7 @@
 huge-build-output
 =================
 
-Generate a huge build output (512Kb).
+Generate a huge build output (~1.5Mb).
 
 Build should pass. Output should be stripped to 1Mb after sending to
 cold storage and a message saying this should be shown to the command
