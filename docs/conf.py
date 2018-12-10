@@ -12,4 +12,4 @@ html_theme = 'sphinx_rtd_theme'
 # Generates a huge build output
 import os
 # https://docs.python.org/3/library/os.html#os.urandom
-print(os.urandom(2 * 1024 ** 2))
+print(os.urandom(512 * 1024))
