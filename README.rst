@@ -16,19 +16,21 @@ Scenarios
 
 Each of these scenarios is a branch that can be built independenly from the others.
 
-* datetime: shows different times (system time, build time, etc)
-* environment-variables: shows all the environment variables used to build the docs
-* unicode-filename: has a page (rst) that its filename is unicode
-* ŭñíč°də-branch: the name of the branch is unicode
+* alabaster-theme: use ``alabaster`` as theme
+* auto-wipe: used for auto wipe the environment when a config is changed
 * conda-env: use a simple conda environment to build the docs
 * conda-env-py3.7: use a simple conda environment to build the docs with Python 3.7
-* alabaster-theme: use ``alabaster`` as theme
-* typlog-theme: use ``typlog`` as theme
-* timeout: generate a timeout by sleeping 1000 seconds
+* datetime: shows different times (system time, build time, etc)
+* environment-variables: shows all the environment variables used to build the docs
+* huge-build-output: generate megabytes of output data for commands
 * none-formats: use ``formats: []`` so only HTML is built
 * requirements-not-found: use ``requirements_file: .notfound.txt``
-* yaml-v2: use a simple YAML for the V2 configuration
+* timeout: generate a timeout by sleeping 1000 seconds
+* typlog-theme: use ``typlog`` as theme
+* unicode-filename: has a page (rst) that its filename is unicode
 * use-py2: use ``python: version: 2``
+* yaml-v2: use a simple YAML for the V2 configuration
+* ŭñíč°də-branch: the name of the branch is unicode
 
 
 To be created
