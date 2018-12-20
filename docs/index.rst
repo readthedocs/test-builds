@@ -1,4 +1,9 @@
-.. include:: ../README.rst
+branch/with/slashes
+===================
+
+This is a branch (Read the Docs' Version object) that has slashes on it's name: ``branch/with/slashes``
+
+Build should pass without problem.
 
 ----
 
