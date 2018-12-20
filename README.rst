@@ -18,6 +18,7 @@ Each of these scenarios is a branch that can be built independenly from the othe
 
 * `alabaster-theme <https://test-builds.readthedocs.io/en/alabaster-theme/>`_: use ``alabaster`` as theme
 * `auto-wipe <https://test-builds.readthedocs.io/en/auto-wipe/>`_: used for auto wipe the environment when a config is changed
+* `branch/with/slashes <https://test-builds.readthedocs.io/en/branch-with-slashes/>`_: used to check that git clones without problem
 * `conda-env <https://test-builds.readthedocs.io/en/conda-env/>`_: use a simple conda environment to build the docs
 * `conda-env-py3.7 <https://test-builds.readthedocs.io/en/conda-env-py3.7/>`_: use a simple conda environment to build the docs with Python 3.7
 * `datetime <https://test-builds.readthedocs.io/en/datetime/>`_: shows different times (system time, build time, etc)
@@ -25,12 +26,13 @@ Each of these scenarios is a branch that can be built independenly from the othe
 * `huge-build-output <https://test-builds.readthedocs.io/en/huge-build-output/>`_: generate megabytes of output data for commands
 * `none-formats <https://test-builds.readthedocs.io/en/none-formats/>`_: use ``formats: []`` so only HTML is built
 * `requirements-not-found <https://test-builds.readthedocs.io/en/requirements-not-found/>`_: use ``requirements_file: .notfound.txt``
+* `search-with-old-sphinx-and-theme <https://test-builds.readthedocs.io/en/search-with-old-sphinx-and-theme/>`_: search box on old Sphinx and RTD theme version
 * `timeout <https://test-builds.readthedocs.io/en/timeout/>`_: generate a timeout by sleeping 1000 seconds
 * `typlog-theme <https://test-builds.readthedocs.io/en/typlog-theme/>`_: use ``typlog`` as theme
+* `ŭñíč°də-branch <https://test-builds.readthedocs.io/en/ŭñíč°də-branch/>`_: the name of the branch is unicode
 * `unicode-filename <https://test-builds.readthedocs.io/en/unicode-filename/>`_: has a page (rst) that its filename is unicode
 * `use-py2 <https://test-builds.readthedocs.io/en/use-py2/>`_: use ``python: version: 2``
 * `yaml-v2 <https://test-builds.readthedocs.io/en/yaml-v2/>`_: use a simple YAML for the V2 configuration
-* `ŭñíč°də-branch <https://test-builds.readthedocs.io/en/ŭñíč°də-branch/>`_: the name of the branch is unicode
 
 
 To be created
