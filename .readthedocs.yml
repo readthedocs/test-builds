@@ -1,5 +1,5 @@
 build:
-  image: 5.0.0rc1
+  image: 5.0.0rc1_dev
 
 python:
   version: 3.7
