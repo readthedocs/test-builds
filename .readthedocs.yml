@@ -1,0 +1,6 @@
+build:
+  image: 5.0.0rc1
+
+python:
+  version: 3.7
+

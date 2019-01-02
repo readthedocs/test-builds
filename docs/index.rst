@@ -1,4 +1,5 @@
-.. include:: ../README.rst
+use-image-5.0rc1
+================
 
 ----
 
