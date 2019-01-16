@@ -26,6 +26,7 @@ Each of these scenarios is a branch that can be built independenly from the othe
 * `huge-build-output <https://test-builds.readthedocs.io/en/huge-build-output/>`_: generate megabytes of output data for commands
 * `none-formats <https://test-builds.readthedocs.io/en/none-formats/>`_: use ``formats: []`` so only HTML is built
 * `requirements-not-found <https://test-builds.readthedocs.io/en/requirements-not-found/>`_: use ``requirements_file: .notfound.txt``
+* `robots-txt <https://test-builds.readthedocs.io/en/robots-txt/>`_: use a custom ``robots.txt`` for this project
 * `search-with-old-sphinx-and-theme <https://test-builds.readthedocs.io/en/search-with-old-sphinx-and-theme/>`_: search box on old Sphinx and RTD theme version
 * `timeout <https://test-builds.readthedocs.io/en/timeout/>`_: generate a timeout by sleeping 1000 seconds
 * `typlog-theme <https://test-builds.readthedocs.io/en/typlog-theme/>`_: use ``typlog`` as theme
