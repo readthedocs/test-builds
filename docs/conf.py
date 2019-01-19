@@ -4,6 +4,7 @@
 project = 'Test Builds'
 extensions = [
     'sphinx_autorun',
+    'notfound.extension',
 ]
 
 # Include all your settings here

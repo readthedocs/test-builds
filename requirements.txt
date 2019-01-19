@@ -1,1 +1,3 @@
 sphinx-autorun
+
+git+https://github.com/humitos/sphinx-notfound-page.git@master#egg=sphinx-notfound-page
