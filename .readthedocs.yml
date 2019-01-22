@@ -4,8 +4,8 @@ formats:
   - epub
 
 build:
-  image: 5.0.0rc1_dev
+  image: 5.0rc1
 
 python:
-  version: 3.6
+  version: 3.7
 
