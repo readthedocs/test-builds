@@ -21,8 +21,9 @@ sphinx:
 
 python:
   version: 3.6
-  requirements: requirements.txt
   system_packages: true
+  install:
+    - requirements: requirements.txt
 
 submodules:
   include: all
