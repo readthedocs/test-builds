@@ -1,0 +1,6 @@
+version: 2
+
+formats: []
+
+build:
+  image: latest
