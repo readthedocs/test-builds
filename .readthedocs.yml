@@ -2,9 +2,6 @@ version: 2
 
 formats: []
 
-build:
-  image: latest
-
 python:
   install:
     - requirements: requirements.txt
