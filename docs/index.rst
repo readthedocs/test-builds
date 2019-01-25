@@ -23,6 +23,23 @@ Read the Docs configuration file,
 
 ----
 
+Docker images in our Build servers::
+
+  REPOSITORY          TAG                 IMAGE ID
+  readthedocs/build   4.0                 0b13addb85cd
+  readthedocs/build   latest              0b13addb85cd
+  readthedocs/build   5.0rc1              4fc1878d18b1
+  readthedocs/build   4.0rc1              95575448a59a
+  readthedocs/build   3.0                 21110214e6a0
+  readthedocs/build   stable              21110214e6a0
+  readthedocs/build   2.0                 9468fcb95b87
+
+.. warning::
+
+   This images/hashes are not automatically updated.
+
+----
+
 Sphinx configuration file to build this docs (:doc:`see full file <conf>`),
 
 .. literalinclude:: conf.py
