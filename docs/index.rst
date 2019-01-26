@@ -8,6 +8,21 @@ Reference: https://github.com/rtfd/readthedocs.org/issues/4367
 
 ----
 
+Requirements file used (note that we need to install s specific version of ``sphinx-rtd-theme``):
+
+.. literalinclude:: ../requirements.txt
+   :language: txt
+   :linenos:
+
+----
+
+.. runblock:: pycon
+
+   >>> import os
+   >>> os.system('pip freeze')
+
+----
+
 Sphinx configuration file to build this docs (:doc:`see full file <conf>`),
 
 .. literalinclude:: conf.py
