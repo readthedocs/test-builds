@@ -1,1 +1,7 @@
 sphinx-autorun
+
+# nbsphinx 3d plot requirements
+plotly
+ipywidgets
+nbsphinx
+jupyter_sphinx

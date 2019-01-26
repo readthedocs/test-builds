@@ -1,4 +1,10 @@
-.. include:: ../README.rst
+nbsphinx-3d-plot
+================
+
+This ``.ipynb`` file `should render properly <3D Plot.html>`_ and show a 3D Plot.
+
+
+Reference: https://github.com/rtfd/readthedocs.org/issues/4367
 
 ----
 
