@@ -16,6 +16,8 @@ Requirements file used (note that we need to install s specific version of ``sph
 
 ----
 
+All packages installed in the virtualenv used to generate this documentation (``pip freeze``):
+
 .. runblock:: pycon
 
    >>> import os
