@@ -6,6 +6,10 @@ This ``.ipynb`` file `should render properly <3D%20Plot.html>`_ and show a 3D Pl
 
 Reference: https://github.com/rtfd/readthedocs.org/issues/4367
 
+.. warning::
+
+   The plot **won't be rendering** while this PR doesn't get merged: https://github.com/rtfd/sphinx_rtd_theme/pull/710
+
 ----
 
 Requirements file used (note that we need to install s specific version of ``sphinx-rtd-theme``):
