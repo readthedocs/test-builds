@@ -5,3 +5,9 @@ plotly
 ipywidgets
 nbsphinx
 jupyter_sphinx
+
+# The PR that fixes the issue with Javascript was merged on Dec 5,
+# but the latest release is 0.4.2 from Oct 5. That's why we need to install
+# the specific commit that contains this PR merged
+# https://github.com/rtfd/sphinx_rtd_theme/pull/545
+git+git@github.com:rtfd/sphinx_rtd_theme.git@a42c4d74fec660835393a4c9b1e7cb9e654ccc90#egg=sphinx_rtd_theme
