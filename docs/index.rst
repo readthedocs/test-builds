@@ -7,6 +7,8 @@ Depending on the Sphinx version different options (str, list, dict) are supporte
 
 This build uses ``.md`` and ``.rst`` files to build its docs. Using ``recommonmark`` and ``restructuredtext``.
 
+:Related Pull Request: https://github.com/rtfd/readthedocs.org/pull/5183
+
 ----
 
 Sphinx configuration file to build this docs (:doc:`see full file <conf>`),
