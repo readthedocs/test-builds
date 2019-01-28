@@ -1,4 +1,13 @@
-.. include:: ../README.rst
+pygments-custom-lexer-apex
+==========================
+
+Uses ``pygments-lexer-apex`` package to colorize Salesforce Apex language.
+
+
+.. literalinclude:: FundController.apxc
+   :language: apex
+   :linenos:
+
 
 ----
 

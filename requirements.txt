@@ -1,1 +1,3 @@
 sphinx-autorun
+
+git+https://github.com/shawalli/pygments-lexer-apex.git#egg=pygments-lexer-apex
