@@ -15,6 +15,13 @@ Including ``FundController.apxc`` should show this file properly colorized by ``
 
 ----
 
+``requirements.txt`` file to install the lexer:
+
+.. literalinclude:: ../requirements.txt
+   :linenos:
+
+----
+
 Sphinx configuration file to build this docs (:doc:`see full file <conf>`),
 
 .. literalinclude:: conf.py
