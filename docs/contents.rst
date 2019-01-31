@@ -7,3 +7,4 @@ All contents of this documentation.
    :glob:
 
    *
+   ../template/docs/*
