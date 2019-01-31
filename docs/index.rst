@@ -1,4 +1,16 @@
-.. include:: ../README.rst
+submodule-https-scheme
+====================
+
+Use a ``https://`` URL for a submodule.
+
+This build will work in both, Community and Corporate site.
+
+----
+
+``.gitmodules`` file:
+
+.. literalinclude:: ../.gitmodules
+   :linenos:
 
 ----
 
