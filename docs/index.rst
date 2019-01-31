@@ -1,4 +1,16 @@
-.. include:: ../README.rst
+submodule-git-scheme
+====================
+
+Use a ``git@github.com:`` URL for a submodule.
+
+This build will fail because we don't support any other URLs than HTTPS in the Community site. I **will work** in the Corporate side, though.
+
+----
+
+``.gitmodules`` file:
+
+.. literalinclude:: ../.gitmodules
+   :linenos:
 
 ----
 
