@@ -6,7 +6,4 @@ ipywidgets
 nbsphinx
 jupyter_sphinx
 
-# The PR that fixes the issue with Javascript was merged on Dec 5,
-# but the latest release is 0.4.2 from Oct 5. That's why we need to install master
-# https://github.com/rtfd/sphinx_rtd_theme/pull/545
-git+https://github.com/rtfd/sphinx_rtd_theme.git#egg=sphinx_rtd_theme
+sphinx-rtd-theme==0.4.3
