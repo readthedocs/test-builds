@@ -1,4 +1,7 @@
-.. include:: ../README.rst
+sphinx2
+=======
+
+Use Sphinx2 to build the docs and our own theme.
 
 ----
 
