@@ -1,6 +1,6 @@
 sphinx-autorun
 
 # C dependencies to be built
-lxml==3.8.0
+lxml  # ==3.8.0
 PyPDF2
 python-docx
