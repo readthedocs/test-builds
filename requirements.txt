@@ -1,1 +1,6 @@
 sphinx-autorun
+
+# C dependencies to be built
+lxml
+PyPDF2
+python-docx
