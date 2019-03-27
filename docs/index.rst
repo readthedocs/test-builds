@@ -17,7 +17,7 @@ it means that Read the Docs is not downloading the file properly using ``git-lfs
 
 .. runblock:: pycon
 
-   >>> print(open('img/git-lfs.png').read())
+   >>> print(open('img/git-lfs.png', 'rb').read())
 
 ----
 
