@@ -1,6 +1,5 @@
 version: 2
 
 python:
-  version: 2
   install:
     - requirements: requirements.txt

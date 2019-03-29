@@ -35,3 +35,14 @@ Sphinx configuration file to build this docs (:doc:`see full file <conf>`),
    >>> # Build at
    >>> import datetime
    >>> datetime.datetime.utcnow()  # UTC
+
+
+.. Sphinx 2.0.0 changes the ``master_doc`` to be ``index`` instead of ``contents``,
+   so I'm adding the ``toctree`` directive here.
+
+   https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-master_doc
+
+.. toctree::
+   :glob:
+
+   *
