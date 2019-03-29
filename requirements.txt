@@ -2,3 +2,6 @@ sphinx-autorun
 
 # git+https://github.com/humitos/sphinx-notfound-page.git@master#egg=sphinx-notfound-page
 git+https://github.com/humitos/sphinx-notfound-page.git@humitos/toctree-links#egg=sphinx-notfound-page
+
+
+sphinx==1.4.9
