@@ -36,13 +36,10 @@ Each of these scenarios is a branch that can be built independenly from the othe
 * `yaml-v2 <https://test-builds.readthedocs.io/en/yaml-v2/>`_: use a simple YAML for the V2 configuration
 
 
-To be created
-~~~~~~~~~~~~~
+.. note::
 
-These are some branches that do not exists yet, but we want to create:
-
-* `latest-image-py3.6 <https://test-builds.readthedocs.io/en/latest-image-py3.6/>`_: use ``build: image: latest`` and ``python: version: 3.6``
-* `sphinx-1.8 <https://test-builds.readthedocs.io/en/sphinx-1.8/>`_: use ``Sphinx<1.9`` as requirement
+  There could be more scenarios probably, but this list is not always up to date.
+  Please, check `all the branches <https://github.com/rtfd/test-builds/branches/>`_ to be sure.
 
 Tags
 ----
