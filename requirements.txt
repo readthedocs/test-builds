@@ -1,7 +1,7 @@
 sphinx-autorun
 
 # nbsphinx 3d plot requirements
-plotly
+git+https://github.com/plotly/plotly.py#egg=plotly
 ipywidgets
 nbsphinx
 jupyter_sphinx
