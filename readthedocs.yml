@@ -1,0 +1,8 @@
+version: 2
+
+formats: []
+
+python:
+  version: 3
+  install:
+    - requirements: requirements.txt
