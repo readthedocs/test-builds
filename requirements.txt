@@ -6,4 +6,4 @@ ipywidgets
 nbsphinx
 jupyter_sphinx
 
-sphinx-rtd-theme==0.4.3
+git+https://github.com/rtfd/sphinx_rtd_theme#egg=sphinx-rtd-theme
