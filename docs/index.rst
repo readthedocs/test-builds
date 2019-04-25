@@ -21,6 +21,13 @@ Related issues/prs:
    :linenos:
 
 
+The version of Sphinx shown here should be ``1.8.1`` which is the one pinned in the conda YAML file.
+
+.. runblock:: pycon
+
+   >>> import sphinx
+   >>> sphinx.__version__
+
 .. runblock:: pycon
 
    >>> # Build at
