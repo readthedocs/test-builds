@@ -3,7 +3,10 @@ channels:
   - conda-forge
 dependencies:
   - python=3.7.1
-  - sphinx
+
+  - sphinx==1.8.1
+
   - sphinx_rtd_theme
+  - pip
   - pip:
       - sphinx-autorun

@@ -1,25 +1,24 @@
-conda-env-py3.7
-===============
+conda-satisfied-skip-solve
+==========================
 
 Build docs using a ``conda`` environment.
 
-Install all dependencies via ``conda``.
+This build pins ``sphinx==1.8.1`` and the logs should show that version is installed and not updated.
+The conda command should be::
 
-Use ``python3.7.1`` from ``conda``.
-
-Build should success without any problem.
-
-.. runblock:: pycon
-
-   >>> variable = 'I want to use f-strings here'
-   >>> f'Replace my {variable} here'
+  conda install --quite --satisfied-skip-solve --name ...
 
 
-.. runblock:: pycon
+Related issues/prs:
 
-   >>> # Python Version used
-   >>> import sys
-   >>> print(sys.version)
+* https://github.com/rtfd/readthedocs.org/pull/5631
+* https://github.com/rtfd/readthedocs.org/issues/3829
+* https://github.com/rtfd/readthedocs-docker-images/pull/102
+
+
+.. literalinclude:: ../environment.yaml
+   :language: yaml
+   :linenos:
 
 
 .. runblock:: pycon
