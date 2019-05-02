@@ -1,4 +1,14 @@
-.. include:: ../README.rst
+pypy3.5
+=======
+
+Use ``pypy3.5`` to build this docs.
+
+----
+
+.. literalinclude:: ../readthedocs.yml
+   :language: yaml
+   :linenos:
+
 
 ----
 

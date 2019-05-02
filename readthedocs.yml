@@ -1,0 +1,6 @@
+version: 2
+
+python:
+  version: pypy3.5
+  install:
+    - requirements: requirements.txt
