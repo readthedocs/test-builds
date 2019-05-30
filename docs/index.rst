@@ -4,7 +4,13 @@ activate-me
 This version/branch should be activated automatically and immediately after that it's pushed.
 There is an Automation Rule ``^activate-me$`` existing for this project in the database.
 
-Should this Version be activated if I push another commit?
+To re-test this rule, first delete the branch running::
+
+  git push origin --delete activate-me
+
+then, re create it running::
+
+  git push activate-me origin/activate-me
 
 ----
 
