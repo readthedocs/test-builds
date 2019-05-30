@@ -4,6 +4,8 @@ activate-me
 This version/branch should be activated automatically and immediately after that it's pushed.
 There is an Automation Rule ``^activate-me$`` existing for this project in the database.
 
+Should this Version be activated if I push another commit?
+
 ----
 
 Sphinx configuration file to build this docs (:doc:`see full file <conf>`),
