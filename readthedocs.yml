@@ -1,0 +1,9 @@
+version: 2
+
+build:
+  image: latest
+
+python:
+  version: 3.5
+  install:
+    - requirements: requirements.txt
