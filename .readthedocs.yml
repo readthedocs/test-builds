@@ -24,6 +24,7 @@ python:
   system_packages: true
   install:
     - requirements: requirements.txt
+    - requirements: blog/requirements.txt
 
 submodules:
   include: all
