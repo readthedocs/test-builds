@@ -1,4 +1,4 @@
-Landing
+landing
 =======
 
 Landing page to have multiple subprojects.
