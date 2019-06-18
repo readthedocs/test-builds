@@ -1,10 +1,9 @@
-Landing
-=======
+subproject
+==========
 
-Landing page to have multiple subprojects.
+Subproject of "landing".
 
-* Single Version
-* Default Version: ``landing``
+* Default Version: ``subproject``
 
 ----
 
