@@ -1,4 +1,10 @@
-.. include:: ../README.rst
+Landing
+=======
+
+Landing page to have multiple subprojects.
+
+* Single Version
+* Default Version: ``landing``
 
 ----
 
