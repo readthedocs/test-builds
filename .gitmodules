@@ -1,3 +1,6 @@
 [submodule "template"]
 	path = template
 	url = https://github.com/rtfd/template.git
+[submodule "notemplate"]
+	path = notemplate
+	url = https://github.com/rtfd/template.git
