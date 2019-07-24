@@ -1,4 +1,7 @@
-.. include:: ../README.rst
+Test PR Builder
+===============
+
+This is an ``open`` Pull Request on GitHub: https://github.com/rtfd/test-builds/pull/3
 
 ----
 
