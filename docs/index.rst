@@ -1,4 +1,5 @@
-.. include:: ../README.rst
+Test
+====
 
 ----
 
