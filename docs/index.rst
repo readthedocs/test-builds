@@ -1,4 +1,10 @@
-.. include:: ../README.rst
+.. meta::
+   :description: This is a meta tag added to the HTML output.
+
+meta tags
+=========
+
+There should be some extra ``<meta>`` tags in this file.
 
 ----
 
