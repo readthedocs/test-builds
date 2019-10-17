@@ -11,6 +11,9 @@ sphinx:
   builder: html
   fail_on_warning: true
 
+build:
+  image: stable
+
 python:
   version: 3.7
   install:
