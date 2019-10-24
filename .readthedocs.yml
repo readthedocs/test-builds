@@ -1,6 +1,7 @@
 version: 2
 
 python:
-  version: 3.8
+  # Py3.8 is not supported in the config file yet
+  # version: 3.8
   install:
     - requirements: requirements.txt
