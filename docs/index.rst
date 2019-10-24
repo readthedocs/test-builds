@@ -1,15 +1,16 @@
-.. include:: ../README.rst
+py3.8
+=====
 
-----
+Build the docs with Python 3.8.
 
-Sphinx configuration file to build this docs (:doc:`see full file <conf>`),
+.. runblock:: pycon
 
-.. literalinclude:: conf.py
-   :language: python
-   :end-before: ###########################################################################
-   :linenos:
+   >>> # Use walrus operator available in Python3.8
+   >>> import random
+   >>> while number := random.choice(range(10):
+   ...     print(number)
+   ...
 
-----
 
 .. runblock:: pycon
 
