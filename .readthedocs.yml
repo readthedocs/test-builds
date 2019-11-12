@@ -23,7 +23,7 @@ python:
   version: 3.6
   system_packages: true
   install:
-    - requirements: None
+    - requirements: 0
 
 submodules:
   include: all
