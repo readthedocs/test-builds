@@ -2,7 +2,7 @@
 
 ----
 
-Sphinx configuration file to build this docs (:doc:`see full file <conf>`),
+Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
 .. literalinclude:: conf.py
    :language: python
