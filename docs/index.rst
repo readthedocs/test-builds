@@ -1,16 +1,18 @@
-yaml-v2
+htmldir
 =======
 
-Use a YAML v2 configuration with many options.
+Test for htmldir building in YAML file.
 
-(at this time, since V2 is not allowed to all the projects, this
-project has enabled the feature ``allow_v2_config_file`` manually from
-the Django shell)
-
-YAML file used to build this docs,
+YAML file used to build these docs:
 
 .. literalinclude:: ../.readthedocs.yml
    :language: yaml
+   :linenos:
+
+Config file used:
+
+.. literalinclude:: conf.py
+   :language: python
    :linenos:
 
 .. runblock:: pycon
