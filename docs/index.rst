@@ -5,6 +5,12 @@ Test for htmldir building in YAML file.
 
 YAML file used to build these docs:
 
+.. toctree::
+   :glob:
+
+   *
+   folder/*
+
 .. literalinclude:: ../.readthedocs.yml
    :language: yaml
    :linenos:
