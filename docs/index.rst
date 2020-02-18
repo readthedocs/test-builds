@@ -1,8 +1,8 @@
-.. include:: ../README.rst
+testing-image
+=============
 
-----
+Used ``build.image: testing`` with ``python.version: 3.8`` to build.
 
-Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
 .. literalinclude:: conf.py
    :language: python
