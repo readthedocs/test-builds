@@ -1,0 +1,2 @@
+Path with encoded chars
+=======================
