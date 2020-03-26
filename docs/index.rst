@@ -13,14 +13,12 @@ Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
 .. runblock:: pycon
 
-  >>> # Build at
-  >>> import datetime
-  >>> datetime.datetime.utcnow()  # UTC
+   >>> # Build at
+   >>> import datetime
+   >>> datetime.datetime.utcnow()  # UTC
 
 New pages:
 
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   *
+- :doc:`c++-api`.
+- :doc:`path-'one'-encode`
+- :doc:`more?to(encode)&decode:rst`
