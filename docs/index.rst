@@ -17,4 +17,7 @@ Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
    >>> import datetime
    >>> datetime.datetime.utcnow()  # UTC
 
-New page :doc:`c++-api`.
+New pages:
+
+- :doc:`c++-api`.
+- :doc:`path-'one'-encode`
