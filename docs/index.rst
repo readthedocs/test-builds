@@ -1,4 +1,7 @@
-.. include:: ../README.rst
+Install aiohttp==3.6.2
+======================
+
+See https://github.com/readthedocs/readthedocs.org/issues/6832
 
 ----
 
