@@ -13,7 +13,9 @@ sphinx:
 formats: []
 
 submodules:
-  include: all
+  include:
+    - cpython
+  recursive: true
 
 # Optionally set the version of Python and requirements required to build your docs
 python:
