@@ -1,4 +1,9 @@
-.. include:: ../README.rst
+cpython-docs
+============
+
+Build CPython Official Documentation with some extra extensions:
+
+* sphinx-hoverxref
 
 ----
 
