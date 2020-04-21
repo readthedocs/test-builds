@@ -1,4 +1,7 @@
-.. include:: ../README.rst
+sphinx-3.x
+==========
+
+Build the docs with Sphinx 3.x
 
 ----
 

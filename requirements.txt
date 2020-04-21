@@ -1,1 +1,2 @@
 sphinx-autorun
+sphinx>=3.0.0
