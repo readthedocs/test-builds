@@ -23,8 +23,7 @@ python:
   version: 3.6
   system_packages: true
   install:
-    - method: pip
-      path: pip
+    - requirements: docs/pip_require.txt
     - requirements: requirements.txt
 
 submodules:
