@@ -1,3 +1,3 @@
 name: readthedocs
 dependencies:
-   - sphinx
+   - sphinx_autorun
