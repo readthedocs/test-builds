@@ -1,1 +1,2 @@
 sphinx-autorun
+git+ssh://github.com/readthedocs/test-builds#egg=elasticsearch-dsl==6.1.1
