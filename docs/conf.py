@@ -13,7 +13,12 @@ latex_engine = 'xelatex'  # allow us to build Unicode chars
 html_theme = 'sphinx_rtd_theme'
 
 def setup(app):
-    current_version = app.config.html_context.get('current_version')
-    if current_version is not None:
-        app.config.version = current_version
-        app.config.release = current_version
+
+    def config_init(app, config):
+        current_version = config.html_context.get('current_version')
+        if current_version is not None:
+            config.version = current_version
+            config.release = current_version
+        return config
+
+    app.connect('config-inited', config_init)
