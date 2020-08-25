@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name='test-builds',
-    version=0.1.0,
+    version="0.1.0",
     author='Manuel Kaufmann',
     author_email='humitos@gmail.com',
     description='Test-builds for Read the Docs',
