@@ -1,4 +1,13 @@
-.. include:: ../README.rst
+Private pip dependency in setup.py
+==================================
+
+Install a private pip dependency using an environment variable on ``setup.py``:
+
+.. literalinclude:: ../setup.py
+   :language: python
+   :emphasize-lines: 25-29
+   :linenos:
+
 
 ----
 
