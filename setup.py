@@ -24,7 +24,7 @@ setuptools.setup(
     keywords='test builds read-the-docs',
     extras_require={
         'docs': [
-            'git+https://${GITHUB_TOKEN}@github.com/readthedocs/readthedocs-ext/',
+            'readthedocs-ext @ git+https://${GITHUB_TOKEN}@github.com/readthedocs/readthedocs-ext/#egg=readthedocs-ext',
         ]
     }
 )
