@@ -1,16 +1,23 @@
-py3.8
+py3.9
 =====
 
-Build the docs with Python 3.8.
+Build the docs with Python 3.9.
 
 .. runblock:: pycon
 
-   >>> # Use walrus operator available in Python3.8
-   >>> import random
-   >>> while number := random.choice(range(10)):
-   ...     print(number)
-   ...
-   >>>
+   >>> import sys
+   >>> sys.version_info
+   >>> sys.version
+
+.. runblock:: pycon
+
+   >>> # Use merge (|) and update (|=) on dicts
+   >>> # https://www.python.org/dev/peps/pep-0584
+   >>> {1: 'a'} | {2: 'b'}
+   >>> d1 = {1: 'a'}
+   >>> d2 = {1: 'uno'}
+   >>> d1 |= d2
+   >>> d1
 
 .. runblock:: pycon
 
