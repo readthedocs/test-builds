@@ -36,4 +36,3 @@ Adding a new scenario to the repository
      * remove auto generated comments
      * configs not used
 #. Push your changes
-#. Modify the ``README.rst`` file from ``master`` to add this new branch in the list
