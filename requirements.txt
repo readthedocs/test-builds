@@ -1,1 +1,3 @@
-sphinx-autorun
+mkdocs
+mkdocs-mermaid2-plugin
+pymdown-extensions

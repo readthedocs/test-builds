@@ -1,0 +1,17 @@
+site_name: readthedocs
+site_description: A build to test python tags in mkdocs.yml.
+
+nav:
+  - Overview: "index.md"
+  - Mermaid: "mermaid.md"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+
+plugins:
+  - search
+  - mermaid2
