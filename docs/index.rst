@@ -1,8 +1,9 @@
-.. include:: ../README.rst
+sphinx.ext.duration
+===================
 
-----
-
-Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
+Use ``sphinx.ext.duration`` extension to show how much time Sphinx spends on each file.
+**Build output should show these times**.
+>>>>>>> Stashed changes
 
 .. literalinclude:: conf.py
    :language: python
