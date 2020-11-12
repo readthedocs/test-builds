@@ -3,7 +3,6 @@ sphinx.ext.duration
 
 Use ``sphinx.ext.duration`` extension to show how much time Sphinx spends on each file.
 **Build output should show these times**.
->>>>>>> Stashed changes
 
 .. literalinclude:: conf.py
    :language: python
