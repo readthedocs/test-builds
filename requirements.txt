@@ -1,1 +1,2 @@
 sphinx-autorun
+sphinx>=2.4
