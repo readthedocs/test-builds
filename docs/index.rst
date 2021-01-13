@@ -1,9 +1,5 @@
-Install aiohttp==3.6.2
-======================
-
-See https://github.com/readthedocs/readthedocs.org/issues/6832
-
-----
+Install mysqlclient
+===================
 
 Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
@@ -14,8 +10,7 @@ Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
 ----
 
-.. runblock:: pycon
+.. runblock:: console
 
-   >>> # Build at
-   >>> import datetime
-   >>> datetime.datetime.utcnow()  # UTC
+   $ which mysql_config
+   $ mysql_config --help
