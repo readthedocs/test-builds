@@ -1,2 +1,2 @@
 sphinx-autorun
-aiohttp==3.6.2
+mysqlclient==1.3.14
