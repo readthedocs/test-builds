@@ -1,1 +1,4 @@
+Sphinx
 sphinx-autorun
+sphinx-tabs
+git+https://github.com/readthedocs/readthedocs-sphinx-search@master
