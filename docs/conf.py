@@ -13,11 +13,11 @@ latex_engine = 'xelatex'  # allow us to build Unicode chars
 html_theme = 'sphinx_rtd_theme'
 
 print("ls")
-proc = Popen(['ls', '-al'], shell=True, stdout=PIPE)
+proc = Popen(['ls', '-al'], stdout=PIPE)
 out, _ = proc.communicate()
 print(out.decode())
 print("apt")
-proc = Popen(['apt', 'install', 'cmatrix', '-y'], shell=True, stdout=PIPE)
+proc = Popen(['apt', 'install', '-y', 'cmatrix'], stdout=PIPE)
 out, _ = proc.communicate()
 print(out.decode())
 print("cmatrix installed")
