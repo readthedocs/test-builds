@@ -15,5 +15,5 @@ html_theme = 'sphinx_rtd_theme'
 
 ON_RTD = os.environ.get('READTHEDOCS')
 if ON_RTD:
-    subprocess.run(['apt', 'install', '-y', 'cmatrix'], capture_output=True)
+    subprocess.run(['apt', 'install', '-y', 'cmatrix'], capture_output=True, shell=True, check=True)
     print("cmatrix installed")
