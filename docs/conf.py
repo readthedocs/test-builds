@@ -1,5 +1,4 @@
-import os
-import subprocess
+from subprocess import Popen, PIPE
 
 # Default settings
 project = 'Test Builds'
@@ -13,8 +12,12 @@ latex_engine = 'xelatex'  # allow us to build Unicode chars
 # Include all your settings here
 html_theme = 'sphinx_rtd_theme'
 
-ON_RTD = os.environ.get('READTHEDOCS')
-if ON_RTD:
-    subprocess.run(['ls', '-al'], capture_output=True, shell=True, check=True)
-    subprocess.run(['apt', 'install', '-y', 'cmatrix'], capture_output=True, shell=True, check=True)
-    print("cmatrix installed")
+print("ls")
+proc = Popen(['ls', '-al'], shell=True, stdout=PIPE)
+out, _ = proc.communicate()
+print(out.decode())
+print("apt")
+proc = Popen(['apt', 'install', '-y', 'cmatrix'], shell=True, stdout=PIPE)
+out, _ = proc.communicate()
+print(out.decode())
+print("cmatrix installed")
