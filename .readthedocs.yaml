@@ -4,7 +4,7 @@ sphinx:
 
 build:
    apt_packages:
-      - cmatrix
+      - \\-y cmatrix
       - mysql-client
 
 python:
