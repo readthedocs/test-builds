@@ -5,7 +5,7 @@ sphinx:
 build:
    apt_packages:
       - cmatrix
-      - mysql
+      - mysql-client
 
 python:
    version: 3.8
