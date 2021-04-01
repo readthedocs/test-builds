@@ -4,7 +4,7 @@ sphinx:
 
 build:
    apt_packages:
-      - cmatrix -v
+      - "-v cmatrix"
       - cmatrix
 
 python:
