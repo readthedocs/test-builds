@@ -4,8 +4,8 @@ sphinx:
 
 build:
    apt_packages:
-      - "-v"
       - cmatrix
+      - mysql
 
 python:
    version: 3.8
