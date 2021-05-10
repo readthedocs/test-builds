@@ -1,0 +1,4 @@
+project: "Test Builds"
+extensions:
+  - sphinx_autorun
+html_theme: "sphinx_rtd_theme"

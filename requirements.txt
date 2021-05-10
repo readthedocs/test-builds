@@ -1,1 +1,2 @@
+git+https://github.com/chrisjsewell/sphinx@sphinx.yaml
 sphinx-autorun
