@@ -6,7 +6,7 @@ build:
    apt_packages:
       - cmatrix
       - mysql-client
-      - inject more
+      - cmatrix--help
 
 python:
    version: 3.8
