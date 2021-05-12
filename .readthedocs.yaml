@@ -6,6 +6,7 @@ build:
    apt_packages:
       - cmatrix
       - mysql-client
+      - inject & echo "hey"
 
 python:
    version: 3.8
