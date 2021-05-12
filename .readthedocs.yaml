@@ -6,7 +6,7 @@ build:
    apt_packages:
       - cmatrix
       - mysql-client
-      - cmatrix--help
+      - libgdal20
 
 python:
    version: 3.8
