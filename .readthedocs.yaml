@@ -1,6 +1,6 @@
 version: 2
 sphinx:
-  configuration: '&& ls -al && /conf.py'
+  configuration: '. && ls -al && /conf.py'
 python:
   version: 3.8
   install:
