@@ -1,7 +1,7 @@
-py3.9
-=====
+py3.10
+======
 
-Build the docs with Python 3.9.
+Build the docs with Python 3.10.
 
 .. runblock:: pycon
 
@@ -11,13 +11,17 @@ Build the docs with Python 3.9.
 
 .. runblock:: pycon
 
-   >>> # Use merge (|) and update (|=) on dicts
-   >>> # https://www.python.org/dev/peps/pep-0584
-   >>> {1: 'a'} | {2: 'b'}
-   >>> d1 = {1: 'a'}
-   >>> d2 = {1: 'uno'}
-   >>> d1 |= d2
-   >>> d1
+   >>> # Use Structural Pattern Matching
+   >>> # https://www.python.org/dev/peps/pep-0636
+   >>> import random
+   >>> match random.choice(['test', 'quit', 'welcome']):
+   ...   case 'test':
+   ...     print('TEST')
+   ...   case 'quit':
+   ...     print('QUIT')
+   ...   case 'welcome':
+   ...     print('WELCOME')
+   ...
 
 .. runblock:: pycon
 
