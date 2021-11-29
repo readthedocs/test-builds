@@ -1,17 +1,8 @@
-Use ``build.os`` and ``build.tools``
-====================================
+Fail the build on pip install with env variable
+===============================================
 
-Example using ``build.os`` and ``build.tools`` in Read the Docs config file.
 
-----
-
-.. runblock:: pycon
-
-   >>> import subprocess
-   >>> subprocess.run('python --version'.split())
-   >>> subprocess.run('node --version'.split())
-   >>> subprocess.run('cargo --version'.split())
-   >>> subprocess.run('go version'.split())
+What happen if the requirements URL contains a ``GITHUB_TOKEN`` environment variable and it fails?
 
 ----
 
