@@ -1,17 +1,10 @@
-Use ``build.os`` and ``build.tools``
-====================================
+Use ``build.tools`` without defining ``build.os``
+=================================================
 
-Example using ``build.os`` and ``build.tools`` in Read the Docs config file.
+Example using ``build.tools.python`` **without**  ``build.os`` in Read the Docs config file.
+As ``build.os`` is *required* we should see a good message communicating this immediately.
 
-----
-
-.. runblock:: pycon
-
-   >>> import subprocess
-   >>> subprocess.run('python --version'.split())
-   >>> subprocess.run('node --version'.split())
-   >>> subprocess.run('cargo --version'.split())
-   >>> subprocess.run('go version'.split())
+See https://github.com/readthedocs/readthedocs.org/issues/8912
 
 ----
 
