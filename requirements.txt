@@ -1,2 +1,2 @@
-git+https://github.com/stsewd/sphinx@check-if-search-progress-exists
+git+https://github.com/stsewd/sphinx@fork
 sphinx-autorun
