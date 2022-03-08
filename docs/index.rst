@@ -1,4 +1,7 @@
-.. include:: ../README.rst
+No config file (``.readthedocs.yaml``)
+======================================
+
+Use the default configuration to build.
 
 ----
 
