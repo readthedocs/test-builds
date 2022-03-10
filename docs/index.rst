@@ -9,6 +9,7 @@ Example using ``build.os`` and ``build.tools`` in Read the Docs config file.
 
    >>> import subprocess
    >>> subprocess.run('python --version'.split())
+   >>> subprocess.run('conda --version'.split())
    >>> subprocess.run('node --version'.split())
    >>> subprocess.run('cargo --version'.split())
    >>> subprocess.run('go version'.split())
