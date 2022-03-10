@@ -3,7 +3,7 @@ version: 2
 build:
   os: "ubuntu-20.04"
   tools:
-    python: "miniconda3-4.7"
+    python: "mambaforge-4.10"
     nodejs: "16"
     rust: "1.55"
     golang: "1.17"
