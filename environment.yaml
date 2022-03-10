@@ -1,0 +1,9 @@
+name: condabuild
+channels:
+  - conda-forge
+dependencies:
+  - python=3.5.4
+  - sphinx
+  - sphinx_rtd_theme
+  - pip:
+      - sphinx-autorun
