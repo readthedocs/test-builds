@@ -1,4 +1,5 @@
-.. include:: ../README.rst
+Build using ``ubuntu-22.04`` image
+==================================
 
 ----
 
