@@ -1,4 +1,9 @@
-.. include:: ../README.rst
+Build with ``build.jobs``
+=========================
+
+.. literalinclude:: .readthedocs.yaml
+   :language: yaml
+   :linenos:
 
 ----
 
