@@ -30,6 +30,8 @@ build:
     pre_install:
       - echo pre_install
       - echo `date`
+      # https://github.com/readthedocs/readthedocs.org/issues/8201#issuecomment-1018511443
+      - git update-index --assume-unchanged docs/index.rst docs/conf.py
     post_install:
       - echo post_install
       - echo `date`
@@ -37,8 +39,6 @@ build:
       - echo pre_build
       - echo `date`
       - sed **/*.rst --in-place --expression "s|{VERSION}|${READTHEDOCS_VERSION_NAME}|g"
-      # https://github.com/readthedocs/readthedocs.org/issues/8201#issuecomment-1018511443
-      - git update-index --assume-unchanged docs/index.rst docs/conf.py
     post_build:
       - echo post_build
       - echo `date`
