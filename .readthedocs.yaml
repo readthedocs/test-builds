@@ -9,6 +9,8 @@ build:
     post_checkout:
       - echo post_checkout
       - echo `date`
+      # https://github.com/readthedocs/readthedocs.org/issues/8201#issuecomment-1018511443
+      - git fetch --unshallow
     pre_system_dependencies:
       - echo pre_system_dependencies
       - echo `date`
