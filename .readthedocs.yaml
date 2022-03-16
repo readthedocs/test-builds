@@ -10,7 +10,11 @@ build:
       - echo post_checkout
       - echo `date`
       # https://github.com/readthedocs/readthedocs.org/issues/8201#issuecomment-1018511443
-      - git fetch --unshallow
+      # use ``|| true`` because it could be that --depth 50 is enough to not be
+      # shallowed and the command will fail with:
+      #
+      # fatal: --unshallow on a complete repository does not make sense
+      - git fetch --unshallow  || true
     pre_system_dependencies:
       - echo pre_system_dependencies
       - echo `date`
