@@ -34,7 +34,7 @@ build:
     pre_build:
       - echo pre_build
       - echo `date`
-      - sed **/*.rst -i -e "s|{VERSION}|${READTHEDOCS_VERSION_NAME}|g"
+      - sed **/*.rst --in-place --expression "s|{VERSION}|${READTHEDOCS_VERSION_NAME}|g"
     post_build:
       - echo post_build
       - echo `date`
