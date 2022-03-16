@@ -26,6 +26,8 @@ build:
     pre_install:
       - echo pre_install
       - echo `date`
+      # https://github.com/readthedocs/readthedocs.org/issues/8201#issuecomment-1018511443
+      - git update-index --assume-unchanged environment.yml docs/conf.py
     post_install:
       - echo post_install
       - echo `date`
