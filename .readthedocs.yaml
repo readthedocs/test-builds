@@ -38,6 +38,7 @@ build:
     pre_build:
       - echo pre_build
       - echo `date`
+      - python -m sphinx -b linkcheck
       - sed **/*.rst --in-place --expression "s|{VERSION}|${READTHEDOCS_VERSION_NAME}|g"
     post_build:
       - echo post_build

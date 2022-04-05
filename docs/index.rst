@@ -3,6 +3,8 @@ Build with ``build.jobs``
 
 
 This version is built with ``build.jobs``.
+It uses ``python -m sphinx -b linkcheck`` to check all the external links.
+For example, that https://readthedocs.org/ resolves properly.
 
 .. note::
 
