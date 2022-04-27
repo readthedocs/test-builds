@@ -16,6 +16,8 @@ build:
       - ./git-lfs fetch
       # Make local files to have the real content on them
       - ./git-lfs checkout
+      # Show logs
+      - ./git-lfs logs last
 
 sphinx:
   configuration: docs/conf.py
