@@ -10,15 +10,17 @@ build:
       # https://git-lfs.github.com/
       - wget https://github.com/git-lfs/git-lfs/releases/download/v3.1.4/git-lfs-linux-amd64-v3.1.4.tar.gz
       - tar xvfz git-lfs-linux-amd64-v3.1.4.tar.gz
-      - ln -s ./git-lfs "$(git --exec-path)/git-lfs"
+      # Since the `git-lfs` is not installed in the default path in the system,
+      # we need to modify the LFS config path to locate it where we downloaded
+      - git config filter.lfs.process "`pwd`/git-lfs filter-process"
+      - git config filter.lfs.smudge  "`pwd`/git-lfs smudge -- %f"
+      - git config filter.lfs.clean "`pwd`/git-lfs clean -- %f"
       # Make LFS available in current repository
       - ./git-lfs install
       # Download content from remote
       - ./git-lfs fetch
       # Make local files to have the real content on them
       - ./git-lfs checkout
-      # Show logs
-      - ./git-lfs logs last
 
 sphinx:
   configuration: docs/conf.py
