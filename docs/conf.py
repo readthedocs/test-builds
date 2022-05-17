@@ -7,6 +7,7 @@ extensions = [
 html_static_path = ['_static']
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars
+root_doc = 'index'
 
 
 # Include all your settings here
