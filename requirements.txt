@@ -1,1 +1,2 @@
 sphinx-autorun
+sphinx_rtd_theme
