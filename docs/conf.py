@@ -6,6 +6,8 @@ extensions = [
 
 html_static_path = ['_static']
 
+html_js_files = ['test.js']
+
 latex_engine = 'xelatex'  # allow us to build Unicode chars
 root_doc = 'index'
 
