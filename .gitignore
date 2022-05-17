@@ -1,2 +1,10 @@
 docs/_build
 .python-version
+.direnv/
+.env/
+.envrc
+.tool-versions
+node_modules/
+.ropeproject/
+.terraform/
+terraform.tfstate
