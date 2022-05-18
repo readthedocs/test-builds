@@ -1,1 +1,6 @@
 sphinx-autorun
+sphinx-js
+
+# Pin it because it fails otherwise
+# ImportError: cannot import name 'soft_unicode' from 'markupsafe'
+markupsafe==2.0.1
