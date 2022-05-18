@@ -1,11 +1,11 @@
 project = 'Test Builds'
 extensions = [
     'sphinx_autorun',
-    'sphinx_js',
+    'autoapi.extension',
 ]
 
-js_source_path = '../src/'
-
+autoapi_dirs = ['../src/']
+autoapi_type = 'javascript'
 
 # Include all your settings here
 html_theme = 'sphinx_rtd_theme'
