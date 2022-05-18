@@ -1,2 +1,4 @@
 docs/_build
 .python-version
+/docs/output/
+*.pyc
