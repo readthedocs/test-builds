@@ -1,16 +1,11 @@
-Build with ``build.jobs``
-=========================
+Build with ``jsdoc``
+====================
 
 
-This version is built with ``build.jobs``.
-It uses ``python -m sphinx -b linkcheck`` to check all the external links.
-For example, that https://readthedocs.org/ resolves properly.
+This version is built with ``jsdoc``.
+It should show the ``linkDensity`` function documented below.
 
-.. note::
-
-   The following text should be something different than ``{ VERSION }``: {VERSION}
-
-   We are using ``sed`` to replace the version with the value of ``READTHEDOCS_VERSION_NAME``.
+.. js:autofunction:: linkDensity
 
 ----
 
