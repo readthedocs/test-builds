@@ -9,4 +9,4 @@ build:
     # After installing Python packages with binaries on it, we need to call `asdf reshim`
     # (recreate shims for version of a package)
     - asdf reshim
-    - pelican --settings docs/pelicanconf.py
+    - pelican --settings docs/pelicanconf.py --output output/ docs/

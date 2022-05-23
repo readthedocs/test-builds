@@ -11,11 +11,8 @@ READTHEDOCS_LANGUAGE = os.environ.get('READTHEDOCS_LANGUAGE')
 # allowing mutliple versions.
 SITEURL = f'https://{READTHEDOCS_PROJECT}.readthedocs.io/{READTHEDOCS_LANGUAGE}/{READTHEDOCS_VERSION}'
 
-PATH = '.'
-
 TIMEZONE = 'Europe/Rome'
 DEFAULT_LANG = 'en'
-OUTPUT_PATH = 'output/'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
