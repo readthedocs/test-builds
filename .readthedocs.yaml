@@ -8,5 +8,6 @@ build:
     - pip install pelican[markdown]
     # After installing Python packages with binaries on it, we need to call `asdf reshim`
     # (recreate shims for version of a package)
+    # https://github.com/danhper/asdf-python/issues/37
     - asdf reshim
     - pelican --settings docs/pelicanconf.py --output output/ docs/
