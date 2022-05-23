@@ -6,4 +6,7 @@ build:
     python: "3.10"
   commands:
     - pip install pelican[markdown]
+    # After installing Python packages with binaries on it, we need to call `asdf reshim`
+    # (recreate shims for version of a package)
+    - asdf reshim
     - pelican content --relative-urls --output output/
