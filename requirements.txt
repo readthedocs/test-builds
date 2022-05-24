@@ -1,1 +1,2 @@
+git+https://github.com/readthedocs/readthedocs-sphinx-ext.git
 sphinx-autorun
