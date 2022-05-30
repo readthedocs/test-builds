@@ -10,4 +10,4 @@ build:
     # (recreate shims for version of a package)
     # https://github.com/danhper/asdf-python/issues/37
     - asdf reshim
-    - pelican --settings docs/pelicanconf.py --output output/ docs/
+    - pelican --settings docs/pelicanconf.py --output _readthedocs/html/ docs/
