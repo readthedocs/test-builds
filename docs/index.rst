@@ -1,4 +1,14 @@
-.. include:: ../README.rst
+sudo-commands
+=============
+
+This build should fail because it includes ``sudo`` commands,
+and all the commands are run as ``docs`` user without sudo capabilities.
+
+----
+
+.. literalinclude:: ../.readthedocs.yaml
+   :language: yaml
+   :linenos:
 
 ----
 
