@@ -5,7 +5,7 @@ build:
   tools:
     python: "3.10"
   jobs:
-    pre_build:
+    pre_system_dependencies:
       - sudo apt update
       - sudo apt install graphviz
 
