@@ -1,4 +1,19 @@
-.. include:: ../README.rst
+Build with Poetry
+=================
+
+Build the documentation shown here with ``poetry install`` under ``build.jobs``.
+
+----
+
+.. literalinclude:: ../pyproject.toml
+   :language: toml
+   :linenos:
+
+----
+
+.. literalinclude:: ../.readthedocs.yaml
+   :language: toml
+   :linenos:
 
 ----
 

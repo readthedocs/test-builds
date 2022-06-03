@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "test-builds"
+version = "0.1.0"
+description = "Experiments with Read the Docs' build system"
+authors = ["Manuel Kaufmann <humitos@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Sphinx = "^5.0.1"
+sphinx-autorun = "^1.1.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
