@@ -10,6 +10,8 @@ build:
       # available in the path
       # https://python-poetry.org/docs/#installation
       - curl -sSL https://install.python-poetry.org | POETRY_HOME=/home/docs python3 -
+      # Tell poetry to not use a virtual environment
+      - ~/bin/poetry config virtualenvs.create false
       # Install project's dependencies
       #
       # FIXME: `/home/docs/bin` should be included in the PATH by default in the
