@@ -5,7 +5,7 @@ build:
   tools:
     python: "3.11"
   jobs:
-    pre_create_environment:
+    post_create_environment:
       # Install Poetry via its recommended way declaring $POETRY_HOME to make it
       # available in the path
       # https://python-poetry.org/docs/#installation
