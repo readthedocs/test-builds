@@ -11,7 +11,10 @@ build:
       # https://python-poetry.org/docs/#installation
       - curl -sSL https://install.python-poetry.org | POETRY_HOME=/home/docs python3 -
       # Install project's dependencies
-      - poetry install
+      #
+      # FIXME: `/home/docs/bin` should be included in the PATH by default in the
+      # Docker image
+      - ~/bin/poetry install
 
 sphinx:
   configuration: docs/conf.py
