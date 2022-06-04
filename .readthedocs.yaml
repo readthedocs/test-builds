@@ -6,17 +6,14 @@ build:
     python: "3.11"
   jobs:
     post_create_environment:
-      # Install Poetry via its recommended way declaring $POETRY_HOME to make it
-      # available in the path
-      # https://python-poetry.org/docs/#installation
-      - curl -sSL https://install.python-poetry.org | POETRY_HOME=/home/docs python3 -
+      # Install poetry using asdf
+      - asdf plugin add poetry
+      - asdf install poetry latest
+      - asdf global poetry latest
       # Tell poetry to not use a virtual environment
-      - ~/bin/poetry config virtualenvs.create false
+      - poetry config virtualenvs.create false
       # Install project's dependencies
-      #
-      # FIXME: `/home/docs/bin` should be included in the PATH by default in the
-      # Docker image
-      - ~/bin/poetry install
+      - poetry install
 
 sphinx:
   configuration: docs/conf.py
