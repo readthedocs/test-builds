@@ -8,8 +8,8 @@ build:
     post_create_environment:
       # Install poetry using asdf
       - asdf plugin add poetry
-      - asdf install poetry latest
-      - asdf global poetry latest
+      - asdf install poetry 1.2.0b1
+      - asdf global poetry 1.2.0b1
       # Tell poetry to not use a virtual environment
       - poetry config virtualenvs.create false
       # Install project's dependencies
