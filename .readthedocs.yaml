@@ -1,9 +1,9 @@
 version: 2
 
 build:
-  os: ubuntu-20.04
+  os: ubuntu-22.04
   commands:
-    - mkdir output/
-    - echo "Hello world! `date`" > output/index.html
+    - mkdir -p _readthedocs/html/
+    - echo "Hello world! `date`" > _readthedocs/html/index.html
   tools:
     python: "3"
