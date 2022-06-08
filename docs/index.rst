@@ -1,4 +1,7 @@
-.. include:: ../README.rst
+Sphinx 5.x
+==========
+
+Documentation built with Sphinx 5.x and Read the Docs theme.
 
 ----
 
