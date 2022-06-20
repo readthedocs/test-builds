@@ -1,4 +1,10 @@
-.. include:: ../README.rst
+Build with a Git submodule
+==========================
+
+.. runblock:: pycon
+
+   >>> import os
+   >>> os.system("head ../submodule/README.rst")
 
 ----
 
