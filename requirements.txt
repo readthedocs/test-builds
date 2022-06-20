@@ -1,2 +1,3 @@
-git+https://github.com/stsewd/sphinx@fork
+git+https://github.com/sphinx-doc/sphinx@master
+git+https://github.com/readthedocs/sphinx_rtd_theme@avoid-js
 sphinx-autorun
