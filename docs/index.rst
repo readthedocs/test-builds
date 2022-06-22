@@ -1,5 +1,8 @@
-Build with a Git submodule
-==========================
+Build with an invalid Git submodule
+===================================
+
+
+This build should fail because it has an **invalid git submodule**: ``invalid``.
 
 .. runblock:: pycon
 
