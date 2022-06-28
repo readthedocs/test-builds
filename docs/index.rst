@@ -2,6 +2,16 @@
 
 ----
 
+Flyout placement
+----------------
+
+.. raw:: html
+
+    <div id="readthedocs-embed-flyout">
+
+Config
+------	
+
 Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
 .. literalinclude:: conf.py
