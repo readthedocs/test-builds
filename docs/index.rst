@@ -1,4 +1,13 @@
-.. include:: ../README.rst
+Command with multiple spaces on ``build.jobs``
+==============================================
+
+
+Note that we are calling ``sed`` with multiple spaces. It should not break the command.
+See issue https://github.com/readthedocs/readthedocs.org/issues/9397
+
+.. literalinclude:: ../.readthedocs.yaml
+   :language: yaml
+   :linenos:
 
 ----
 
