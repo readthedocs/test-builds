@@ -6,7 +6,7 @@ build:
     python: "3"
   jobs:
     post_install:
-      - sed -i -E "s/^     do something with multiple spaces       here    and replace it with       nothing//g" docs/conf.py
+      - sed -i -E \"s/^     do something with multiple spaces       here    and replace it with       nothing//g\" docs/conf.py
 
 sphinx:
   configuration: docs/conf.py
