@@ -20,7 +20,7 @@ Inside the `<head>` tag:
 <script type="text/javascript">
  READTHEDOCS_DATA = {
      "project": "test-builds",
-     "version": "docsify",
+     "version": "docsify-ads",
  }
 </script>
 ```
@@ -30,7 +30,14 @@ Inside the `<body>` tag:
 ```html
 <!-- Manually added to show the Read the Docs flyout -->
 <div id="readthedocs-embed-flyout"></div>
+
+<!-- Manually added to show Ethical Ads -->
+<div id="rtd-stickybox-container">
+    <div class="raised" data-ea-publisher="readthedocs" data-ea-type="image" data-ea-style="stickybox"></div>
+</div>
 ```
 
 > The Flyout Menu may not be displayed 100% integrated and styled.
 > That's because I'm using the default styles. However, it can be tweaked to be awesome!
+
+> Note the Ad placement and the Flyout Menu placement are both floating and the collide each other.
