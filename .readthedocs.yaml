@@ -6,4 +6,4 @@ build:
     python: "3"
   commands:
     - mkdir -p _readthedocs/html
-    - env > _readthedocs/html/index.html
+    - env | tee _readthedocs/html/index.html
