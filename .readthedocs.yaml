@@ -5,5 +5,4 @@ build:
   tools:
     python: "3"
   commands:
-    - mkdir -p _readthedocs/html
-    - env | tee _readthedocs/html/index.html
+    - set -x && test -n "${PUBLIC}"
