@@ -5,4 +5,4 @@ build:
   tools:
     python: "3"
   commands:
-    - set -x && test -n "${PUBLIC}"
+    - set -x; test -n "${PUBLIC}"
