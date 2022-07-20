@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-Sphinx = "^5.0.1"
+Sphinx = "^5.0.2"
 sphinx-autorun = "^1.1.1"
 
 [tool.poetry.dev-dependencies]
