@@ -8,12 +8,14 @@ See https://python-poetry.org/docs/#osx--linux--bashonwindows-install-instructio
 ----
 
 .. literalinclude:: ../pyproject.toml
+   :caption: pyproject.toml
    :language: toml
    :linenos:
 
 ----
 
 .. literalinclude:: ../.readthedocs.yaml
+   :caption: .readthedocs.yaml
    :language: yaml
    :linenos:
 
@@ -22,6 +24,7 @@ See https://python-poetry.org/docs/#osx--linux--bashonwindows-install-instructio
 Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
 .. literalinclude:: conf.py
+   :caption: docs/conf.py
    :language: python
    :end-before: ###########################################################################
    :linenos:
