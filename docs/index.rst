@@ -1,4 +1,7 @@
-.. include:: ../README.rst
+test-builds
+===========
+
+GitHub repository to test different Read the Docs builds scenarios.
 
 ----
 
