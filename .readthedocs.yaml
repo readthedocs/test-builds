@@ -6,6 +6,8 @@ build:
     python: "3"
   jobs:
     post_build:
+      - find _readthedocs
+      - find _build
       - rm -rfv _build/html/_sources/
       - rm -rfv _readthedocs/html/_sources/
 
