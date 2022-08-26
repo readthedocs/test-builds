@@ -6,7 +6,7 @@ build:
     python: "3"
   jobs:
     post_build:
-      - find _build
+      - find ./
       - rm -rfv _build/html/_sources/
 
 sphinx:
