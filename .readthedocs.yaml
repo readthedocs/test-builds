@@ -7,7 +7,7 @@ build:
   jobs:
     post_build:
       - find ./
-      - rm -rfv _build/html/_sources/
+      - rm -rfv docs/_build/html/_sources/
 
 sphinx:
   configuration: docs/conf.py
