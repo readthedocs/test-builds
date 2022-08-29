@@ -1,7 +1,8 @@
-test-builds
-===========
+404 page with invalid URLs
+==========================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Example showing what happens when creating a ``404.rst`` file with Sphinx *without using* ``sphinx-notfound-page``:
+https://sphinx-notfound-page.readthedocs.io/
 
 ----
 
