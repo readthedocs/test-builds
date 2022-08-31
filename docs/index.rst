@@ -1,14 +1,13 @@
 Intersphinx with mkdocstrings
 =============================
 
-Use the feature "Cross-references to other projects / inventories" from ``mkdocstrings``
-to point directly to documentation objects.
+Use the feature
+`Cross-references to other projects / inventories <https://mkdocstrings.github.io/usage/#cross-references-to-other-projects-inventories>`_
+from ``mkdocstrings`` to point directly to documentation objects.
 
 The source project is built using Sphinx and,
 the destination project is built using MkDocs + mkdocstrings' plugin.
-Read more about this feature at https://mkdocstrings.github.io/usage/#cross-references-to-other-projects-inventories
-
-Full documentation of ``mkdocstrings`` plugin at: https://mkdocstrings.github.io/
+Full documentation of mkdocstrings' plugin at: https://mkdocstrings.github.io/
 
 Examples:
 
