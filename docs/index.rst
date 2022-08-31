@@ -1,7 +1,17 @@
-test-builds
-===========
+Intersphinx with mkdocstrings
+=============================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Use the feature "Cross-references to other projects / inventories" from ``mkdocstrings``
+to point directly to documentation objects.
+
+The source project is built using Sphinx and,
+the destination project is built using MkDocs + mkdocstrings' plugin.
+Read more at https://mkdocstrings.github.io/
+
+Examples:
+
+* :py:class:`mkdocstrings.extension.AutoDocProcessor`
+* :py:data:`mkdocstrings.plugin.RENDERING_OPTS_KEY`
 
 ----
 
