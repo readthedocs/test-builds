@@ -6,7 +6,9 @@ to point directly to documentation objects.
 
 The source project is built using Sphinx and,
 the destination project is built using MkDocs + mkdocstrings' plugin.
-Read more at https://mkdocstrings.github.io/
+Read more about this feature at https://mkdocstrings.github.io/usage/#cross-references-to-other-projects-inventories
+
+Full documentation of ``mkdocstrings`` plugin at: https://mkdocstrings.github.io/
 
 Examples:
 
