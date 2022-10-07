@@ -2,6 +2,13 @@ version: 2
 
 build:
   os: ubuntu-20.04
+  jobs:
+    post_checkout:
+      - echo `date`
+      # Exit when there aren't changed in docs directory
+      # --quiet exits with a 1 when there **are** changes,
+      # so we invert the logic with a !
+      - "! git diff --quiet origin/main -- docs"
   tools:
     python: "3"
 
