@@ -1,7 +1,8 @@
-test-builds
-===========
+Skip a build based on command exit code
+=======================================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Use ``build.jobs.post_checkout`` to execute a Git command and check if there are changes in the ``docs/`` directory.
+If there aren't changes, we return 439 exit code to cancel the build immediately.
 
 ----
 
