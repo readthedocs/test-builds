@@ -19,6 +19,14 @@ Read the Docs ``.readthedocs.yaml`` configuration file used to build this docs.
 
 ----
 
+``requirements.txt`` used to build these docs.
+
+.. literalinclude:: ../requirements.txt
+   :language: txt
+   :linenos:
+
+----
+
 Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
 .. literalinclude:: conf.py
