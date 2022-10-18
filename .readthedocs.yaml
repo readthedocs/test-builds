@@ -6,7 +6,8 @@ build:
     python: "3"
   apt_packages:
     - tree
-    - libmagic1
+    - libmagic1  # python-magic
+    - graphviz   # dot command
   jobs:
     pre_build:
       - git clone --depth 1 https://github.com/sphinx-doc/sphinx

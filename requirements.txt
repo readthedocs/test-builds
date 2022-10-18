@@ -1,2 +1,5 @@
 sphinx-autorun
 git+https://github.com/AdrianVollmer/Zundler@main#egg=Zundler
+
+# Sphinx docs requirements
+sphinxcontrib-websupport
