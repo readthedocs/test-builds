@@ -6,6 +6,12 @@ build:
     python: "3"
   apt_packages:
     - tree
+  jobs:
+    pre_build:
+      - git clone --depth 1 https://github.com/sphinx-doc/sphinx
+      - mkdir -p docs/_static
+      - sphinx-build -b zundler sphinx/doc/ _build/zundler
+      - cp _build/zundler/index.html docs/_static/zundler.html
 
 sphinx:
   configuration: docs/conf.py
