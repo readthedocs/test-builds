@@ -6,6 +6,7 @@ build:
     python: "3"
   apt_packages:
     - tree
+    - libmagic1
   jobs:
     pre_build:
       - git clone --depth 1 https://github.com/sphinx-doc/sphinx
