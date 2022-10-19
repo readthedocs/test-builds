@@ -6,6 +6,7 @@ build:
     python: "3"
   apt_packages:
     - tree
+    - libasound2
   jobs:
     pre_build:
       - shot-scraper install
