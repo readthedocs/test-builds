@@ -11,7 +11,7 @@ Screenshot
 
 This is an screenshot of https://datasette.io/ taken with ``shot-scraper``:
 
-.. image:: datasette.png
+.. image:: _/static/datasette.png
    :with: 80%
    :align: center
 
