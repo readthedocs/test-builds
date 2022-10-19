@@ -6,6 +6,10 @@ build:
     python: "3"
   apt_packages:
     - tree
+  jobs:
+    pre_build:
+      - shot-scraper install
+      - shot-scraper https://latest.datasette.io/ --height 800 -o docs/_static/datasette.png
 
 sphinx:
   configuration: docs/conf.py

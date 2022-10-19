@@ -1,7 +1,27 @@
-test-builds
-===========
+shot-scraper
+============
 
-GitHub repository to test different Read the Docs builds scenarios.
+Automate screenshot generation with ``shot-scraper`` (https://shot-scraper.datasette.io/).
+
+I used this blog post as reference
+https://simonwillison.net/2022/Oct/14/automating-screenshots/
+
+Screenshot
+----------
+
+This is an screenshot of https://datasette.io/ taken with ``shot-scraper``:
+
+.. image:: datasette.png
+   :with: 80%
+   :align: center
+
+----
+
+Read the Docs configuration file, ``.readthedocs.yaml``:
+
+.. literalinclude:: ../.readthedocs.yaml
+   :language: yaml
+   :linenos:
 
 ----
 
