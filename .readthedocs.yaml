@@ -10,7 +10,7 @@ build:
   jobs:
     pre_build:
       - shot-scraper install
-      - shot-scraper https://latest.datasette.io/ --height 800 -o docs/_static/datasette.png
+      - shot-scraper https://datasette.io/ --height 800 -o docs/_static/datasette.png
 
 sphinx:
   configuration: docs/conf.py
