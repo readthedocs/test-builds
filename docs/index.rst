@@ -34,6 +34,14 @@ Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
 ----
 
+Python's ``requirements.txt`` file:
+
+.. literalinclude:: ../requirements.txt
+   :language: txt
+   :linenos:
+
+----
+
 .. runblock:: pycon
 
    >>> # Build at
