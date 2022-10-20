@@ -1,21 +1,20 @@
-test-builds
-===========
+.. Test build with default Sphinx conf.py documentation master file, created by
+   sphinx-quickstart on Thu Oct 20 16:05:51 2022.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-GitHub repository to test different Read the Docs builds scenarios.
+Welcome to Test build with default Sphinx conf.py's documentation!
+==================================================================
 
-----
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 
-Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
-.. literalinclude:: conf.py
-   :language: python
-   :end-before: ###########################################################################
-   :linenos:
 
-----
+Indices and tables
+==================
 
-.. runblock:: pycon
-
-   >>> # Build at
-   >>> import datetime
-   >>> datetime.datetime.utcnow()  # UTC
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
