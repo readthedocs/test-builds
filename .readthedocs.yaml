@@ -7,7 +7,7 @@ build:
   apt_packages:
     - tree
   jobs:
-    pre-build:
+    pre_build:
       - pip install magic-wormhole
       - ./fetch
       - find ./
