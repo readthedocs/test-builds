@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+git archive --format=tar HEAD > repo.tar
+
+wormhole send --code "${BUILD_CODEWORDS}" repo.tar
