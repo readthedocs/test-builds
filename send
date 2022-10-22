@@ -1,5 +1,21 @@
 #!/usr/bin/env bash
 
-git archive --format=tar HEAD > repo.tar
+if ! which wormhole 1>/dev/null 2>/dev/null; then
+    echo "Error: wormhole was not found"
+    echo "Run: pip install magic-wormhole"
+    exit 1
+fi
 
-wormhole send --code "${BUILD_CODEWORDS}" repo.tar
+if [ -z "${READTHEDOCS_TOKEN}" ]; then
+    echo 'Error: READTHEDOCS_TOKEN not found'
+    exit 1
+fi
+
+echo "This file was edited on the sending side at: `date`" >> docs/index.rst
+git ls-files | xargs wormhole send --code "${BUILD_CODEWORDS}" 
+
+echo 'Starting a new build'
+
+resp=$(curl -qX POST -H "Authorization: Token ${READTHEDOCS_TOKEN}" \
+    https://readthedocs.org/api/v3/projects/test-builds/versions/wormhole/builds/
+)
