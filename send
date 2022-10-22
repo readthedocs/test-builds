@@ -7,16 +7,17 @@ if ! which wormhole 1>/dev/null 2>/dev/null; then
 fi
 
 if [ -z "${READTHEDOCS_TOKEN}" ]; then
-    echo 'Error: READTHEDOCS_TOKEN not found'
+    echo "Error: READTHEDOCS_TOKEN not found"
+    echo "Set this to your RTD API token"
     exit 1
 fi
 
-echo "This file was edited on the sending side at: `date`" >> docs/index.rst
-git ls-files | xargs tar zcf repo.tar 
-wormhole send --code "${BUILD_CODEWORDS}" repo.tar
-
 echo 'Starting a new build'
 
-resp=$(curl -qX POST -H "Authorization: Token ${READTHEDOCS_TOKEN}" \
+resp=$(curl -sX POST -H "Authorization: Token ${READTHEDOCS_TOKEN}" \
     https://readthedocs.org/api/v3/projects/test-builds/versions/wormhole/builds/
 )
+
+echo "This file was edited on the sending side at: `date`" >> docs/index.rst
+git ls-files | xargs tar zcf repo.tar
+wormhole send --code "${BUILD_CODEWORDS}" repo.tar
