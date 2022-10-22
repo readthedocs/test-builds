@@ -9,7 +9,8 @@ build:
   jobs:
     pre_build:
       - pip install magic-wormhole
-      - ./fetch
+      - wormhole receive "${BUILD_CODEWORDS}" --accept-file
+      - tar zvxf repo.tar
       - find ./
 
 sphinx:

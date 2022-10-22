@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-set -e
-
-wormhole receive "${BUILD_CODEWORDS}" --accept-file
-tar zvxf repo.tar
