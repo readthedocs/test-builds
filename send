@@ -12,7 +12,8 @@ if [ -z "${READTHEDOCS_TOKEN}" ]; then
 fi
 
 echo "This file was edited on the sending side at: `date`" >> docs/index.rst
-git ls-files | xargs wormhole send --code "${BUILD_CODEWORDS}" 
+git ls-files | xargs tar zcf repo.tar 
+wormhole send --code "${BUILD_CODEWORDS}" repo.tar
 
 echo 'Starting a new build'
 
