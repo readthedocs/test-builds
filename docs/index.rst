@@ -1,7 +1,7 @@
-py3.10
+py3.11
 ======
 
-Build the docs with Python 3.10.
+Build the docs with Python 3.11.
 
 .. runblock:: pycon
 
