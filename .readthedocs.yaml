@@ -12,7 +12,11 @@ build:
       #
       # If there are not changes (exit 0) we force the command to return with 439.
       # This is a special exit code on Read the Docs that will cancel the build immediately.
-      - "! git diff --quiet origin/main -- docs && exit 439"
+      # - "! git diff --quiet origin/main -- docs && exit 439"
+
+      # Use `git log` to check if the latest commit contains "skip ci",
+      # in that case exit the command with 439 to skip the build
+      - if [[ `git --no-pager log --pretty="tformat:%s" -1` == *"skip ci"* ]]; then exit 439; fi
 
 sphinx:
   configuration: docs/conf.py
