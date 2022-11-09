@@ -22,7 +22,7 @@ build:
       # Use multiline
       - |
         case `git --no-pager log --pretty="tformat:%s" -1`
-        in *skip ci"*)
+        in *"skip ci"*)
           exit 439;;
         *);;
         esac
