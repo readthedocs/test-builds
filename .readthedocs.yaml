@@ -20,6 +20,7 @@ build:
       # - case `git --no-pager log --pretty="tformat:%s" -1` in *"skip ci"*) exit 439;; *);; esac
 
       # Use multiline
+      # (it seems it works fine)
       - |
         case `git --no-pager log --pretty="tformat:%s" -1`
         in *"skip ci"*)
