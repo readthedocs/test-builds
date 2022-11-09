@@ -17,7 +17,15 @@ build:
       # Use `git log` to check if the latest commit contains "skip ci",
       # in that case exit the command with 439 to skip the build
       # NOTE: it uses `case` to make it POSIX compatible
-      - case `git --no-pager log --pretty="tformat:%s" -1` in *"skip ci"*) exit 439;; *);; esac
+      # - case `git --no-pager log --pretty="tformat:%s" -1` in *"skip ci"*) exit 439;; *);; esac
+
+      # Use multiline
+      - |
+        case `git --no-pager log --pretty="tformat:%s" -1`
+        in *skip ci"*)
+          exit 439;;
+        *);;
+        esac
 
 sphinx:
   configuration: docs/conf.py
