@@ -3,7 +3,7 @@ version: 2
 build:
   os: ubuntu-22.04
   tools:
-    nodejs: "16"
+    nodejs: "18"
   commands:
     # "docs/" directory was created using the command to create the site:
     # npx create-docusaurus@latest docs classic
