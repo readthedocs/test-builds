@@ -15,7 +15,7 @@ myvar2 = os.environ.get('MYVAR2')
 myvar3 = os.environ.get('MYVAR3')
 
 rst_epilog = f"""
-.. |myvar1| replace:: {{myvar1}}
-.. |myvar2| replace:: {{myvar2}}
-.. |myvar3| replace:: {{myvar3}}
+.. |myvar1| replace:: {myvar1}
+.. |myvar2| replace:: {myvar2}
+.. |myvar3| replace:: {myvar3}
 """
