@@ -1,6 +1,11 @@
 envvar-config-file
 ==================
 
+.. note::
+
+   This is a test of https://github.com/readthedocs/readthedocs.org/issues/6311#issuecomment-1324426604
+   but it seems it does not work...
+
 Use a hacky way to define environment variables in the ``.readthedocs.yaml``.
 These are the variables defined in the YAML:
 
