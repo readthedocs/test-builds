@@ -4,7 +4,7 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3"
-  build:
+  jobs:
     post_checkout:
       - echo "export MYVAR1=myvar1" >> ~/.bash_profile
       - echo "export MYVAR2=myvar2" >> ~/.bash_profile
