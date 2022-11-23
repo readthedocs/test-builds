@@ -1,7 +1,19 @@
-test-builds
-===========
+envvar-config-file
+==================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Use a hacky way to define environment variables in the ``.readthedocs.yaml``.
+These are the variables defined in the YAML:
+
+:MYVAR1: |myvar1|
+:MYVAR2: |myvar2|
+:MYVAR3: |myvar3|
+
+
+----
+
+.. literalinclude:: ../.readthedocs.yaml
+   :language: yaml
+   :linenos:
 
 ----
 
