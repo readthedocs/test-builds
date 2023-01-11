@@ -1,7 +1,7 @@
-htmldir
-=======
+singlehtml
+==========
 
-Test for htmldir building in YAML file.
+Test for singlehtml building in YAML file.
 
 YAML file used to build these docs:
 
