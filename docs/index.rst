@@ -1,16 +1,15 @@
-Build with ``build.jobs``
-=========================
+Modify HTML via ``build.jobs.post_build``
+=========================================
 
-
-This version is built with ``build.jobs``.
-It uses ``python -m sphinx -b linkcheck`` to check all the external links.
-For example, that https://readthedocs.org/ resolves properly.
+Modify the content of the HTML in ``build.jobs.post_build`` by replacing some text using ``sed``.
+Test case for https://github.com/readthedocs/readthedocs.org/issues/9179
 
 .. note::
 
-   The following text should be something different than ``{ VERSION }``: {VERSION}
+   This text should say something different than a placesholder:
 
-   We are using ``sed`` to replace the version with the value of ``READTHEDOCS_VERSION_NAME``.
+   $IM_A_PLACEHOLDER
+
 
 ----
 

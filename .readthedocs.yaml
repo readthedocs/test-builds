@@ -1,45 +1,11 @@
 version: 2
 
 build:
-  os: ubuntu-20.04
+  os: ubuntu-22.04
   jobs:
-    post_checkout:
-      - echo post_checkout
-      - echo `date`
-      # https://github.com/readthedocs/readthedocs.org/issues/8201#issuecomment-1018511443
-      # use ``|| true`` because it could be that --depth 50 is enough to not be
-      # shallowed and the command will fail with:
-      #
-      # fatal: --unshallow on a complete repository does not make sense
-      - git fetch --unshallow  || true
-    pre_system_dependencies:
-      - echo pre_system_dependencies
-      - echo `date`
-    post_system_dependencies:
-      - echo post_system_dependencies
-      - echo `date`
-    pre_create_environment:
-      - echo pre_create_environment
-      - echo `date`
-    post_create_environment:
-      - echo post_create_environment
-      - echo `date`
-    pre_install:
-      - echo pre_install
-      - echo `date`
-      # https://github.com/readthedocs/readthedocs.org/issues/8201#issuecomment-1018511443
-      - git update-index --assume-unchanged docs/index.rst docs/conf.py
-    post_install:
-      - echo post_install
-      - echo `date`
-    pre_build:
-      - echo pre_build
-      - echo `date`
-      - python -m sphinx -b linkcheck docs/ _build/linkcheck
-      - sed **/*.rst --in-place --expression "s|{VERSION}|${READTHEDOCS_VERSION_NAME}|g"
     post_build:
-      - echo post_build
-      - echo `date`
+      # Modify the HTML content via `build.jobs.post_build` and check if it has effect
+      - sed -i -e 's|IM_A_PLACEHOLDER|This text has been modified by sed|g' _readthedocs/html/index.html
   tools:
     python: "3"
 
