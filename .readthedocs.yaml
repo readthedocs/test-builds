@@ -5,7 +5,7 @@ build:
   jobs:
     post_build:
       # Modify the HTML content via `build.jobs.post_build` and check if it has effect
-      - sed -i -e 's|IM_A_PLACEHOLDER|This text has been modified by sed|g' _readthedocs/html/index.html
+      - sed -i -e "s|IM_A_PLACEHOLDER|This text has been modified by sed|g" _readthedocs/html/index.html
   tools:
     python: "3"
 
