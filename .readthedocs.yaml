@@ -40,6 +40,8 @@ build:
     post_build:
       - echo post_build
       - echo `date`
+      - echo $READTHEDOCS_OUTPUT
+      - find $READTHEDOCS_OUTPUT
   tools:
     python: "3"
 
