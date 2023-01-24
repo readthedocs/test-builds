@@ -4,6 +4,7 @@
 project = 'Test Builds'
 extensions = [
     'sphinx_autorun',
+    'sphinx_simplepdf',
 ]
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars

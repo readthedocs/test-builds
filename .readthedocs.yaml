@@ -9,11 +9,10 @@ build:
     - libmagic1  # python-magic
     - graphviz   # dot command
   jobs:
-    pre_build:
-      - git clone --depth 1 https://github.com/sphinx-doc/sphinx
-      - mkdir -p docs/_static
-      - sphinx-build -b zundler sphinx/doc/ _build/zundler
-      - cp _build/zundler/index.html docs/_static/zundler.html
+    post_build:
+      - mkdir --parents _readthedocs/htmlzip _readthedocs/pdf
+      - sphinx-build -b zundler . _readthedocs/htmlzip
+      - sphinx-build -M simplepdf . _readthedocs/pdf
 
 sphinx:
   configuration: docs/conf.py
