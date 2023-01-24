@@ -12,9 +12,9 @@ build:
     post_build:
       - mkdir --parents _readthedocs/htmlzip _readthedocs/pdf
       - sphinx-build -b zundler docs/ _readthedocs/test-builds
-      - cd _readthedocs ; zip -r -j htmlzip/test-builds-all-formats-build-jobs.zip test-builds
+      - cd _readthedocs ; zip -r -j htmlzip/test-builds.zip test-builds
       - sphinx-build -M simplepdf docs/ _readthedocs/
-      - mv _readthedocs/simplepdf/"Test Builds.pdf" _readthedocs/pdf/test-builds-all-formats-build-jobs.pdf
+      - mv _readthedocs/simplepdf/"Test Builds.pdf" _readthedocs/pdf/test-builds.pdf
 
 sphinx:
   configuration: docs/conf.py
