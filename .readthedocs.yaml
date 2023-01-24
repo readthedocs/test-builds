@@ -11,8 +11,8 @@ build:
   jobs:
     post_build:
       - mkdir --parents _readthedocs/htmlzip _readthedocs/pdf
-      - sphinx-build -b zundler . _readthedocs/htmlzip
-      - sphinx-build -M simplepdf . _readthedocs/pdf
+      - sphinx-build -b zundler docs/ _readthedocs/htmlzip
+      - sphinx-build -M simplepdf docs/ _readthedocs/pdf
 
 sphinx:
   configuration: docs/conf.py
