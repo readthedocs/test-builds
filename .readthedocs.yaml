@@ -12,6 +12,9 @@ build:
     post_build:
       - mkdir --parents _readthedocs/htmlzip
       - sphinx-build -b zundler docs/ _readthedocs/htmlzip
+      - mv _readthedocs/htmlzip _readthedocs/test-builds
+      - mkdir _readthedocs/htmlzip
+      - cd _readthedocs ; zip -r -j htmlzip/test-builds.zip test-builds
       - sphinx-build -M simplepdf docs/ _readthedocs/
       - mv _readthedocs/simplepdf/"Test Builds.pdf" _readthedocs/pdf
 
