@@ -10,13 +10,11 @@ build:
     - graphviz   # dot command
   jobs:
     post_build:
-      - mkdir --parents _readthedocs/htmlzip
-      - sphinx-build -b zundler docs/ _readthedocs/htmlzip
-      - mv _readthedocs/htmlzip _readthedocs/test-builds
-      - mkdir _readthedocs/htmlzip
+      - mkdir --parents _readthedocs/htmlzip _readthedocs/pdf
+      - sphinx-build -b zundler docs/ _readthedocs/test-builds
       - cd _readthedocs ; zip -r -j htmlzip/test-builds.zip test-builds
       - sphinx-build -M simplepdf docs/ _readthedocs/
-      - mv _readthedocs/simplepdf/"Test Builds.pdf" _readthedocs/pdf
+      - mv _readthedocs/simplepdf/"Test Builds.pdf" _readthedocs/pdf/
 
 sphinx:
   configuration: docs/conf.py
