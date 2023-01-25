@@ -1,7 +1,7 @@
-test-builds
-===========
+Build documentation from PR
+===========================
 
-GitHub repository to test different Read the Docs builds scenarios.
+The index file is edited in the PR to reflect some changes in the home page.
 
 ----
 
