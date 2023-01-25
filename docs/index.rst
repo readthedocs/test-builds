@@ -1,8 +1,9 @@
-Use external builders to generate different formats
-===================================================
+Use external builders to generate different formats (``build.commands``)
+========================================================================
 
 * Use ``zundler`` to create the HTMLZip version
 * Use ``SimplePDF`` to generate the PDF version
+* Use regular ``sphinx-build -b epub`` to build ePUB version
 
 ----
 
@@ -17,7 +18,6 @@ Read the Docs ``.readthedocs.yaml`` configuration file used to build this docs.
 ``requirements.txt`` used to build these docs.
 
 .. literalinclude:: ../requirements.txt
-   :language: txt
    :linenos:
 
 ----
