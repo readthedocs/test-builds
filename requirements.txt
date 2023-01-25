@@ -1,7 +1,7 @@
 sphinx-autorun
 git+https://github.com/AdrianVollmer/Zundler@main#egg=Zundler
 sphinx-simplepdf
-sphinx-rtd-theme==1.2.0rc3
+sphinx-rtd-theme
 sphinx<6
 
 # Installed to have the flyout and extras
