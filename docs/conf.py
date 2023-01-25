@@ -3,6 +3,9 @@
 # Default settings
 project = 'Test Builds'
 extensions = [
+    # Read the Docs flyout and extras
+    'readthedocs_ext.readthedocs',
+
     'sphinx_autorun',
     'sphinx_simplepdf',
 ]

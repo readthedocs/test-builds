@@ -4,5 +4,8 @@ sphinx-simplepdf
 sphinx-rtd-theme==1.2.0rc3
 sphinx<6
 
+# Installed to have the flyout and extras
+readthedocs-sphinx-ext
+
 # Sphinx docs requirements
 sphinxcontrib-websupport
