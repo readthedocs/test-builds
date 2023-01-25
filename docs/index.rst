@@ -1,5 +1,5 @@
-Use external builders to generate different formats
-===================================================
+Use external builders to generate different formats (``build.jobs``)
+====================================================================
 
 * Use ``zundler`` to create the HTMLZip version
 * Use ``SimplePDF`` to generate the PDF version
