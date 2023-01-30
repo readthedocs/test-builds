@@ -3,5 +3,3 @@ site_description: A build to test MkDocs
 
 nav:
   - Overview: "index.md"
-
-docs_dir: "."
