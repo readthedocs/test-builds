@@ -1,0 +1,5 @@
+site_name: readthedocs
+site_description: A build to test MkDocs
+
+nav:
+  - Overview: "index.md"
