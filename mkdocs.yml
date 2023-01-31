@@ -1,0 +1,15 @@
+site_name: readthedocs
+site_description: A build to test MkDocs
+
+nav:
+  - Overview: "index.md"
+
+plugins:
+   - search
+   - autozip:
+       # TODO: find a way to use $READTHEDOCS_OUTPUT and $READTHEDOCS_PROJECT
+       # source_zip_dir: $READTHEDOCS_OUTPUT
+       # source_zip_file_name: $READTHEDOCS_PROJECT.zip
+       source_zip_dir: _readthedocs/htmlzip/
+       source_zip_file_name: test-builds.zip
+       add_source_zip_to_nav: false
