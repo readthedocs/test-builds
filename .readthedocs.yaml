@@ -12,6 +12,7 @@ build:
       - curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh
       - python -m sphinx -T -E -j auto -b latex -d _build/doctrees -D language=en docs/ _readthedocs/latex
       - ./tectonic -X compile _readthedocs/latex/$READTHEDOCS_PROJECT.tex
+      - mkdirs --parents _readthedocs/pdf
       - mv _readthedocs/latex/$READTHEDOCS_PROJECT.pdf _readthedocs/pdf/$READTHEDOCS_PROJECT.pdf
 
 sphinx:
