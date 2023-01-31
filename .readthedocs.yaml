@@ -4,8 +4,13 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3"
-  apt_packages:
-    - tree
+  jobs:
+    post_build:
+      # https://tectonic-typesetting.github.io/en-US/install.html
+      - curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh
+      - sphinx -T -E -j auto -b latex -d _build/doctrees -D language=en docs/ _readthedocs/latex
+      - tectonic -X compile _readthedocs/latex/$READTHEDOCS_PROJECT.tex
+      - mv $READTHEDOCS_PROJECT.pdf _readthedocs/pdf/$READTHEDOCS_PROJECT.pdf
 
 sphinx:
   configuration: docs/conf.py

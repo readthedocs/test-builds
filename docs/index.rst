@@ -1,7 +1,18 @@
-test-builds
-===========
+Sphinx PDF build with ``tectonic``
+==================================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Uses ``tectonic`` to build a PDF after generating the ``.tex`` file with Sphinx
+(https://tectonic-typesetting.github.io/en-US/)
+
+See the issue https://github.com/readthedocs/readthedocs.org/issues/9598
+
+----
+
+Read the Docs configuration file
+
+.. literalinclude:: ../.readthedocs.yaml
+   :language: yaml
+   :linenos:
 
 ----
 
