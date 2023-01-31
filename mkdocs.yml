@@ -8,4 +8,4 @@ plugins:
   - with-pdf:
       # TODO: find a way to use $READTHEDOCS_OUTPUT and $READTHEDOCS_PROJECT
       # output_path: $READTHEDOCS_OUTPUT/$READTHEDOCS_PROJECT.pdf
-      output_path: ../_readthedocs/pdf/test-builds.pdf
+      output_path: ../pdf/test-builds.pdf
