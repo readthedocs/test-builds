@@ -1,7 +1,16 @@
-test-builds
-===========
+Sphinx multi-page HTMLZip
+=========================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Use the same output from ``StandaloneHTMLBuilder`` to generate a zipped version of it.
+Expose the ``.zip`` file as downloadable content.
+
+----
+
+Read the Docs ``.readthedocs.yaml`` configuration file used to build this docs.
+
+.. literalinclude:: ../.readthedocs.yaml
+   :language: yaml
+   :linenos:
 
 ----
 
