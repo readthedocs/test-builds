@@ -1,5 +1,6 @@
 site_name: readthedocs
 site_description: A build to test MkDocs
+copyright: 2022
 
 nav:
   - Overview: "index.md"
