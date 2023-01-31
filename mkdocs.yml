@@ -1,4 +1,4 @@
-site_name: readthedocs
+site_name: Read the Docs
 site_description: A build to test MkDocs with PDF
 copyright: "2022"
 
@@ -7,6 +7,7 @@ nav:
 
 plugins:
   - with-pdf:
+      cover_subtitle: PDF created with mkdocs-with-pdf
       # TODO: find a way to use $READTHEDOCS_OUTPUT and $READTHEDOCS_PROJECT
       # output_path: $READTHEDOCS_OUTPUT/$READTHEDOCS_PROJECT.pdf
       output_path: ../pdf/test-builds.pdf
