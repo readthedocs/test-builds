@@ -5,6 +5,8 @@ build:
   jobs:
     post_checkout:
       - env
+    pre_build:
+      - env
   tools:
     python: "3"
 
