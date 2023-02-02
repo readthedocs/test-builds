@@ -1,7 +1,8 @@
-test-builds
-===========
+Build a PDF with ``rinohtype``
+==============================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Use http://www.mos6581.org/rinohtype/master/index.html to build a PDF from the Sphinx project.
+In the flyout menu, you will find a link to download the PDF.
 
 ----
 
