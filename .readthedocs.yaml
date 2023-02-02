@@ -6,6 +6,9 @@ build:
     python: "3"
   apt_packages:
     - tree
+  jobs:
+    post_build:
+      - sphinx-build -b rinoh docs/ _readthedocs/pdf
 
 sphinx:
   configuration: docs/conf.py
