@@ -8,7 +8,9 @@ build:
     - tree
   jobs:
     post_build:
-      - sphinx-build -b rinoh docs/ _readthedocs/pdf
+      - sphinx-build -b rinoh docs/ _build/rinohtype/
+      - mkdir _readthedocs/pdf
+      - mv _build/rinohtype/test-builds.pdf _readthedocs/pdf
 
 sphinx:
   configuration: docs/conf.py
