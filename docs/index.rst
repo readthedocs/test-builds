@@ -10,8 +10,8 @@ Tooltips with issues on glossary
 
 Example:
 
-* :term:`Term 1`
-* :term:`Term 2`
+* :term:`term 1`
+* :term:`term 2`
 
 
 Reference to a title
