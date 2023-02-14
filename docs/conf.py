@@ -8,6 +8,9 @@ extensions = [
 ]
 
 hoverxref_auto_ref = True
+hoverxref_roles = [
+    'term',
+]
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars
 
