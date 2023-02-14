@@ -1,7 +1,18 @@
-test-builds
-===========
+sphinx-hoverxref
+================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Make usage of ``sphinx-hoverxref`` and test different scenarios.
+
+Tooltips with issues on glossary
+--------------------------------
+
+* Issue: https://github.com/readthedocs/sphinx-hoverxref/issues/97
+
+Example:
+
+* :term:`Term 1`
+* :term:`Term 2`
+
 
 ----
 

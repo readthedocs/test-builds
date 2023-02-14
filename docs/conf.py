@@ -4,7 +4,10 @@
 project = 'Test Builds'
 extensions = [
     'sphinx_autorun',
+    'hoverxref.extension',
 ]
+
+hoverxref_auto_ref = True
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars
 
