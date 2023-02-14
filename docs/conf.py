@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+import os
 
 # Default settings
 project = 'Test Builds'
@@ -7,6 +7,9 @@ extensions = [
     'sphinx.ext.autosectionlabel',
     'hoverxref.extension',
 ]
+
+if "LOCAL_BUILD" in os.environ:
+    hoverxref_api_host = 'http://devthedocs.org'
 
 hoverxref_auto_ref = True
 hoverxref_roles = [
