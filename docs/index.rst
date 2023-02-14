@@ -14,6 +14,17 @@ Example:
 * :term:`Term 2`
 
 
+Reference to a title
+-----------------
+
+:ref:`conf:conf.py`
+
+
+Reference to a document
+------------------------
+
+:doc:`conf`
+
 ----
 
 Read the Docs configuration file used to build this docs:
