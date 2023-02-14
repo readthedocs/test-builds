@@ -15,7 +15,7 @@ Example:
 
 
 Reference to a title
------------------
+--------------------
 
 :ref:`conf:conf.py`
 
@@ -49,3 +49,14 @@ Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
    >>> # Build at
    >>> import datetime
    >>> datetime.datetime.utcnow()  # UTC
+
+
+Contents
+--------
+
+All contents of this documentation.
+
+.. toctree::
+   :glob:
+
+   *

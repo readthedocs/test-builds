@@ -1,3 +1,6 @@
+Glossary
+========
+
 .. glossary::
 
    term 1
