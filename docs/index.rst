@@ -1,7 +1,19 @@
-test-builds
-===========
+Output content into ``_build/html``
+===================================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Read the Docs is not using ``_build/html`` anymore.
+Instead, it's using ``$READTHEDOCS_OUTPUT`` now.
+
+Users outputting content to ``_build/html`` should be contacted and communicated about this
+to avoid unexpected behavior.
+
+We are now logging::
+
+  Directory '_build/html' exists. This may lead to unexpected behavior.
+
+when we detect the build is creating this directory.
+We can find these logs in New Relic.
+
 
 ----
 
