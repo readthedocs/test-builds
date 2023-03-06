@@ -16,7 +16,6 @@ html_theme = 'sphinx_rtd_theme'
 # Fail the PDF build on purpose
 latex_elements = {
     'preamble': r'''
-\usepackage[titles]{tocloft}
-\cftsetpnumwidth {1.25cx}\cftsetrmarg{1.5cm}
+\useage[titles]{}
 ''',
 }
