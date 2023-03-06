@@ -13,7 +13,13 @@ latex_engine = 'xelatex'  # allow us to build Unicode chars
 html_theme = 'sphinx_rtd_theme'
 
 
-# Fail the PDF build on purpose
+# Fail the PDF build on purpose by producing a syntax error
+#
+# ! Undefined control sequence.
+# l.71 \useage
+#             [titles]{}
+
+# ! LaTeX Error: Missing \begin{document}.
 latex_elements = {
     'preamble': r'''
 \useage[titles]{}
