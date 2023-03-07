@@ -15,6 +15,9 @@ build:
     pre_system_dependencies:
       - echo pre_system_dependencies
       - echo `date`
+      - |
+        # Test multi-line script
+        if test -n "A"; then echo "B"; fi
     post_system_dependencies:
       - echo post_system_dependencies
       - echo `date`
