@@ -30,8 +30,14 @@ READTHEDOCS_DATA = {
     // TODO: remove the following ones, they are just my own tests
     "build": {
         "id": 1111,
+        "external_version": true,
     },
     "repository_url": "https://github.com/readthedocs/test-builds/",  // This one could be retrieved from the API
+    "features": {
+        "docdiff": {
+            "enabled": true,
+        },
+    },
 };
 
 /*
@@ -85,6 +91,9 @@ READTHEDOCS_DATA = {
             },
         },
         "analytics": {
+            "enabled": true,
+        },
+        "docdiff": {
             "enabled": true,
         },
 
