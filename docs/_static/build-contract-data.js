@@ -32,7 +32,7 @@ READTHEDOCS_DATA = {
         "id": 1111,
         "external_version": true,
     },
-    "repository_url": "https://github.com/readthedocs/test-builds/",  // This one could be retrieved from the API
+    "repository_url": "https://github.com/readthedocs/test-builds",  // This one could be retrieved from the API
     "features": {
         "docdiff": {
             "enabled": true,
