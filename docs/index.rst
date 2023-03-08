@@ -1,7 +1,13 @@
-test-builds
-===========
+manual-integrations
+===================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Initial PoC to manually integrate all the Read the Docs features.
+Context:
+
+* https://github.com/readthedocs/readthedocs.org/pull/9755
+* https://github.com/readthedocs/readthedocs.org/issues/9063
+* https://github.com/readthedocs/meta/issues/71
+
 
 ----
 
@@ -17,7 +23,6 @@ Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
 .. literalinclude:: conf.py
    :language: python
-   :end-before: ###########################################################################
    :linenos:
 
 ----
