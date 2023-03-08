@@ -1,7 +1,10 @@
 // This data should be outputed by the builder at build time
 // (this is the contract builders has to follow to integrate with our features)
 // TODO: trim this data and only keep the useful one.
-let READTHEDOCS_DATA = {
+// This variable comes from
+// https://github.com/rtfd/readthedocs-sphinx-ext/blob/f1145b1819458643f442b21083b3397aeebc8e72/readthedocs_ext/_templates/readthedocs-insert.html.tmpl#L30
+// https://github.com/rtfd/readthedocs-sphinx-ext/blob/f1145b1819458643f442b21083b3397aeebc8e72/readthedocs_ext/readthedocs.py#L141-L194
+READTHEDOCS_DATA = {
     "ad_free": false,
     "api_host": "http://devthedocs.org",
     "build_date": "2023-03-01T20:47:52Z",
