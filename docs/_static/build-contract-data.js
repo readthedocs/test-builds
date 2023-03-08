@@ -26,4 +26,63 @@ READTHEDOCS_DATA = {
     "theme": "sphinx_rtd_theme",
     "user_analytics_code": "UA-12341234-1",
     "version": "latest",
-}
+};
+
+/*
+
+Explanation about what field is useful for.
+Besides, I'm starting to propose a potential JavaScript object that builders will need to output.
+
+READTHEDOCS_DATA = {
+    // Mandatory
+    // Footer HTML endpoint
+    "theme": "",
+    "docroot": "",
+    "source_suffix": "",
+    "page": "",
+    "project": "",
+    "version": "",
+
+    // NOTE: we are sending "subproject=true" attribute to the footer API,
+    // if the URL contains "/projects/" on it.
+    // However, the server is not using that argument at all
+
+    // NOTE: Currently used, but why?
+    // Shouldn't be always "/_"?
+    // What are the cases where this will be different
+    // https://github.com/readthedocs/readthedocs.org/blob/e18b40f6fe7c2c058bbf681063c1c577b5e8e9d3/readthedocs/core/static-src/core/js/doc-embed/footer.js#L65
+    "proxied_api_host": "",
+
+    // Search API
+    "language": "",
+
+    // Global analytics (for Read the Docs)
+    // NOTE: this is not mandatory
+    "programming_language": "",
+    "builder": "",
+    "global_analytics_code": "",
+
+    // User specific analytics (added via the project's setting)
+    "user_analytics_code": "",
+
+    // New attributes
+    // Use an Object for each feature.
+    // This will allow us to expand in the future if required.
+    "features": {
+        "search": {
+            "enabled": true,
+        },
+        "banner": {
+            "warning": {
+                "enabled": true,
+                "versioning": "semver",
+            },
+        },
+        "analytics": {
+            "enabled": true,
+        },
+
+    },
+};
+
+*/
