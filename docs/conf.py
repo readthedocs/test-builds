@@ -1,3 +1,5 @@
+import os
+
 # Default settings
 project = 'Test Builds'
 extensions = [
@@ -13,3 +15,12 @@ html_static_path = [
 html_js_files = [
     'build-contract-data.js',
 ]
+
+
+# We need to tell to our builder that we are building on Read the Docs
+# Ideally, the theme should get this automatically from the environment
+# instead of forcing us to define it on its context
+if "READTHEDOCS" in os.environ:
+    html_context = {
+        "READTHEDOCS": True
+    }
