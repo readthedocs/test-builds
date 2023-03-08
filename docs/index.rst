@@ -32,3 +32,9 @@ Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
    >>> # Build at
    >>> import datetime
    >>> datetime.datetime.utcnow()  # UTC
+
+
+.. https://docs.readthedocs.io/en/stable/flyout-menu.html
+.. raw:: html
+
+   <div id="readthedocs-embed-flyout"></div>
