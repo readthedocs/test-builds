@@ -22,5 +22,6 @@ html_js_files = [
 # instead of forcing us to define it on its context
 if "READTHEDOCS" in os.environ:
     html_context = {
-        "READTHEDOCS": True
+        "READTHEDOCS": True,
+        "current_version": os.environ.get('READTHEDOCS_VERSION'),
     }
