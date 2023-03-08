@@ -26,6 +26,12 @@ READTHEDOCS_DATA = {
     "theme": "sphinx_rtd_theme",
     "user_analytics_code": "UA-12341234-1",
     "version": "latest",
+
+    // TODO: remove the following ones, they are just my own tests
+    "build": {
+        "id": 1111,
+    },
+    "repository_url": "https://github.com/readthedocs/test-builds/",  // This one could be retrieved from the API
 };
 
 /*
