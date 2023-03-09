@@ -5,5 +5,7 @@ build:
   tools:
     nodejs: "16"
   commands:
-    - mkdir --parents _readthedocs/html/
-    - cp --recursive docs/* _readthedocs/html/
+    - mkdir --parents $READTHEDOCS_OUTPUT/html/
+    - cp --recursive docs/* $READTHEDOCS_OUTPUT/html/
+    - envsubst < $READTHEDOCS_OUTPUT/html/readthedocs-docsify.js > $READTHEDOCS_OUTPUT/html/readthedocs-docsify.js
+    - cat $READTHEDOCS_OUTPUT/html/readthedocs-docsify.js
