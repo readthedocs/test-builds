@@ -6,7 +6,7 @@ build:
     python: "3"
   commands:
     # Run all the commands manually to avoid installing pre-defined packages
-    - env
     # Make explicit what are the dependencies we are installing
     - pip install sphinx sphinx-rtd-theme sphinx-autorun
     - sphinx-build -b html docs/ _readthedocs/html
+    - cp docs/readthedocs-build.yaml _readthedocs/html/

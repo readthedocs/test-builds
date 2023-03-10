@@ -1,0 +1,42 @@
+# Read the Docs build contract YAML file.
+#
+# This file is generated (dynamically or statically) at build time by the doctool.
+# It has to be saved at `$READTHEDOCS_OUTPUT/html/readthedocs-build.yaml`.
+#
+#
+#
+# Attributes defined by the doctool itself
+doctool:
+  name": "sphinx"
+  version": "6.0.1"
+  theme:
+    name: "sphinx_rtd_theme"
+    version: "1.2.0"
+  extensions:
+    - sphinx_rtd_theme
+    - sphinx-autorun
+  vcs_integration:
+    # `source_suffix` is a per-page value
+    # In Sphinx you can have multiple backends (.rst, .md, .ipynb, etc)
+    # in the same documentation.
+    # This field could be overwritten per-page if required
+    source_suffix: ".rst"
+
+# New attributes
+# Uses an object for each feature:
+# this will allow us to expand in the future if required.
+features:
+  search:
+    enabled: true
+  banner:
+    warning:
+      enabled: true
+      # Entry point to change Javascript attributes
+      versioning: "semver"
+  analytics:
+      enabled: true
+  docdiff:
+    enabled: true
+  # Pin to a specific version of the Read the Docs JavaScript library
+  hosting:
+    version": "1.0"
