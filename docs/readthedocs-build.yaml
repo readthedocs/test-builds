@@ -1,0 +1,33 @@
+# Attributes defined by the doctool itself
+doctool:
+  name": "docsify"
+  version": "4.13.0"
+  theme:
+    name: "vue.css"
+    version: null
+  extensions: null
+  vcs_integration:
+    # `source_suffix` is a per-page value
+    # In Sphinx you can have multiple backends (.rst, .md, .ipynb, etc)
+    # in the same documentation.
+    # This field could be overwritten per-page if required
+    source_suffix: ".md"
+
+# New attributes
+# Uses an object for each feature:
+# this will allow us to expand in the future if required.
+features:
+  search:
+    enabled: true
+  banner:
+    warning:
+      enabled: true
+      # Entry point to change Javascript attributes
+      versioning: "semver"
+  analytics:
+      enabled: true
+  docdiff:
+    enabled: true
+  # Pin to a specific version of the Read the Docs JavaScript library
+  hosting:
+    version": "1.0"
