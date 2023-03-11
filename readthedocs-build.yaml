@@ -6,21 +6,16 @@
 #
 #
 # Attributes defined by the doctool itself
-doctool:
-  name": "sphinx"
-  version": "6.0.1"
-  theme:
-    name: "sphinx_rtd_theme"
-    version: "1.2.0"
-  extensions:
-    - sphinx_rtd_theme
-    - sphinx-autorun
-  vcs_integration:
-    # `source_suffix` is a per-page value
-    # In Sphinx you can have multiple backends (.rst, .md, .ipynb, etc)
-    # in the same documentation.
-    # This field could be overwritten per-page if required
-    source_suffix: ".rst"
+telemetry:
+  doctool:
+    name": "sphinx"
+    version": "6.0.1"
+    theme:
+      name: "sphinx_rtd_theme"
+      version: "1.2.0"
+    extensions:
+      - sphinx_rtd_theme
+      - sphinx-autorun
 
 # New attributes
 # Uses an object for each feature:
@@ -37,6 +32,14 @@ features:
       enabled: true
   docdiff:
     enabled: true
+  flyout:
+    enabled: true
+    vcs_integration:
+      # `source_suffix` could be a per-page value.
+      # In Sphinx you can have multiple backends (.rst, .md, .ipynb, etc)
+      # in the same documentation.
+      # This field could be overwritten per-page if required
+      source_suffix: ".rst"
   # Pin to a specific version of the Read the Docs JavaScript library
   hosting:
     version": "1.0"
