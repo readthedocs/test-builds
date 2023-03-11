@@ -23,6 +23,9 @@ telemetry:
 features:
   search:
     enabled: true
+    # `selector` is a CSS selector that points to a link or input field.
+    # When clicked on it, the Read the Docs search modal UI will be shown.
+    selector: "#readthedocs-search"
   banner:
     warning:
       enabled: true
@@ -34,12 +37,23 @@ features:
     enabled: true
   flyout:
     enabled: true
+    placement: "#readthedocs-versions"
     vcs_integration:
+      # `pagename` is a per-page value.
+      pagename: "index"
       # `source_suffix` could be a per-page value.
       # In Sphinx you can have multiple backends (.rst, .md, .ipynb, etc)
       # in the same documentation.
       # This field could be overwritten per-page if required
       source_suffix: ".rst"
+      docroot: "docs/"
   # Pin to a specific version of the Read the Docs JavaScript library
   hosting:
     version": "1.0"
+  ads:
+    # Some ideas taken from Furo theme
+    # - https://github.com/pradyunsg/furo/blob/55b32f0dd5ac9a055629a8fbb8914e9c62a8b072/src/furo/theme/furo/sidebar/ethical-ads.html#L2
+    # -
+    enabled: true  # it cannot be disabled, tho
+    placement: "#readthedocs-ads"
+    type: "readthedocs-sidebar"
