@@ -12,9 +12,6 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = [
     '_static',
 ]
-html_js_files = [
-    'build-contract-data.js',
-]
 
 
 # We need to tell to our builder that we are building on Read the Docs
