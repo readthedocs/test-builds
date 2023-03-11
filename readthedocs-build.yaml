@@ -37,7 +37,11 @@ features:
     enabled: true
   flyout:
     enabled: true
+
+    # `placement` can be removed from here since we have documented
+    # the user has to define `#readthedocs-embed-flyout` for Read the Docs to inject it there
     placement: "#readthedocs-versions"
+
     vcs_integration:
       # `pagename` is a per-page value.
       pagename: "index"
