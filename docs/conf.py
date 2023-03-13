@@ -28,8 +28,8 @@ html_static_path = [
 # https://github.com/readthedocs/sphinx_rtd_theme/blob/9d88b9e4e1e17896c6231358a89da4612ff7bc90/sphinx_rtd_theme/versions.html#L1
 # Note that everything from inside "rst-other-versions" is gonna be replaced by the `/footer_html/` response,
 # so they are not needed to be defined.
-if "READTHEDOCS" in os.environ:
-    html_context = {
-        "READTHEDOCS": True,
-        "current_version": os.environ.get('READTHEDOCS_VERSION'),
-    }
+# if "READTHEDOCS" in os.environ:
+#     html_context = {
+#         "READTHEDOCS": True,
+#         "current_version": os.environ.get('READTHEDOCS_VERSION'),
+#     }
