@@ -7,7 +7,11 @@ build:
   commands:
     # Run all the commands manually to avoid installing pre-defined packages
     # Make explicit what are the dependencies we are installing
-    - pip install sphinx sphinx-rtd-theme sphinx-autorun
+    - pip install sphinx sphinx-autorun
+
+    # Install "sphinx-rtd-theme" from this branch because it injects the Flyout using the new documented way.
+    - pip install 'sphinx-rtd-theme @ git+https://github.com/readthedocs/sphinx_rtd_theme@humitos/flyout-menu'
+
     - sphinx-build -b html docs/ _readthedocs/html
 
     # TODO: decide whether or not this file is required
