@@ -10,7 +10,8 @@ build:
     - pip install sphinx sphinx-autorun
 
     # Install "sphinx-rtd-theme" from this branch because it injects the Flyout using the new documented way.
-    - pip install 'sphinx-rtd-theme @ git+https://github.com/readthedocs/sphinx_rtd_theme@humitos/flyout-menu'
+    # - pip install 'sphinx-rtd-theme @ git+https://github.com/readthedocs/sphinx_rtd_theme@humitos/flyout-menu'
+    - pip install sphinx-rtd-theme
 
     - sphinx-build -b html docs/ _readthedocs/html
 
