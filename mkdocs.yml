@@ -1,0 +1,3 @@
+site_name: Read the Docs - Material for MkDocs
+theme:
+  name: material
