@@ -10,6 +10,8 @@ Context:
 * https://github.com/readthedocs/readthedocs.org/pull/10127
 * https://github.com/humitos/readthedocs-client
 
+Take a look at :doc:`page`.
+
 
 ----
 
