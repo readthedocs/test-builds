@@ -1,0 +1,9 @@
+# Read the Docs build contract YAML file.
+#
+# This file is generated (dynamically or statically) at build time by the doctool.
+# It has to be saved at `$READTHEDOCS_OUTPUT/html/readthedocs-build.yaml`.
+#
+#
+extras:
+  comment: |
+    Text comming from "readthedocs-build.yaml" generated at build time.
