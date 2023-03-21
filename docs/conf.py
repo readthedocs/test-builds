@@ -13,9 +13,9 @@ html_static_path = [
     '_static',
 ]
 
-def setup(app):
-    if "DISABLE_READTHEDOCS_CLIENT" not in os.environ:
-        app.add_js_file('readthedocs-client.js')
+# def setup(app):
+#     if "DISABLE_READTHEDOCS_CLIENT" not in os.environ:
+#         app.add_js_file('readthedocs-client.js')
 
 
 # We need to tell to our builder that we are building on Read the Docs
