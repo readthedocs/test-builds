@@ -4,12 +4,10 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3"
-  apt_packages:
-    - tree
 
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+  commands:
+    - git clone --depth 1 https://github.com/readthedocs/readthedocs.org
+    # - sed -i "s|sphinx_search\.extension||g" readthedocs.org/docs/conf.py
+    - echo "extensions.pop(\"sphinx_search.extension\")" >> readthedocs.org/docs/conf.py
+    - pip install -r readthedocs.org/requirements/docs.txt
+    - sphinx-build -E -b html readthedocs.org/docs/ $READTHEDOCS_OUTPUT/html
