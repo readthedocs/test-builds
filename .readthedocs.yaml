@@ -6,10 +6,6 @@ build:
     python: "3"
   apt_packages:
     - tree
-
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+  commands:
+    pip install furo
+    sphinx-build -b html docs/ $READTHEDOCS_OUTPUT/html
