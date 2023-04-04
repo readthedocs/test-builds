@@ -4,12 +4,8 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3"
-  apt_packages:
-    - tree
-
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+  commands:
+    - pip install -r requirements.txt
+    - jupyter-book create book/
+    - jupyter-book build book/
+    - mv _build/html $READTHEDOCS_OUTPUT
