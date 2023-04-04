@@ -7,7 +7,4 @@ build:
   commands:
     - pip install -r requirements.txt
     - jupyter-book create book/
-    - jupyter-book build book/
-    - mkdir -p $READTHEDOCS_OUTPUT/html
-    - mv --verbose book/_build/html/ $READTHEDOCS_OUTPUT/html
-    - find $READTHEDOCS_OUTPUT
+    - jupyter-book build --all --path-output $READTHEDOCS_OUTPUT/html book/
