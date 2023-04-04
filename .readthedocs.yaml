@@ -9,4 +9,4 @@ build:
     - jupyter-book create book/
     - jupyter-book build book/
     - mv --verbose book/_build/html/ $READTHEDOCS_OUTPUT/html/
-    - ls $READTHEDOCS_OUTPUT
+    - find $READTHEDOCS_OUTPUT
