@@ -6,17 +6,17 @@ build:
     python: "3"
   apt_packages:
     - tree
-  jobs:
-    post_checkout:
-      # Cancel building pull requests when they do not change project1.
-      #
-      # If there are no changes (git diff exits with 0) we force the command to return with 183.
-      # This is a special exit code on Read the Docs that will cancel the build immediately.
-      - |
-        if [ "$READTHEDOCS_VERSION_TYPE" = "external" ] && git diff --quiet origin/monorepo -- project1;
-        then
-          exit 183;
-        fi
+#  jobs:
+#    post_checkout:
+#      # Cancel building pull requests when they do not change project1.
+#      #
+#      # If there are no changes (git diff exits with 0) we force the command to return with 183.
+#      # This is a special exit code on Read the Docs that will cancel the build immediately.
+#      - |
+#        if [ "$READTHEDOCS_VERSION_TYPE" = "external" ] && git diff --quiet origin/monorepo -- project1;
+#        then
+#          exit 183;
+#        fi
 
 sphinx:
   configuration: project1/conf.py
