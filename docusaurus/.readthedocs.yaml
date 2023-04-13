@@ -1,0 +1,17 @@
+version: 2
+
+build:
+  os: ubuntu-22.04
+  tools:
+    nodejs: "18"
+  commands:
+    # "docs/" directory was created using the command to create the site:
+    # npx create-docusaurus@latest docs classic
+    #
+    # Install Docusaurus dependencies
+    - cd docs/ && npm install
+    # Build the site
+    - cd docs/ && npm run build
+    # Copy generated files into Read the Docs directory
+    - mkdir --parents _readthedocs/html/
+    - cp --recursive docs/build/* _readthedocs/html/
