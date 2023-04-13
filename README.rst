@@ -12,3 +12,8 @@ project2
 --------
 
 Builds with Sphinx 5.x.
+
+docusaurus
+----------
+
+Configured to be added as a subproject with alias "docusaurus"
