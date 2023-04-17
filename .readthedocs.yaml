@@ -3,6 +3,8 @@ version: 2
 build:
   os: ubuntu-22.04
   commands:
+    # Creates a basic HTML
+    # It should show the PR build notification, tho
     - mkdir -p _readthedocs/html/
     - echo "Hello world! `date`" > _readthedocs/html/index.html
   tools:
