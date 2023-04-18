@@ -6,6 +6,6 @@ build:
     # Creates a basic HTML
     # It should show the PR build notification, tho
     - mkdir -p _readthedocs/html/
-    - echo "Hello world! `date`" > _readthedocs/html/index.html
+    - mv index.html _readthedocs/html/index.html
   tools:
     python: "3"
