@@ -16,7 +16,7 @@ Take a look at :doc:`page`.
 
      <script>
        let element = document.createElement("readthedocs-docdiff");
-       element.setAttribute({ base-url: "http://test-builds.devthedocs.org/en/latest/" });
+       element.setAttribute("base-url", "http://test-builds.devthedocs.org/en/latest/");
        document.querySelector("[role=navigation").appendChild(element);
      </script>
 
