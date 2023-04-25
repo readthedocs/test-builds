@@ -12,6 +12,13 @@ Context:
 
 Take a look at :doc:`page`.
 
+.. raw:: html
+
+   <readthedocs-docdiff
+     base-url="http://test-builds.devthedocs.org/en/latest/"
+   ></readthedocs-docdiff>
+
+
 
 ----
 
