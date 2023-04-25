@@ -1,0 +1,12 @@
+{%- extends "layout.html" %}
+
+{%- block navigation %}
+{{ super() }}
+
+
+<p>Docdiff</p>
+<readthedocs-docdiff
+    base-url="http://test-builds.devthedocs.org/en/latest/"
+></readthedocs-docdiff>
+
+{%- endblock navigation %}

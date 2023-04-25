@@ -13,6 +13,10 @@ html_static_path = [
     '_static',
 ]
 
+template_path = [
+    "templates",
+]
+
 # def setup(app):
 #     if "DISABLE_READTHEDOCS_CLIENT" not in os.environ:
 #         app.add_js_file('readthedocs-client.js')
