@@ -12,6 +12,15 @@ Context:
 
 Take a look at :doc:`page`.
 
+.. raw:: html
+
+     <script>
+       let element = document.createElement("readthedocs-docdiff");
+       element.setAttribute({ base-url: "http://test-builds.devthedocs.org/en/latest/" });
+       document.querySelector("[role=navigation").appendChild(element);
+     </script>
+
+
 ----
 
 Read the Docs configuration file used to build this docs:
