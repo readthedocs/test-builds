@@ -4,7 +4,7 @@
 project = 'Test Builds'
 extensions = [
     'sphinx_autorun',
-    'sphinxcontrib-jquery',  # https://github.com/readthedocs/sphinx_rtd_theme/issues/1452
+    'sphinxcontrib.jquery',  # https://github.com/readthedocs/sphinx_rtd_theme/issues/1452
 ]
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars
