@@ -3,4 +3,5 @@ version: 2
 build:
   os: ubuntu-22.04
   commands:
+    - mkdir -p _readthedocs/html/
     - echo "Hola mundo!" > _readthedocs/html/index.html
