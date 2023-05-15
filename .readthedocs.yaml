@@ -16,7 +16,13 @@ build:
 
       # Use `git log` to check if the latest commit contains "skip ci",
       # in that case exit the command with 183 to skip the build
-      - (git --no-pager log --pretty="tformat:%s -- %b" -1 | grep -viq "skip rtd") || exit 183
+      # - (git --no-pager log --pretty="tformat:%s -- %b" -1 | grep -viq "skip rtd") || exit 183
+      - |
+        if [ "$READTHEDOCS_VERSION_TYPE" = "external" ] && git diff --quiet origin/main -- Doc/ .readthedocs.yml;
+        then
+          echo "No changes to Doc/ - exiting the build.";
+          exit 183;
+        fi
 
 sphinx:
   configuration: docs/conf.py
