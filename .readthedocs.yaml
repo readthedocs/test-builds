@@ -22,6 +22,8 @@ build:
         then
           echo "No changes to Doc/ - exiting the build.";
           exit 183;
+        else
+          echo "Continue with the build";
         fi
 
 sphinx:
