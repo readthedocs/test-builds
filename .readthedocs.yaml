@@ -2,8 +2,12 @@ version: 2
 
 build:
   os: ubuntu-22.04
-  commands:
-    - mkdir -p _readthedocs/html/
-    - echo "Hello world! `date`" > _readthedocs/html/index.html
   tools:
     python: "3"
+  commands:
+    - |
+      if [ "$READTHEDOCS_VERSION_TYPE" = "external" ] && [ "$(git diff --quiet origin/main -- Doc/ .readthedocs.yml; echo $?)" -eq 0 ]; then \
+        echo "No changes to Doc/ - exiting the build."; \
+        exit 183; \
+      fi
+    - echo "Hello World!" > _readthedocs/html/index.html
