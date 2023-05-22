@@ -10,4 +10,5 @@ build:
         echo "No changes to Doc/ - exiting the build."; \
         exit 183; \
       fi
+    - mkdir -p _readthedocs/html
     - echo "Hello World!" > _readthedocs/html/index.html
