@@ -2,6 +2,7 @@ test-builds
 ===========
 
 * this is added
+* then this is added
 
 GitHub repository to test different Read the Docs builds scenarios.
 
