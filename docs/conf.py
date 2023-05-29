@@ -3,7 +3,6 @@
 # Default settings
 project = 'Test Builds'
 extensions = [
-    'sphinx_autorun',
 ]
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars
