@@ -1,6 +1,8 @@
 Test Builds
 ===========
 
+Editing README.rst is not enough for the build to trigger: This will be skipped.
+
 This repository is used internally to create different scenarios
 on build configs and trigger many builds on Read the Docs productions.
 
