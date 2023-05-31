@@ -9,18 +9,9 @@ extensions = [
 # Include all your settings here
 html_theme = 'sphinx_rtd_theme'
 
-html_static_path = [
-    '_static',
-]
-
 template_path = [
     "templates",
 ]
-
-# def setup(app):
-#     if "DISABLE_READTHEDOCS_CLIENT" not in os.environ:
-#         app.add_js_file('readthedocs-client.js')
-
 
 # We need to tell to our builder that we are building on Read the Docs
 # Ideally, the theme should get this automatically from the environment
