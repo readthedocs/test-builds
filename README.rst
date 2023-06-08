@@ -3,6 +3,8 @@ Test Builds
 
 I just disabled PR builds, so this should not build
 
+Now let's add another commit and see if the PR starts building
+
 This repository is used internally to create different scenarios
 on build configs and trigger many builds on Read the Docs productions.
 
