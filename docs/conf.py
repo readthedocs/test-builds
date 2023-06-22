@@ -29,6 +29,6 @@ latex_elements = {
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-latex_documents
 # (startdocname, targetname, title, author, theme, toctree_only)
 latex_documents = [
-   ('index', 'index.tex', 'Test BuildsDocumentation', 'Donald Docs', 'manual', False),
-   ('conf', 'configuration.tex', "", "Donald Docs Jr", 'howto', False),
+   ('index', 'index.tex', 'Test Builds - front page', 'Donald Docs', 'manual', False),
+   ('contents', 'contents.tex', "Test Builds - contents", "Donald Docs", 'howto', False),
 ]
