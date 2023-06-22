@@ -30,5 +30,5 @@ latex_elements = {
 # (startdocname, targetname, title, author, theme, toctree_only)
 latex_documents = [
    ('index', 'index.tex', 'Test BuildsDocumentation', 'Donald Docs', 'manual', False),
-   ('conf', 'configuration.tex', "", "Donald Docs Jr", 'howto', True),
+   ('conf', 'configuration.tex', "", "Donald Docs Jr", 'howto', False),
 ]
