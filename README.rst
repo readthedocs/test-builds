@@ -1,6 +1,8 @@
 Test Builds
 ===========
 
+Create multiple PDFs from Sphinx build
+
 This repository is used internally to create different scenarios
 on build configs and trigger many builds on Read the Docs productions.
 

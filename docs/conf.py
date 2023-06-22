@@ -25,3 +25,10 @@ latex_elements = {
 \useage[titles]{}
 ''',
 }
+
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-latex_documents
+# (startdocname, targetname, title, author, theme, toctree_only)
+latex_documents = [
+   ('index', 'index.tex', 'Test BuildsDocumentation', 'Donald Docs', 'manual', False),
+   ('conf', 'configuration.tex', "", "Donald Docs Jr", 'howto', True),
+]
