@@ -1,4 +1,18 @@
 # .readthedocs.yml
+version: 2
+
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "miniconda3-4.7"
+  jobs:
+    pre_create_environment:
+      - conda --version
+      - conda update --yes --quiet --name=base --channel=defaults conda
+      - conda --version
+
+sphinx:
+  configuration: docs/conf.py
 
 conda:
-  file: environment.yml
+  environment: environment.yml
