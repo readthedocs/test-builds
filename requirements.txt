@@ -1,2 +1,4 @@
+--pre
+
 sphinx-autorun
---pre sphinxawesome-theme
+sphinxawesome-theme
