@@ -1,7 +1,8 @@
-test-builds
-===========
+sphinx-awesome
+==============
 
-GitHub repository to test different Read the Docs builds scenarios.
+Sample documentation building with Awesome Sphinx Theme:
+https://sphinxawesome.xyz/
 
 ----
 
