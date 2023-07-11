@@ -1,4 +1,9 @@
-# .readthedocs.yml
+version: 2
+
+build:
+  os: ubuntu-22.04
+  tools:
+    python: miniconda3-4.7
 
 conda:
-  file: environment.yml
+  environment: environment.yml
