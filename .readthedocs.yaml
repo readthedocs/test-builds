@@ -4,8 +4,10 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3"
-  apt_packages:
-    - tree
+  jobs:
+    post_build:
+      - mkdir --parents $READTHEDOCS_OUTPUT/pdf
+      - wget https://www.sphinx-doc.org/_/downloads/en/master/pdf/ -O $READTHEDOCS_OUTPUT/pdf/sphinx.pdf
 
 sphinx:
   configuration: docs/conf.py
@@ -13,3 +15,6 @@ sphinx:
 python:
   install:
     - requirements: requirements.txt
+
+
+formats: []
