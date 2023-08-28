@@ -7,7 +7,7 @@ build:
   jobs:
     post_build:
       - mkdir --parents $READTHEDOCS_OUTPUT/pdf
-      - wget https://www.sphinx-doc.org/_/downloads/en/master/pdf/ -O $READTHEDOCS_OUTPUT/pdf/sphinx.pdf
+      - wget https://www.sphinx-doc.org/_/downloads/en/master/pdf/ -O $READTHEDOCS_OUTPUT/pdf/$READTHEDOCS_PROJECT.pdf
 
 sphinx:
   configuration: docs/conf.py
