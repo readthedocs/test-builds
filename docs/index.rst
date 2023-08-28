@@ -1,7 +1,9 @@
-test-builds
-===========
+pdf-build-jobs
+==============
 
-GitHub repository to test different Read the Docs builds scenarios.
+Use Read the Docs "normal workflow" to build the HTML,
+but use ``build.jobs`` to create a PDF and put it on ``$READTHEDOCS_OUTPUT/pdf``
+so serve it using the regular API and flyout.
 
 ----
 
