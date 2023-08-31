@@ -6,4 +6,4 @@ build:
     python: "3.10"
   commands:
     - pip install -r requirements.txt
-    - python -m sphinx -T -E -j auto -b readthedocs -D language=en . $READTHEDOCS_OUTPUT/html
+    - python -m sphinx -T -E -j auto -b readthedocs -D language=en docs/ $READTHEDOCS_OUTPUT/html
