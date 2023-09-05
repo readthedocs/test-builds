@@ -7,14 +7,5 @@ build:
   commands:
     # Run all the commands manually to avoid installing pre-defined packages
     # Make explicit what are the dependencies we are installing
-    - pip install sphinx sphinx-autorun
-
-    # Install "sphinx-rtd-theme" from this branch because it injects the Flyout using the new documented way.
-    # - pip install 'sphinx-rtd-theme @ git+https://github.com/readthedocs/sphinx_rtd_theme@humitos/flyout-menu'
-    - pip install sphinx-rtd-theme
-
-    - sphinx-build -b html docs/ _readthedocs/html
-
-    # Copy data from the builder
-    # This will exposed via `/_/readthedocs-config/` API endpoint
-    - cp docs/readthedocs-build.yaml _readthedocs/html/
+    - pip install sphinx sphinx-autorun sphinx-rtd-theme
+    - sphinx-build -b html docs/ $READTHEDOCS_OUTPUT/html
