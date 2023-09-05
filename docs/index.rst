@@ -1,14 +1,8 @@
-manual-integrations
-===================
+Documentation from a PR for testing
+===================================
 
-Initial PoC to manually integrate all the Read the Docs features.
-Context:
-
-* https://github.com/readthedocs/readthedocs.org/pull/9755
-* https://github.com/readthedocs/readthedocs.org/issues/9063
-* https://github.com/readthedocs/meta/issues/71
-* https://github.com/readthedocs/readthedocs.org/pull/10127
-* https://github.com/humitos/readthedocs-client
+It seems that for some reason the new addons are not being shown on PR:
+https://github.com/readthedocs/readthedocs.org/issues/10706
 
 ----
 
