@@ -1,3 +1,4 @@
 sphinx-autorun
 sphinx-notfound-page
 sphinx
+sphinx-rtd-theme

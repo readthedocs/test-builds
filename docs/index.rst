@@ -19,9 +19,15 @@ Once built, `404.html page <404.html>`_ should show
    pages on the repository, **this branch won't shows 404
    automatically** on all 404 pages.
 
+Read the Docs configuration file used to build this docs:
+
+.. literalinclude:: ../.readthedocs.yaml
+   :language: yaml
+   :linenos:
+
 ----
 
-Sphinx configuration file to build this docs (:doc:`see full file <conf>`),
+Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
 
 .. literalinclude:: conf.py
    :language: python
