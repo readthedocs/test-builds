@@ -8,12 +8,10 @@ build:
   commands:
     # Build the documentation with Material for MkDocs
     - pip install mkdocs-material
-    - mkdocs build --site-dir unencrypted
+    - mkdocs build --site-dir $READTHEDOCS_OUTPUT/html
     # Use staticrypt to hide each page behind a password
     - npm install -g staticrypt
     # Encrypt all the HTML files
     # The passphrase is in the STATICRYPT_PASSWORD env variable
-    # It outputs the file on "encrypted/" folder
-    - find unencrypted/ -type f -name "*.html" -exec staticrypt {} --short \;
-    # Move encrypted docs to Read the Docs HTML's output
-    - mv encrypted $READTHEDOCS_OUTPUT/html
+    - find $READTHEDOCS_OUTPUT/html -type f -name "*.html" -exec staticrypt {} --short \;
+    - cp -rf encrypted/* $READTHEDOCS_OUTPUT/html/
