@@ -4,7 +4,12 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3"
+    nodejs: "18"
   commands:
+    # Build the documentation with Material for MkDocs
     - pip install mkdocs-material
     - mkdocs build --site-dir $READTHEDOCS_OUTPUT/html
-
+    # Use staticrypt to hide each page behind a password
+    - npm install -g staticrypt
+    # the passphrase is in the STATICRYPT_PASSWORD env variable
+    - find $READTHEDOCS_OUTPUT/html/ -type f -name "*.html" -exec staticrypt {} -o {} \;
