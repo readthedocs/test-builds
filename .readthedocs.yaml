@@ -12,4 +12,4 @@ build:
     # Use staticrypt to hide each page behind a password
     - npm install -g staticrypt
     # the passphrase is in the STATICRYPT_PASSWORD env variable
-    - find $READTHEDOCS_OUTPUT/html/ -type f -name "*.html" -exec staticrypt {} -o {} \;
+    - find $READTHEDOCS_OUTPUT/html/ -type f -name "*.html" -exec staticrypt {} --short -o {} \;
