@@ -9,9 +9,6 @@ site_url: !ENV READTHEDOCS_CANONICAL_URL
 theme:
   name: material
 
-  # Disable it for now
-  # custom_dir: overrides
-
 # Include extra CSS to make some style adjustments
 extra_css:
   - stylesheets/readthedocs.css
@@ -19,12 +16,6 @@ extra_css:
 # Include extra JS to setup Read the Docs addons integrations
 extra_javascript:
   - javascripts/readthedocs.js
-
-plugins:
-  - search:
-      # Disable the search plugin since it interferes with other hotkeys
-      enabled: false
-
 
 # I didn't find a good way to disable the "global" hotkeys.
 # https://github.com/squidfunk/mkdocs-material/discussions/4273#discussioncomment-3455176
