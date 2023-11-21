@@ -11,7 +11,7 @@ theme:
 
 # Include extra CSS to make some style adjustments
 extra_css:
-  stylesheets/readthedocs.css
+  - stylesheets/readthedocs.css
 
 
 plugins:
