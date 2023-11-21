@@ -17,7 +17,7 @@ extra_css:
   - stylesheets/readthedocs.css
 
 # Include extra JS to setup Read the Docs addons integrations
-extra_javascripts:
+extra_javascript:
   - javascripts/readthedocs.js
 
 plugins:
