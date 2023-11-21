@@ -1,3 +1,24 @@
+# Define the site name
 site_name: Read the Docs - Material for MkDocs
+
+# Set the site URL by using a Read the Docs environment variable:
+# https://docs.readthedocs.io/en/stable/reference/environment-variables.html
+site_url: !ENV READTHEDOCS_CANONICAL_URL
+
+# Set the Material for MkDocs theme
 theme:
   name: material
+
+# Include extra CSS to make some style adjustments
+extra_css:
+  stylesheets/readthedocs.css
+
+
+plugins:
+  - search:
+      # Disable the search plugin since it interferes with other hotkeys
+      enabled: false
+
+
+# I didn't find a good way to disable the "global" hotkeys.
+# https://github.com/squidfunk/mkdocs-material/discussions/4273#discussioncomment-3455176

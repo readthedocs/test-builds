@@ -5,6 +5,11 @@ build:
   tools:
     python: "3"
   commands:
+    # Install Material for MkDocs Insiders
+    # https://squidfunk.github.io/mkdocs-material/insiders/getting-started/
+    #
+    # Create GH_TOKEN environment variable on Read the Docs
+    # https://docs.readthedocs.io/en/stable/guides/private-python-packages.html
     - pip install mkdocs-material
     - mkdocs build --site-dir $READTHEDOCS_OUTPUT/html
 
