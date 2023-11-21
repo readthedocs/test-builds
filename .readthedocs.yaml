@@ -4,6 +4,10 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3"
+
+  # Since Read the Docs manipulates that `mkdocs.yml` and it does not support `!ENV`,
+  # we use `build.commands` here because we need `!ENV` in our `mkdocs.yml`.
+  #
   commands:
     # Install Material for MkDocs Insiders
     # https://squidfunk.github.io/mkdocs-material/insiders/getting-started/
