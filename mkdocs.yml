@@ -8,7 +8,9 @@ site_url: !ENV READTHEDOCS_CANONICAL_URL
 # Set the Material for MkDocs theme
 theme:
   name: material
-  custom_dir: overrides
+
+  # Disable it for now
+  # custom_dir: overrides
 
 # Include extra CSS to make some style adjustments
 extra_css:
