@@ -8,7 +8,7 @@ build:
     - tree
   jobs:
     pre_install:
-      - pip install Sphinx<5
+      - pip install "Sphinx<5"
 
 sphinx:
   configuration: docs/conf.py
