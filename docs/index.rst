@@ -5,7 +5,9 @@ Build docs using a ``conda`` environment.
 
 Install all dependencies via ``conda``.
 
-Build should success without any problem.
+Build shouldn't fail because of ``conda.environment`` config key not defined.
+It may fail for other reasons, tho.
+See https://github.com/readthedocs/readthedocs.org/pull/10979#issuecomment-1896036953
 
 .. runblock:: pycon
 
