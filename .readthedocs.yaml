@@ -6,6 +6,9 @@ build:
     python: "3"
   apt_packages:
     - tree
+  jobs:
+    pre_install:
+      - pip install Sphinx<5
 
 sphinx:
   configuration: docs/conf.py
