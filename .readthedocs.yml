@@ -5,4 +5,4 @@ build:
   tools:
     python: miniconda3-4.7
   commands:
-    - mamba env create --file environment.yml
+    - conda env create --file environment.yml
