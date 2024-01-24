@@ -1,7 +1,8 @@
-test-builds
-===========
+test-doc-diff
+=============
 
-GitHub repository to test different Read the Docs builds scenarios.
+GitHub page to test different Read the Docs builds scenarios.
+This is an live example of what you can see when using DocDiff addon.
 
 ----
 
