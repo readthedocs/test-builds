@@ -4,12 +4,11 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3"
-  apt_packages:
-    - tree
-
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+    nodejs: "16"
+  commands:
+    # Commands from https://docs.antora.org/antora/latest/install-and-run-quickstart/
+    - npm i -g -D -E @antora/cli@3.1 @antora/site-generator@3.1
+    - antora -v
+    - antora --fetch antora-playbook.yml
+    - mkdir $READTHEDOCS_OUTPUT
+    - mv build/site $READTHEDOCS_OUTPUT/html
