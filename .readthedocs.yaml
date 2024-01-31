@@ -1,9 +1,9 @@
 version: 2
 
 build:
-  os: ubuntu-22.04
+  os: ubuntu-latest-lts
   tools:
-    python: "3"
+    python: "latest"
   apt_packages:
     - tree
 
