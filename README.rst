@@ -10,7 +10,6 @@ QA process can be considered a success or a failure.
 If we need to test a very specific use case, we create a new branch with
 the issue number and the repository, like: ``issue-1234-org``, ``issue-4321-ext`` or similar.
 
-
 Scenarios
 ---------
 
