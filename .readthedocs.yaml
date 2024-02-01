@@ -3,8 +3,6 @@ version: 2
 build:
   os: ubuntu-22.04
   tools:
-    rust: "1.75"
-  apt_packages:
-    - tree
+    ruby: "3.3"
   commands:
-    - cargo --version
+    - ruby --version
