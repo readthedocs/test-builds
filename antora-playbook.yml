@@ -1,5 +1,5 @@
 site:
-  title: Antora Docs
+  title: Antora Demo site on Read the Docs
   start_page: component-b::index.adoc
 content:
   sources:
