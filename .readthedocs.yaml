@@ -11,6 +11,6 @@ build:
   commands:
     - python --version
     - ruby --version
-    - go --version
+    - go version
     - node --version
     - cargo --version
