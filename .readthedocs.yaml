@@ -1,15 +1,16 @@
 version: 2
 
 build:
-  os: ubuntu-22.04
+  os: ubuntu-lts-latest
   tools:
-    python: "3"
-  apt_packages:
-    - tree
-
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+    python: latest
+    nodejs: latest
+    ruby: latest
+    rust: latest
+    golang: latest
+  commands:
+    - python --version
+    - ruby --version
+    - go --version
+    - node --version
+    - cargo --version
