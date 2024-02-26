@@ -1,5 +1,7 @@
 site_name: readthedocs
 site_description: A build to test MkDocs
+theme:
+  name: terminal
 
 nav:
   - Overview: "index.md"
