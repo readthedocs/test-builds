@@ -6,13 +6,14 @@ build:
     python: "3.10"
   jobs:
     post_create_environment:
-      # Install pipx
-      - pip install pipx
       # Install poetry
-      # https://python-poetry.org/docs/#installing-with-pipx
-      - pipx install poetry
-      # Install project's dependencies
-      - pipx run poetry install
+      # https://python-poetry.org/docs/#installing-manually
+      - pip install poetry
+    post_install:
+      # Install dependencies with 'docs' dependency group
+      # https://python-poetry.org/docs/managing-dependencies/#dependency-groups
+      # VIRTUAL_ENV needs to be set manually for now, see #11150
+      - VIRTUAL_ENV=$READTHEDOCS_VIRTUALENV_PATH poetry install
 
 sphinx:
   configuration: docs/conf.py
