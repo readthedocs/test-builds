@@ -6,5 +6,5 @@ build:
     ruby: "3.3"
   commands:
     - gem install bundle
-    - bundle install --gemfile docs/Gemfile
+    - bundle install
     - jekyll build --destination $READTHEDOCS_OUTPUT/html --baseurl $(echo -n "$READTHEDOCS_CANONICAL_URL" | cut -d '/' -f 4-)
