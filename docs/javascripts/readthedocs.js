@@ -1,19 +1,3 @@
-// NOTE: this is auto-injected by Read the Docs when serving the files.
-const metaApiVersion = document.createElement("meta");
-metaApiVersion.setAttribute("name", "readthedocs-addons-api-version");
-metaApiVersion.setAttribute("content", "1");
-document.head.append(metaApiVersion);
-
-const metaProject = document.createElement("meta");
-metaProject.setAttribute("name", "readthedocs-project-slug");
-metaProject.setAttribute("content", "test-builds");
-document.head.append(metaProject);
-
-const metaVersion = document.createElement("meta");
-metaVersion.setAttribute("name", "readthedocs-version-slug");
-metaVersion.setAttribute("content", "mkdocs-material");
-document.head.append(metaVersion);
-
 document.addEventListener("DOMContentLoaded", function(event) {
   // Trigger Read the Docs' search addon instead of Material MkDocs default
   document.querySelector(".md-search__input").addEventListener("focus", (e) => {
