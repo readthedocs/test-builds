@@ -9,7 +9,7 @@ site_url: !ENV READTHEDOCS_CANONICAL_URL
 theme:
   name: material
   # https://squidfunk.github.io/mkdocs-material/customization/
-  custom_dir: overrides
+  custom_dir: docs/overrides
 
 # Include extra CSS to make some style adjustments
 extra_css:
