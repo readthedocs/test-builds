@@ -22,7 +22,7 @@ document.addEventListener(
   ${ config.versions.active.map(
     (version) => `
     <li class="md-version__item">
-      <a href="${ version.url }" class="md-version__link">
+      <a href="${ version.urls.documentation }" class="md-version__link">
         ${ version.slug }
       </a>
             </li>`).join("\n")}
