@@ -1,7 +1,7 @@
-test-builds
-===========
+PyData Sphinx Theme
+===================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Use the PyData Sphinx theme to perform some tests on Read the Docs
 
 ----
 
