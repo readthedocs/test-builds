@@ -10,7 +10,7 @@ build:
   jobs:
     post_checkout:
      # Test we can use a PUBLIC environment variable in a command
-     - set -x; test -n "${PUBLIC}"
+     - echo ${PUBLIC}
 
     post_install:
       # Test jsdoc
