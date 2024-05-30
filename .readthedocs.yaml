@@ -14,7 +14,7 @@ build:
 
     post_install:
       # Test jsdoc
-      - npm install -g jsdoc  jobs:
+      - npm install -g jsdoc
 
 sphinx:
   configuration: docs/conf.py
