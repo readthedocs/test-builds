@@ -11,6 +11,7 @@ GitHub repository to test different Read the Docs builds scenarios.
    tabs
    notfound-page
    robots
+   pygments
 
 ----
 
