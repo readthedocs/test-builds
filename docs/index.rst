@@ -12,6 +12,7 @@ GitHub repository to test different Read the Docs builds scenarios.
    notfound-page
    robots
    pygments
+   shot-scraper
    conf.py
    readthedocs.yaml
 

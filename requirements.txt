@@ -3,6 +3,7 @@ sphinx-rtd-theme
 sphinx-notfound-page
 sphinx-hoverxref
 sphinx-tabs
+shot-scraper
 
 sphinx-js
 # Pin it because it fails otherwise
