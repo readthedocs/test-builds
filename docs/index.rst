@@ -8,6 +8,9 @@ GitHub repository to test different Read the Docs builds scenarios.
    hoverxref
    environment-variables
    jsdoc
+   tabs
+   notfound-page
+   robots
 
 ----
 

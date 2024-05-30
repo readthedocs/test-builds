@@ -2,6 +2,7 @@ sphinx-autorun
 sphinx-rtd-theme
 sphinx-notfound-page
 sphinx-hoverxref
+sphinx-tabs
 
 sphinx-js
 # Pin it because it fails otherwise

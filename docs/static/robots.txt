@@ -1,0 +1,4 @@
+# This is a comment in my custom robots.txt
+# for the test-builds project under Read the Docs
+User-agent: *
+Allow: /
