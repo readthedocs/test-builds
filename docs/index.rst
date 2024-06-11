@@ -4,6 +4,7 @@ test-builds
 GitHub repository to test different Read the Docs builds scenarios.
 
 .. toctree::
+   :glob:
 
    hoverxref
    environment-variables
@@ -15,6 +16,7 @@ GitHub repository to test different Read the Docs builds scenarios.
    shot-scraper
    conf.py
    readthedocs.yaml
+   subpath/*
 
 ----
 
