@@ -24,7 +24,7 @@ build:
     post_build:
       # Download a PDF sample and expose it
       - mkdir -p $READTHEDOCS_OUTPUT/pdf/
-      - wget https://file-examples.com/storage/fe3cb26995666504a8d6180/2017/10/file-sample_150kB.pdf -O $READTHEDOCS_OUTPUT/pdf/my-file.pdf
+      - wget https://pdfobject.com/pdf/sample.pdf -O $READTHEDOCS_OUTPUT/pdf/my-file.pdf
 
 
 sphinx:
