@@ -6,6 +6,7 @@ build:
     nodejs: "latest"
   commands:
      - npm ci
+     - asdf reshim nodejs
      # The site was created by running `vitepress init`
      # and following the official guide
      # https://vitepress.dev/guide/getting-started
