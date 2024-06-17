@@ -13,13 +13,17 @@ build:
      # Test we can use a PUBLIC environment variable in a command
      - echo ${PUBLIC}
 
+    post_install:
+      # Test jsdoc
+      - npm install -g jsdoc
+
     pre_build:
       - shot-scraper install
       - shot-scraper https://datasette.io/ --height 800 -o docs/static/datasette.png
 
-    post_install:
-      # Test jsdoc
-      - npm install -g jsdoc
+    post_build:
+      # Download a PDF sample and expose it
+      - wget https://file-examples.com/storage/fe3cb26995666504a8d6180/2017/10/file-sample_150kB.pdf -O $READTHEDOCS_OUTPUT/pdf/my-file.pdf
 
 
 sphinx:
