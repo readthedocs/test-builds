@@ -3,32 +3,9 @@ version: 2
 build:
   os: ubuntu-22.04
   tools:
-    python: "latest"
     nodejs: "latest"
-  apt_packages:
-    - tree
-    - libasound2
-  jobs:
-    post_checkout:
-     # Test we can use a PUBLIC environment variable in a command
-     - echo ${PUBLIC}
-
-    post_install:
-      # Test jsdoc
-      - npm install -g jsdoc
-
-    pre_build:
-      - shot-scraper install
-      - shot-scraper https://datasette.io/ --height 800 -o docs/static/datasette.png
-
-    post_build:
-      # Download a PDF sample and expose it
-      - wget https://file-examples.com/storage/fe3cb26995666504a8d6180/2017/10/file-sample_150kB.pdf -O $READTHEDOCS_OUTPUT/pdf/my-file.pdf
-
-
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+  commands:
+     - npm install vitepress
+     - vitepress build docs
+     - mkdir -p $READTHEDOCS_OUTPUT/
+     - mv docs/.vitepress/dist $READTHEDOCS_OUTPUT/html
