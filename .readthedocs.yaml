@@ -5,7 +5,7 @@ build:
   tools:
     nodejs: "latest"
   commands:
-     - npm install vitepress
+     - npm install -g vitepress
      # The site was created by running `vitepress init`
      # and following the official guide
      # https://vitepress.dev/guide/getting-started
