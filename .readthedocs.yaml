@@ -5,6 +5,9 @@ build:
   tools:
     python: "latest"
     nodejs: "latest"
+    golang: "latest"
+    rust: "latest"
+    ruby: "latest"
   apt_packages:
     - tree
     - libasound2t64

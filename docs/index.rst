@@ -5,6 +5,7 @@ GitHub repository to test different Read the Docs builds scenarios.
 
 .. toctree::
 
+   latest-aliases
    hoverxref
    environment-variables
    jsdoc
