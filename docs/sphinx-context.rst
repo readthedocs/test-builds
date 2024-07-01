@@ -1,12 +1,12 @@
-Sphinx context
+sphinx context
 ==============
 
-These are all the values injected in the ``html_context``:
+These are all the values injected in the Sphinx context:
 
 .. jinja::
 
    {%- for key, value in env.config.__dict__.items() %}
-     {%- if key in ("values", "_raw_config", "overrides") %}
+     {%- if key in ("values", "_raw_config", "overrides", "_overrides", "_options") %}
        {% continue %}
      {%- endif %}
 
