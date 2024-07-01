@@ -16,6 +16,7 @@ GitHub repository to test different Read the Docs builds scenarios.
    shot-scraper
    conf.py
    readthedocs.yaml
+   sphinx-context
 
 ----
 
