@@ -11,10 +11,17 @@ build:
   apt_packages:
     - tree
     - libasound2t64
+    - jq
   jobs:
     post_checkout:
      # Test we can use a PUBLIC environment variable in a command
      - echo ${PUBLIC}
+
+    pre_install:
+      - curl --silent 'http://devthedocs.org/api/v2/project/?slug=test-builds-disable-sphinx-manipulation' | jq
+      - curl --silent 'http://web:8000/api/v2/project/?slug=test-builds-disable-sphinx-manipulation' | jq
+      - curl --silent 'http://$READTHEDOCS_HOSTIP/api/v2/project/?slug=test-builds-disable-sphinx-manipulation' | jq
+      - curl --silent 'http://$READTHEDOCS_HOSTIP/api/v2/version/?project__slug=test-builds-disable-sphinx-manipulation&active=true' | jq
 
     post_install:
       # Test jsdoc
