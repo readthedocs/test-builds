@@ -14,4 +14,4 @@ markupsafe==2.0.1
 git+https://github.com/shawalli/pygments-lexer-apex.git#egg=pygments-lexer-apex
 
 # Keep old Read the Docs' build context Sphinx manipulation
-git+https://github.com/readthedocs/sphinx-build-compatibility#egg=sphinx-build-compatibility
+git+https://github.com/readthedocs/sphinx-build-compatibility@debug#egg=sphinx-build-compatibility
