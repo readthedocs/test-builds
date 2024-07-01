@@ -1,7 +1,7 @@
 sphinx context
 ==============
 
-These are all the values injected in the Sphinx context:
+These are all the values from the Sphinx config object:
 
 .. jinja::
 
