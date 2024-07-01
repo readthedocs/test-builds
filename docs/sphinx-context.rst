@@ -11,7 +11,8 @@ These are all the values injected in the Sphinx context:
      {%- endif %}
 
    {{ key }}:
-      .. code:: python
+       .. code-block:: python
 
-         {{ value }}
+          {{ value|pprint|indent(9, True) }}
+
    {%- endfor %}
