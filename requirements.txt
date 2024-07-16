@@ -1,3 +1,4 @@
+sphinx<7.3
 sphinx-autorun
 sphinx-jinja2
 insipid-sphinx-theme
