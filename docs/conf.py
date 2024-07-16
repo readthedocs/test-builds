@@ -7,6 +7,7 @@ extensions = [
     'sphinx_js',
     'sphinx_tabs.tabs',
     'sphinx_jinja2',
+    'sphinx_immaterial',
 ]
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars
@@ -18,7 +19,7 @@ hoverxref_roles = [
 ]
 
 # Include all your settings here
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_immaterial'
 
 js_source_path = '../src/'
 html_extra_path = ['static']
