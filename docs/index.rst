@@ -3,6 +3,10 @@ test-builds
 
 GitHub repository to test different Read the Docs builds scenarios.
 
+.. raw:: html
+
+   <readthedocs-flyout position="top-right"></readthedocs-flyout>
+
 .. toctree::
 
    latest-aliases
