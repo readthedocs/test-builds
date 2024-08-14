@@ -3,12 +3,6 @@ test-builds
 
 GitHub repository to test different Read the Docs builds scenarios.
 
-.. toctree::
-
-   hoverxref
-   environment-variables
-   jsdoc
-
 ----
 
 Read the Docs configuration file used to build this docs:

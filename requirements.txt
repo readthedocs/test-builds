@@ -1,9 +1,2 @@
 sphinx-autorun
-sphinx-rtd-theme
-sphinx-notfound-page
-sphinx-hoverxref
-
-sphinx-js
-# Pin it because it fails otherwise
-# ImportError: cannot import name 'soft_unicode' from 'markupsafe'
-markupsafe==2.0.1
+sphinx-rtd-theme>=1.2.0rc3
