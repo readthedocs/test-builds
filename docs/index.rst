@@ -5,18 +5,26 @@ GitHub repository to test different Read the Docs builds scenarios.
 
 .. toctree::
 
-   latest-aliases
    hoverxref
    environment-variables
    jsdoc
-   tabs
-   notfound-page
-   robots
-   pygments
-   shot-scraper
-   conf.py
-   readthedocs.yaml
-   sphinx-context
+
+----
+
+Read the Docs configuration file used to build this docs:
+
+.. literalinclude:: ../.readthedocs.yaml
+   :language: yaml
+   :linenos:
+
+----
+
+Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
+
+.. literalinclude:: conf.py
+   :language: python
+   :end-before: ###########################################################################
+   :linenos:
 
 ----
 

@@ -1,34 +1,20 @@
 version: 2
 
 build:
-  os: ubuntu-24.04
+  os: ubuntu-22.04
   tools:
     python: "latest"
     nodejs: "latest"
-    golang: "latest"
-    rust: "latest"
-    ruby: "latest"
   apt_packages:
     - tree
-    - libasound2t64
   jobs:
     post_checkout:
      # Test we can use a PUBLIC environment variable in a command
-     - echo ${PUBLIC}
+     - set -x; test -n "${PUBLIC}"
 
     post_install:
       # Test jsdoc
-      - npm install -g jsdoc
-
-    pre_build:
-      - shot-scraper install
-      - shot-scraper https://datasette.io/ --height 800 -o docs/static/datasette.png
-
-    post_build:
-      # Download a PDF sample and expose it
-      - mkdir -p $READTHEDOCS_OUTPUT/pdf/
-      - wget https://pdfobject.com/pdf/sample.pdf -O $READTHEDOCS_OUTPUT/pdf/my-file.pdf
-
+      - npm install -g jsdoc  jobs:
 
 sphinx:
   configuration: docs/conf.py
