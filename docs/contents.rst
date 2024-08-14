@@ -1,7 +1,7 @@
 Contents
 ========
 
-All contents of this documentation.
+All the great contents of this documentation.
 
 .. toctree::
    :glob:
