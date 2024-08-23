@@ -4,8 +4,6 @@ build:
   os: ubuntu-24.04
   tools:
     python: latest
-  apt_packages:
-    - tree
 
 sphinx:
   configuration: docs/conf.py
