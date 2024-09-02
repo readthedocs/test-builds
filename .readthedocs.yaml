@@ -5,5 +5,9 @@ build:
   tools:
     python: "3"
 
+python:
+  install:
+    - requirements: requirements.txt
+
 mkdocs:
   configuration: mkdocs.yml
