@@ -35,7 +35,7 @@ document.addEventListener("readthedocs-addons-data-ready", function(event) {
         </button>
 
         <div id="pst-version-switcher-list-2"
-             class="version-switcher__menu dropdown-menu list-group-flush py-0 show"
+             class="version-switcher__menu dropdown-menu list-group-flush py-0"
              role="listbox"
              aria-labelledby="pst-version-switcher-button-2"
              data-bs-popper="static">
