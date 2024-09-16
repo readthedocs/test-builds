@@ -7,6 +7,9 @@ extensions = [
 ]
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars
+html_theme_options = {
+    "flyout_display": "selectors",
+}
 
 
 # Include all your settings here
