@@ -45,5 +45,5 @@ document.addEventListener("readthedocs-addons-data-ready", function(event) {
     </div>
     `;
 
-  document.querySelector(".navbar-header-items__center").insertAdjacentHTML("afterstart", versionSelector);
+  document.querySelector(".navbar-header-items__center").insertAdjacentHTML("afterbegin", versionSelector);
 });
