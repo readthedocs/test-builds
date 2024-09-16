@@ -31,7 +31,7 @@ document.addEventListener("readthedocs-addons-data-ready", function(event) {
                 aria-label="Version switcher list"
                 data-active-version-name="${ config.versions.current.verbose_name }"
                 data-active-version="${ config.versions.current.slug }" aria-expanded="true">
-          0.15.4 (stable)
+          ${ config.versions.current.verbose_name }
         </button>
 
         <div id="pst-version-switcher-list-2"
