@@ -6,7 +6,7 @@ function renderVersions(config) {
       ${ config.versions.active.map(
         (version) => `
         <a class="dropdown-item list-group-item list-group-item-action py-1 ${ version.slug === config.versions.current.slug ? 'active' : '' }"
-           href="${ version.verbose_name }"
+           href="${ version.urls.documentation }"
            role="option"
            data-version-name="${ version.verbose_name }"
            data-version="${ version.slug }">
