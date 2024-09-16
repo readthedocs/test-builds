@@ -29,8 +29,8 @@ document.addEventListener("readthedocs-addons-data-ready", function(event) {
                 aria-haspopup="listbox"
                 aria-controls="pst-version-switcher-list-2"
                 aria-label="Version switcher list"
-                data-active-version-name="${ config.current.verbose_name }"
-                data-active-version="${ config.current.slug }" aria-expanded="true">
+                data-active-version-name="${ config.versions.current.verbose_name }"
+                data-active-version="${ config.versions.current.slug }" aria-expanded="true">
           0.15.4 (stable)
         </button>
 
