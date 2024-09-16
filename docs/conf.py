@@ -12,4 +12,5 @@ html_theme = "pydata_sphinx_theme"
 
 
 templates_path = ["templates"]
-html_js_files = ["version-selector.js"]
+html_static_path = ["_static"]
+html_js_files = ["js/version-selector.js"]
