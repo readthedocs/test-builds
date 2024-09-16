@@ -46,6 +46,6 @@ document.addEventListener("readthedocs-addons-data-ready", function(event) {
     `;
 
 
-  const header = document.querySelector("header");
+  const header = document.querySelector(".navbar-header-items__start");
   header.insertAdjacentHTML("afterbegin", versionSelector);
 });
