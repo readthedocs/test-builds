@@ -7,6 +7,9 @@ extensions = [
 ]
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars
+html_theme_options = {
+    "display_version": False,
+}
 
 # Include all your settings here
 html_theme = 'sphinx_rtd_theme'
