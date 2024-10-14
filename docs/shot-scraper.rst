@@ -3,7 +3,7 @@ shot-scraper
 
 Automate screenshot generation with ``shot-scraper`` (https://shot-scraper.datasette.io/).
 
-.. seemore::
+.. seealso::
 
    I used this blog post as reference
    https://simonwillison.net/2022/Oct/14/automating-screenshots/
