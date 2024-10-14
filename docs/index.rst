@@ -17,6 +17,7 @@ GitHub repository to test different Read the Docs builds scenarios.
    conf.py
    readthedocs.yaml
    sphinx-context
+   mathjax
 
 ----
 

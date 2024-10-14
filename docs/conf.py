@@ -7,6 +7,7 @@ extensions = [
     'sphinx_js',
     'sphinx_tabs.tabs',
     'sphinx_jinja2',
+    'sphinx.ext.mathjax',
 ]
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars
