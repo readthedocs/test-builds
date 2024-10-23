@@ -7,10 +7,12 @@ build:
 
   jobs:
     build:
-      pdf:
+      html:
         - mkdir -p $READTHEDOCS_OUTPUT/html/
         - echo "Hello, World!" > $READTHEDOCS_OUTPUT/html/index.html
 
 python:
   install:
     - requirements: requirements.txt
+
+formats: []
