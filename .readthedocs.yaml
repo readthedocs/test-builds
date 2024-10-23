@@ -12,8 +12,3 @@ build:
       html:
         - mkdir -p $READTHEDOCS_OUTPUT/html/
         - echo "Hello, World!" > $READTHEDOCS_OUTPUT/html/index.html
-      pdf: invalid type
-
-python:
-  install:
-    - requirements: requirements.txt
