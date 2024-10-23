@@ -8,7 +8,8 @@ build:
   jobs:
     build:
       html:
-        - echo "Hello, World!" > index.html
+        - mkdir -p $READTHEDOCS_OUTPUT/html/
+        - echo "Hello, World!" > $READTHEDOCS_OUTPUT/html/index.html
 
 python:
   install:
