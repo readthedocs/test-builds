@@ -6,7 +6,8 @@ build:
     python: latest
 
   jobs:
-    create_environment:
+    create_environment: []
+    install: []
     build:
       html:
         - mkdir -p $READTHEDOCS_OUTPUT/html/
