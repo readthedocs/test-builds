@@ -12,6 +12,9 @@ build:
       html:
         - mkdir -p $READTHEDOCS_OUTPUT/html/
         - echo "Hello, World!" > $READTHEDOCS_OUTPUT/html/index.html
+      pdf:
+        - mkdir -p $READTHEDOCS_OUTPUT/pdf/
+        - echo "Hello, World!" > $READTHEDOCS_OUTPUT/pdf/index.pdf
 
 python:
   install:
