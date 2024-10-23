@@ -9,3 +9,7 @@ build:
     build:
       html:
         - echo "Hello, World!" > index.html
+
+python:
+  install:
+    - requirements: requirements.txt
