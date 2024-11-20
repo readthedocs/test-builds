@@ -10,9 +10,7 @@
     "@markdoc/markdoc": "latest",
     "@markdoc/next.js": "latest",
     "next": "latest",
-    "prismjs": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "prismjs": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",
