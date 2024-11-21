@@ -9,7 +9,7 @@ const nextConfig = {
   trailingSlash: true,
 
   // Ensure links are relative
-  basePath: process.env.READTHEDOCS_CANONICAL_URL || '',
+  basePath: process.env.READTHEDOCS_CANONICAL_URL ? new URL(process.env.READTHEDOCS_CANONICAL_URL).pathname : '',
 }
 
 module.exports =
