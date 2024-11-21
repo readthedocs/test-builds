@@ -12,7 +12,7 @@ const nextConfig = {
   assetPrefix: './',
 
   // Ensure links are relative
-  basePath: '/en/markdoc',
+  basePath: process.env.READTHEDOCS_CANONICAL_URL || '/en/markdoc',
 }
 
 module.exports =
