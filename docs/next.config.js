@@ -8,11 +8,8 @@ const nextConfig = {
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   trailingSlash: true,
 
-  // Ensure pages have relative asset URLs
-  assetPrefix: './',
-
   // Ensure links are relative
-  basePath: process.env.READTHEDOCS_CANONICAL_URL || '/en/markdoc',
+  basePath: process.env.READTHEDOCS_CANONICAL_URL || '',
 }
 
 module.exports =
