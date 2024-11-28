@@ -13,6 +13,11 @@ theme:
   features:
     - navigation.instant
 
+nav:
+  - Home: index.md
+  - Extra: extra.md
+  - Instant: instant.md
+
 # Include extra CSS to make some style adjustments
 extra_css:
   - stylesheets/readthedocs.css
