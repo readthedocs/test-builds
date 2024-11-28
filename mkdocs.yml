@@ -10,6 +10,8 @@ theme:
   name: material
   # https://squidfunk.github.io/mkdocs-material/customization/
   custom_dir: docs/overrides
+  features:
+    - navigation.instant
 
 # Include extra CSS to make some style adjustments
 extra_css:
