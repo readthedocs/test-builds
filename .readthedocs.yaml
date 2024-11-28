@@ -1,17 +1,21 @@
 version: 2
 
 build:
-  os: ubuntu-22.04
+  os: ubuntu-24.04
   tools:
-    nodejs: "18"
-  commands:
-    # "docs/" directory was created using the command to create the site:
-    # npx create-docusaurus@latest docs classic
-    #
-    # Install Docusaurus dependencies
-    - cd docs/ && npm install
-    # Build the site
-    - cd docs/ && npm run build
-    # Copy generated files into Read the Docs directory
-    - mkdir --parents $READTHEDOCS_OUTPUT/html/
-    - cp --recursive docs/build/* $READTHEDOCS_OUTPUT/html/
+    nodejs: "22"
+  jobs:
+    install:
+      # "docs/" directory was created using the command to create the site:
+      # npx create-docusaurus@latest docs classic
+      #
+      # Install Docusaurus dependencies
+      - cd docs/ && npm install
+    build:
+      html:
+        # Build the site
+        - cd docs/ && npm run build
+    post_build:
+      # Copy generated files into Read the Docs directory
+      - mkdir --parents $READTHEDOCS_OUTPUT/html/
+      - cp --recursive docs/build/* $READTHEDOCS_OUTPUT/html/
