@@ -1,13 +1,10 @@
 version: 2
 
 build:
-  os: ubuntu-24.04
+  os: ubuntu-lts-latest
   tools:
-    python: latest
-
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+    rust: latest
+  commands:
+    - cargo --version
+    - mdbook init docs
+    - mdbook build docs --dest-dir $READTHEDOCS_OUTPUT/html
