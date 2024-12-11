@@ -7,5 +7,6 @@ build:
   commands:
     - cargo --version
     - cargo install mdbook
+    - asdf reshim rust
     - mdbook init docs
     - mdbook build docs --dest-dir $READTHEDOCS_OUTPUT/html
