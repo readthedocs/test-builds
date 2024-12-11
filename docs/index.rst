@@ -13,11 +13,10 @@ Read the Docs configuration file used to build this docs:
 
 ----
 
-Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
+Sphinx configuration file used to build this docs:
 
 .. literalinclude:: conf.py
    :language: python
-   :end-before: ###########################################################################
    :linenos:
 
 ----
