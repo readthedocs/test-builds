@@ -7,5 +7,5 @@ build:
   commands:
     - wget https://github.com/nektos/act/releases/latest/download/act_Linux_x86_64.tar.gz
     - tar xvfz act_Linux_x86_64.tar.gz
-    - ./act pull_request --verbose --workflows gh-workflows/sphinx-build.yml
+    - ./act pull_request --verbose --bind --workflows gh-workflows/sphinx-build.yml
     - cp --recursive docs/_build/html $READTHEDOCS_OUTPUT
