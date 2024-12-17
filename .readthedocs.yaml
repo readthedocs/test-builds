@@ -5,7 +5,5 @@ build:
   tools:
     rust: latest
   commands:
-    - cargo --version
     - cargo install mdbook
-    - asdf reshim rust
     - mdbook build docs --dest-dir $READTHEDOCS_OUTPUT/html
