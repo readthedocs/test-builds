@@ -1,0 +1,8 @@
+:root {
+    /* Increase the font size of the flyout menu */
+    --readthedocs-flyout-font-size: 1.3rem;
+
+    /* Increase the font size of the notifications */
+    --readthedocs-notification-font-size: 1.3rem;
+
+}
