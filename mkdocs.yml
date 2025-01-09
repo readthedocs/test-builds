@@ -11,10 +11,6 @@ theme:
   # https://squidfunk.github.io/mkdocs-material/customization/
   custom_dir: docs/overrides
 
-# Include extra CSS to make some style adjustments
-extra_css:
-  - stylesheets/readthedocs.css
-
 # Include extra JS to setup Read the Docs addons integrations
 extra_javascript:
   - javascripts/readthedocs.js
