@@ -16,4 +16,6 @@ build:
   jobs:
     build:
       pdf:
-        - sphinx-build -b rinoh docs $READTHEDOCS_OUTPUT/pdf/
+        - sphinx-build -b rinoh docs _build/pdf/
+        - mkdir -p $READTHEDOCS_OUTPUT/pdf/
+        - mv _build/pdf/*.pdf $READTHEDOCS_OUTPUT/pdf/
