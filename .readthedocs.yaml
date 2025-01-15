@@ -1,9 +1,6 @@
 version: 2
 
-build:
-  os: ubuntu-24.04
-  tools:
-    python: latest
+formats: ["pdf", "epub"]
 
 sphinx:
   configuration: docs/conf.py
@@ -11,3 +8,12 @@ sphinx:
 python:
   install:
     - requirements: requirements.txt
+
+build:
+  os: ubuntu-24.04
+  tools:
+    python: latest
+  jobs:
+    build:
+      pdf:
+        - sphinx-build -b rinoh docs $READTHEDOCS_OUTPUT/pdf/

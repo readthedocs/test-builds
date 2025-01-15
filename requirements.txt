@@ -1,2 +1,4 @@
 sphinx-autorun
 sphinx-rtd-theme>=3.0.0rc2
+sphinx-simplepdf
+rinohtype
