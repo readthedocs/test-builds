@@ -1,2 +1,2 @@
 sphinx-autorun
-furo
+furo git+https://github.com/humitos/furo@readthedocs-flyout-inline
