@@ -3,6 +3,11 @@ test-builds
 
 GitHub repository to test different Read the Docs builds scenarios.
 
+.. raw:: html
+
+   <readthedocs-flyout position="inline"></readthedocs-flyout>
+
+
 ----
 
 Read the Docs configuration file used to build this docs:
