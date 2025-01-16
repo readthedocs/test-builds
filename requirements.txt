@@ -1,2 +1,2 @@
 sphinx-autorun
-sphinx-rtd-theme
+sphinx-rtd-theme @ git+https://github.com/readthedocs/sphinx_rtd_theme@humitos/flyout-nav
