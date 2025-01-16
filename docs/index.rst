@@ -1,12 +1,7 @@
-test-builds
-===========
+Explicit flyout
+===============
 
-GitHub repository to test different Read the Docs builds scenarios.
-
-.. raw:: html
-
-   <readthedocs-flyout position="inline"></readthedocs-flyout>
-
+Use an explicit ``readthedocs-flyout`` HTML element with ``position="inline"``.
 
 ----
 
