@@ -1,15 +1,3 @@
-sphinx<7.3
+sphinx
 sphinx-autorun
-sphinx-jinja2
 insipid-sphinx-theme
-sphinx-notfound-page
-sphinx-hoverxref
-sphinx-tabs
-shot-scraper
-
-sphinx-js
-# Pin it because it fails otherwise
-# ImportError: cannot import name 'soft_unicode' from 'markupsafe'
-markupsafe==2.0.1
-
-git+https://github.com/shawalli/pygments-lexer-apex.git#egg=pygments-lexer-apex
