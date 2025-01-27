@@ -2,7 +2,8 @@
 console.log("This message comes from a file injected by Cloudflare Worker");
 
 function _handleReadTheDocsData (event) {
-  const config = event.data();
+  console.log("_handleReadTheDocsData function called.");
+  const config = event.detail.data();
   console.log("Project slug:", config.projects.current.slug);
 }
 
