@@ -1,5 +1,5 @@
 // Show a message in the console immediatelly loading this script
-console.log("This message comes from a file injected by Cloudflare Worker");
+console.log("This message comes from a file injected by CustomScript addon.");
 
 function _handleReadTheDocsData (event) {
   console.log("_handleReadTheDocsData function called.");
