@@ -1,9 +1,11 @@
 version: 2
 
 build:
-  os: "ubuntu-22.04"
-  tools:
-    python: "mambaforge-22.9"
+  os: ubuntu-lts-latest
+  jobs:
+    pre_create_environment:
+      - asdf install python miniforge3-24.11.2-1
+      - asdf global python miniforge3-24.11.2-1
 
 sphinx:
   configuration: docs/conf.py
