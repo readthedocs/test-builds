@@ -6,8 +6,6 @@ build:
     python: latest
   jobs:
     pre_create_environment:
-      - asdf update
-      - asdf plugin update --all
       - asdf install python miniforge3-24.11.2-1
       - asdf global python miniforge3-24.11.2-1 || true
     post_build:
