@@ -18,6 +18,7 @@ GitHub repository to test different Read the Docs builds scenarios.
    readthedocs.yaml
    sphinx-context
    mathjax
+   table
 
 ----
 
