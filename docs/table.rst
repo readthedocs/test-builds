@@ -32,7 +32,7 @@ non. Donec non neque quis felis molestie rhoncus sit amet quis dui. Morbi varius
 mollis diam, vel vestibulum dui elementum et.
 
 Donec laoreet ligula quis massa eleifend feugiat. Pellentesque gravida orci sed
-tellus rhoncus aliquet. Sed et mauris diam. Proin ornare elit sagittis justo
+tellus rhoncus aliquet. Proin ornare elit sagittis justo
 egestas, vitae fringilla tortor volutpat. Donec tincidunt nunc id nunc
 pellentesque, vitae luctus felis bibendum. Nam congue felis sed lorem dapibus
 dictum. Sed luctus turpis id sapien vehicula lacinia. Ut at ligula aliquet,
@@ -52,8 +52,8 @@ posuere cubilia curae; Donec consequat pharetra tortor a maximus.
 
 Praesent eget mi gravida, tempus erat sed, lacinia risus. Nulla vel laoreet
 nulla, vitae congue augue. Nullam ex felis, fringilla non condimentum nec,
-feugiat consequat quam. Class aptent taciti sociosqu ad litora torquent per
-conubia nostra, per inceptos himenaeos. Praesent ac mauris consequat tortor
-facilisis gravida. Ut at finibus velit. Phasellus mollis velit sapien, vel
-volutpat sem congue vitae. Aenean enim sapien, feugiat eget interdum sed,
-sodales vitae turpis.
+feugiat consequat quam. This is a change. Class aptent taciti sociosqu ad litora
+torquent per conubia nostra, per inceptos himenaeos. Praesent ac mauris
+consequat tortor facilisis gravida. Ut at finibus velit. Phasellus mollis velit
+sapien, vel volutpat sem congue vitae. Aenean enim sapien, feugiat eget interdum
+sed, sodales vitae turpis.
