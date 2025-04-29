@@ -7,7 +7,7 @@ build:
   commands:
     - asdf plugin update python
     - echo $CONDA_ENVS_PATH
-    - unset CONDA_ENVS_PATH ; asdf install python miniforge3-25.1.1-2 || true
+    - unset CONDA_ENVS_PATH ; unset CONDA_DEFAULT_ENV ; asdf install python miniforge3-25.1.1-2 || true
     - asdf global python miniforge3-25.1.1-2 || true
     - ls -la /home/docs/checkouts/readthedocs.org/user_builds/test-builds/conda/miniforge3 || true
     - cat /tmp/python-build.*.log || true
