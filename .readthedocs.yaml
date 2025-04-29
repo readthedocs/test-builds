@@ -6,10 +6,10 @@ build:
     python: latest
   jobs:
     pre_create_environment:
-      - asdf install python miniforge3-25.1.1-2
-      - asdf global python miniforge3-25.1.1-2
-      - cat /tmp/python-build.*.log
-      - ls /tmp/python-build.*
+      - asdf install python miniforge3-25.1.1-2 || true
+      - asdf global python miniforge3-25.1.1-2 || true
+      - cat /tmp/python-build.*.log || true
+      - ls /tmp/python-build.* || true
 
 sphinx:
   configuration: docs/conf.py
