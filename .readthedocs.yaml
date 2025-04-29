@@ -7,9 +7,10 @@ build:
   jobs:
     pre_create_environment:
       - asdf plugin update python
-      - CONDA_ENVS_DIRS=/tmp asdf install python miniforge3-25.1.1-2 || true
+      - echo CONDA_ENVS_PATH
+      - asdf install python miniforge3-25.1.1-2 || true
       - asdf global python miniforge3-25.1.1-2 || true
-      - ls -la /home/docs/checkouts/readthedocs.org/user_builds/test-builds/conda/miniforge3
+      - ls -la /home/docs/checkouts/readthedocs.org/user_builds/test-builds/conda/miniforge3 || true
       - cat /tmp/python-build.*.log || true
       - ls /tmp/python-build.* || true
 
