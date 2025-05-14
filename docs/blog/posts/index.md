@@ -1,6 +1,4 @@
 ---
-authors:
-  - humitos
 categories:
   - Testing
 date: 2025-05-14
