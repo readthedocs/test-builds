@@ -15,5 +15,8 @@ theme:
 extra_javascript:
   - javascripts/readthedocs.js
 
+plugins:
+  - blog
+
 # I didn't find a good way to disable the "global" hotkeys.
 # https://github.com/squidfunk/mkdocs-material/discussions/4273#discussioncomment-3455176
