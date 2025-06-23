@@ -41,7 +41,8 @@ build:
       - python -m sphinx -b linkcheck docs/ _build/linkcheck
       - sed **/*.rst --in-place --expression "s|{VERSION}|${READTHEDOCS_VERSION_NAME}|g"
     build:
-      html: python -m sphinx -j auto -T -b html -d _build/doctrees -D language=en docs/ ${READTHEDOCS_OUTPUT}/html
+      html:
+        - python -m sphinx -j auto -T -b html -d _build/doctrees -D language=en docs/ ${READTHEDOCS_OUTPUT}/html
     post_build:
       - echo post_build
       - echo `date`
