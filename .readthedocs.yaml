@@ -7,7 +7,5 @@ build:
   jobs:
     build:
       html:
-        # Sleep 50 minutes, don't trigger restart
-        - sleep 3000
-        # Sleep 70 minutes, trigger task restart around 60m?
-        - sleep 4200
+        # Sleep 90 minutes, trigger task restart around 65m
+        - sleep 5400
