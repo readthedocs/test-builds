@@ -6,6 +6,13 @@ build:
     python: latest
   jobs:
     build:
-      html:
-        # Sleep 90 minutes, trigger task restart around 65m
-        - sleep 5400
+      post_checkout:
+        # Sleep 120 minutes
+        - sleep 7200
+
+sphinx:
+  configuration: docs/conf.py
+
+python:
+  install:
+    - requirements: requirements.txt
