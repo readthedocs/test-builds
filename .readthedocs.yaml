@@ -5,10 +5,9 @@ build:
   tools:
     python: latest
   jobs:
-    build:
-      post_checkout:
-        # Sleep 120 minutes
-        - sleep 7200
+    post_checkout:
+      # Sleep 120 minutes
+      - sleep 7200
 
 sphinx:
   configuration: docs/conf.py
