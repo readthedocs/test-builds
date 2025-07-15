@@ -5,9 +5,11 @@ build:
   tools:
     python: latest
   jobs:
-    post_checkout:
-      # Sleep 120 minutes
-      - sleep 7200
+    build:
+      html:
+        # Sleep 120 minutes
+        - sleep 7200
+        - python -m sphinx -T -b html -d _build/doctrees -D language=en . $READTHEDOCS_OUTPUT/html
 
 sphinx:
   configuration: docs/conf.py
