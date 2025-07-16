@@ -13,16 +13,16 @@ build:
     - libasound2t64
   jobs:
     post_checkout:
-     # Test we can use a PUBLIC environment variable in a command
-     - echo ${PUBLIC}
-     - pip --version
-     - python --version
-     - ruby --version
-     - go version
-     - node --version
-     - cargo --version
+      # Test we can use a PUBLIC environment variable in a command
+      - echo ${PUBLIC}
+      - python --version
+      - ruby --version
+      - go version
+      - node --version
+      - cargo --version
 
     post_install:
+      - pip --version
       # Test jsdoc
       - npm install -g jsdoc
 
