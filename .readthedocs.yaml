@@ -1,7 +1,7 @@
 version: 2
 
 build:
-  os: ubuntu-24.04
+  os: ubuntu-lts-latest
   tools:
     python: "latest"
     nodejs: "latest"
@@ -15,6 +15,12 @@ build:
     post_checkout:
      # Test we can use a PUBLIC environment variable in a command
      - echo ${PUBLIC}
+     - pip --version
+     - python --version
+     - ruby --version
+     - go version
+     - node --version
+     - cargo --version
 
     post_install:
       # Test jsdoc
