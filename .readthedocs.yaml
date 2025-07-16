@@ -15,13 +15,13 @@ build:
     post_checkout:
       # Test we can use a PUBLIC environment variable in a command
       - echo ${PUBLIC}
+
+    post_install:
       - python --version
       - ruby --version
       - go version
       - node --version
       - cargo --version
-
-    post_install:
       - pip --version
       # Test jsdoc
       - npm install -g jsdoc
