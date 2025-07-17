@@ -1,0 +1,8 @@
+# To execute the code in our notebook
+altair
+matplotlib
+numpy
+vega_datasets
+
+# To interactively browser Jupyter content with MyST
+jupyterlab_myst

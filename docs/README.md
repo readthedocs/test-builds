@@ -1,41 +1,23 @@
-# Website
+# MyST Quickstart
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+[![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://myst.tools)
 
-### Installation
+This repository contains the files used in the [quickstart guide](https://mystmd.org/guide/quickstart), and can be used to follow that guide, before trying MyST with your own content.
 
-```
-$ yarn
-```
+> **Note** This is **not** a good example of an actual MyST project! The repositories purpose is to be a simple markdown + notebook repository that can be transformed throughout a tutorial.
 
-### Local Development
+The goals of the [quickstart guide](https://myst.tools/docs/mystjs/quickstart) are:
 
-```
-$ yarn start
-```
+1. Create a `myst` site, using the standard template
+2. Improve the frontmatter, to add authors, affiliations and other metadata
+3. Export the paper as a PDF, Word document, and LaTeX files
+4. Integrate a Jupyter Notebook output into our paper, to improve reproducibility
+5. Publish a website of with our work 🚀
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Improving Frontmatter and MyST Site
 
-### Build
+![](./images/frontmatter-after.png)
 
-```
-$ yarn build
-```
+## Export as a PDF
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+![](./images/export-pdf.png)

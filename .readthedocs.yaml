@@ -6,16 +6,18 @@ build:
     nodejs: "22"
   jobs:
     install:
-      # "docs/" directory was created using the command to create the site:
-      # npx create-docusaurus@latest docs classic
+      # "docs/" directory was created clonnig the example repository
+      # https://github.com/jupyter-book/mystmd-quickstart.git
       #
-      # Install Docusaurus dependencies
-      - cd docs/ && npm install
+      # Install mystmd dependencies
+      - npm install -g mystmd
+    post_install:
+      - myst -v
     build:
       html:
         # Build the site
-        - cd docs/ && npm run build
+        - cd docs/ && myst build --html
     post_build:
       # Copy generated files into Read the Docs directory
       - mkdir --parents $READTHEDOCS_OUTPUT/html/
-      - cp --recursive docs/build/* $READTHEDOCS_OUTPUT/html/
+      - cp --recursive docs/_build/* $READTHEDOCS_OUTPUT/html/
