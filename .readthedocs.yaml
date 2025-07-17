@@ -10,10 +10,10 @@ build:
       # https://github.com/jupyter-book/mystmd-quickstart.git
       #
       # Install mystmd dependencies
-      - npm install -g mystmd
+      - npm install mystmd
       # Force installing the latest version of remix
       # https://github.com/readthedocs/addons/issues/278#issuecomment-2278050905
-      - npm install remix@rc
+      - npm install react@latest remix@latest
     post_install:
       - myst -v
     build:
