@@ -11,6 +11,9 @@ build:
       #
       # Install mystmd dependencies
       - npm install -g mystmd
+      # Force installing the latest version of remix
+      # https://github.com/readthedocs/addons/issues/278#issuecomment-2278050905
+      - npm install remix@rc
     post_install:
       - myst -v
     build:
