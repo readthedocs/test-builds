@@ -7,8 +7,9 @@ build:
   jobs:
     build:
       html:
-        # Sleep 120 minutes
-        - sleep 7200
+        # Sleep 2h55m minutes
+        # (this is the limit of the build API token)
+        - sleep 10500
         - python -m sphinx -T -b html -d _build/doctrees -D language=en . $READTHEDOCS_OUTPUT/html
 
 sphinx:
