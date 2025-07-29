@@ -19,7 +19,7 @@ GitHub repository to test different Read the Docs builds scenarios.
    sphinx-context
    mathjax
    table
-   running-process
+   running-processes
 
 ----
 
