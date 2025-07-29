@@ -15,6 +15,7 @@ build:
     post_checkout:
       # Test we can use a PUBLIC environment variable in a command
       - echo ${PUBLIC}
+      - ps -ef
 
     post_install:
       - python --version
