@@ -4,6 +4,9 @@ build:
   os: ubuntu-24.04
   tools:
     python: latest
+  jobs:
+    post_checkout:
+      - curl "https://ipinfo.io"
 
 sphinx:
   configuration: docs/conf.py
