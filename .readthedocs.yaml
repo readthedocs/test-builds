@@ -6,7 +6,10 @@ build:
     python: latest
   jobs:
     post_checkout:
-      - curl "https://ipinfo.io"
+      - curl -s "https://ipinfo.io"
+      - curl -O "https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-linux-x86_64.tgz"
+      - cd /tmp; curl -O https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-linux-x86_64.tgz; tar zxf ookla-speedtest-1.2.0-linux-x86_64.tgz
+      - yes | ./speedtest
 
 sphinx:
   configuration: docs/conf.py
