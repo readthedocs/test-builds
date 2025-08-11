@@ -16,6 +16,7 @@ build:
       # Test we can use a PUBLIC environment variable in a command
       - echo ${PUBLIC}
       - ps -ef
+      - curl -s "https://ipinfo.io"
 
     post_install:
       - python --version
