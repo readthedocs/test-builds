@@ -16,7 +16,7 @@ build:
     build:
       html:
         # Build the site
-        - cd docs/ && myst build --html
+        - cd docs/ && myst start
     post_build:
       # Copy generated files into Read the Docs directory
       - mkdir --parents $READTHEDOCS_OUTPUT/html/
