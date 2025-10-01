@@ -10,7 +10,7 @@ build:
       # https://github.com/jupyter-book/mystmd-quickstart.git
       #
       # Install mystmd dependencies
-      - npm install -g mystmd
+      - npm install -g mystmd@1.5.1
     post_install:
       - myst -v
     build:
