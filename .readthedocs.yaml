@@ -13,6 +13,7 @@ build:
       - npm install -g mystmd@1.5.1
     post_install:
       - myst -v
+      - cat /etc/hosts
     build:
       html:
         # Build the site
