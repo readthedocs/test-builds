@@ -4,6 +4,13 @@ build:
   os: ubuntu-24.04
   tools:
     python: latest
+  jobs:
+    post_checkout:
+      - ssh-add -l
+    pre_build:
+      - ssh-add -l
+    post_build:
+      - ssh-add -l
 
 sphinx:
   configuration: docs/conf.py
