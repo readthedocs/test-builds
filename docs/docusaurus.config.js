@@ -14,8 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  // Testing trailing slash issue
-  // https://github.com/readthedocs/readthedocs.org/issues/11220#issuecomment-3083219216
+  // Use trailing slash
   // https://docusaurus.io/docs/advanced/routing#routes-become-html-files
   trailingSlash: false,
 
