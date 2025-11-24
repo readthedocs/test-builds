@@ -16,7 +16,7 @@ const config = {
 
   // Use trailing slash
   // https://docusaurus.io/docs/advanced/routing#routes-become-html-files
-  trailingSlash: false,
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
