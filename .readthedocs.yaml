@@ -4,6 +4,11 @@ build:
   os: ubuntu-24.04
   tools:
     python: latest
+  jobs:
+    build:
+      - zensical build
+    post_build:
+      - mv site/* $READTHEDOCS_OUTPUT_DIR/html/
 
 python:
   install:
