@@ -11,4 +11,4 @@ build:
       html:
         - zensical build
     post_build:
-      - mv site/ $READTHEDOCS_OUTPUT/html
+      - cp --recursive site/* $READTHEDOCS_OUTPUT/html/
