@@ -6,7 +6,8 @@ build:
     python: latest
   jobs:
     build:
-      - zensical build
+      html:
+        - zensical build
     post_build:
       - mv site/* $READTHEDOCS_OUTPUT_DIR/html/
 
