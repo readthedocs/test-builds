@@ -65,7 +65,7 @@ Copyright &copy; 2025 The authors
 # The path provided should be relative to the "docs_dir".
 #
 # Read more: https://zensical.org/docs/customization/#additional-javascript
-#extra_javascript = ["assets/javascript/extra.js"]
+extra_javascript = ["assets/javascript/readthedocs.js"]
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
