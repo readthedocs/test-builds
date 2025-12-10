@@ -7,10 +7,13 @@ build:
   jobs:
     post_checkout:
       - ssh-add -l
+      - echo $GIT_SSH_COMMAND
     pre_build:
       - ssh-add -l
+      - echo $GIT_SSH_COMMAND
     post_build:
       - ssh-add -l
+      - echo $GIT_SSH_COMMAND
 
 sphinx:
   configuration: docs/conf.py
