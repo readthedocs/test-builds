@@ -1,0 +1,72 @@
+# test-builds
+
+> GitHub repository to test different Read the Docs build scenarios
+
+This repository is used internally by Read the Docs to create different scenarios on build configs and trigger many builds on Read the Docs productions.
+
+## Purpose
+
+Each branch in this repository represents a different test scenario for Read the Docs builds. The branches explain in their `docs/index.rst` what they test and how the QA process can be considered a success or failure.
+
+## Branch Structure
+
+- Each scenario is a branch that can be built independently
+- Branches are named descriptively (e.g., `issue-1234-org`, `issue-4321-ext`)
+- The `full-feature` branch contains comprehensive examples of Read the Docs features
+
+## Key Features Tested
+
+The repository tests various Read the Docs features including:
+
+- **Sphinx documentation builds** - Different Sphinx configurations and extensions
+- **Build environment configuration** - Testing different OS versions, Python, Node.js, Go, Rust, and Ruby
+- **Custom build jobs** - pre_build, post_build, post_checkout, post_install commands
+- **Multiple formats** - HTML, PDF, and other output formats
+- **Static files** - robots.txt and other static file serving
+- **Glossaries** - Sphinx glossary functionality
+- **Math rendering** - MathJax integration
+- **Tabs** - sphinx-tabs extension
+- **404 pages** - Custom not-found pages
+- **Environment variables** - Testing environment variable injection
+- **JSDoc** - JavaScript documentation generation
+- **Shot-scraper** - Screenshot generation in builds
+
+## Documentation
+
+The documentation is built using Sphinx and configured via:
+
+- `.readthedocs.yaml` - Read the Docs configuration file
+- `docs/conf.py` - Sphinx configuration
+- `requirements.txt` - Python dependencies
+
+## Configuration File
+
+The `.readthedocs.yaml` file demonstrates:
+
+```yaml
+version: 2
+build:
+  os: ubuntu-24.04
+  tools:
+    python: "latest"
+    nodejs: "latest"
+    golang: "latest"
+    rust: "latest"
+    ruby: "latest"
+```
+
+## Adding New Scenarios
+
+To add a new test scenario:
+
+1. Create a new branch from `master` with an appropriate name
+2. Document the use case in `docs/index.rst`
+3. Explain how to verify success or failure
+4. Add necessary configuration files
+5. Keep configuration minimal (remove auto-generated comments and unused configs)
+6. Push changes to trigger builds
+
+## Links
+
+- Repository: https://github.com/readthedocs/test-builds
+- Documentation: https://test-builds.readthedocs.io/
