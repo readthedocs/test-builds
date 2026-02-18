@@ -1,0 +1,49 @@
+# Test Builds
+
+> Repository for testing Read the Docs build configurations and scenarios
+
+## Overview
+
+This repository is used internally by Read the Docs to test different build scenarios and configurations. Each branch represents a specific test case or scenario that can be built independently to verify Read the Docs functionality.
+
+## Purpose
+
+- Create different build configuration scenarios
+- Trigger builds on Read the Docs production
+- Test specific use cases and edge cases
+- Quality assurance for Read the Docs features
+
+## Structure
+
+- **Multiple branches**: Each branch represents a specific test scenario
+- **Multiple tags**: Tags are used for version-specific testing
+- **Branch naming**: Issue-specific branches follow the pattern `issue-{number}-{org|ext}`
+- **Documentation**: Each scenario explains its purpose in `docs/index.rst`
+
+## Key Files
+
+- `.readthedocs.yaml`: Read the Docs configuration file
+- `docs/conf.py`: Sphinx configuration
+- `docs/index.rst`: Documentation and scenario description
+- `requirements.txt`: Python dependencies
+
+## Adding New Scenarios
+
+1. Create a new branch from `main` with an appropriate name
+2. Document the use case in `docs/index.rst`:
+   - Explain success/failure criteria
+   - Link to related issue tracker entries
+3. Add or modify necessary configuration files:
+   - Keep configurations minimal
+   - Remove auto-generated comments
+   - Remove unused configs
+4. Push changes
+
+## Documentation Tool
+
+Uses Sphinx with the Read the Docs theme for documentation generation.
+
+## Related Resources
+
+- [All branches](https://github.com/readthedocs/test-builds/branches/)
+- [All tags](https://github.com/readthedocs/test-builds/tags/)
