@@ -36,7 +36,7 @@ _PHASE_BUDGETS = {
 }
 
 # ── Phase-tracking state ───────────────────────────────────────────────────
-_tracker = {'profiler': None, 'phase_start': None, 'phases': []}
+_tracker = {'phase_start': None, 'phases': []}
 
 
 def _checkpoint(phase_name):
@@ -54,8 +54,6 @@ def _checkpoint(phase_name):
 
 def _on_builder_inited(app):
     tracemalloc.start()
-    _tracker['profiler'] = Profiler()
-    _tracker['profiler'].start()
     _tracker['phase_start'] = time.perf_counter()
 
 
@@ -69,17 +67,11 @@ def _on_env_updated(app, env):
 
 def _on_build_finished(app, exception):
     _checkpoint('Write output')
-    if _tracker['profiler']:
-        _tracker['profiler'].stop()
     if tracemalloc.is_tracing():
         tracemalloc.stop()
 
     if exception or app.builder.name != 'html':
         return
-
-    # Full-build interactive profile
-    with open(os.path.join(app.outdir, 'build_profile.html'), 'w') as fh:
-        fh.write(_tracker['profiler'].output_html())
 
     # Phase-timing table
     with open(os.path.join(app.outdir, 'build_phases.html'), 'w') as fh:
