@@ -12,7 +12,7 @@ build:
         - python -m cProfile -o profram.prof -m sphinx -T -W --keep-going -b html -d _build/doctrees -D language=en . $READTHEDOCS_OUTPUT/html
         - wget https://gist.githubusercontent.com/MSSandroid/6402e2e99e31633386a312b283839e0d/raw/4890a4ac54c3dae72a634da92f84c2adc7480056/snakeviz_static_html.py
         - python snakeviz_static_html.py profram.prof 
-        - mv profram.html $READTHEDOCS_OUTPUT/html/profram.html
+        - mv profram.html $READTHEDOCS_OUTPUT/html/
 
 sphinx:
   configuration: docs/conf.py
