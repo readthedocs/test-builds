@@ -4,10 +4,10 @@ build:
   os: ubuntu-24.04
   tools:
     python: latest
-
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+  commands:
+    # Install dependencies (includes pyinstrument for profiling)
+    - pip install -r requirements.txt
+    # Wrap the entire Sphinx build with pyinstrument so the interactive
+    # profile is written to the output directory and browsable on the web
+    - python -m pyinstrument --html -o $READTHEDOCS_OUTPUT/html/build_profile.html
+        -- sphinx-build -b html docs/ $READTHEDOCS_OUTPUT/html/
