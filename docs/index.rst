@@ -7,14 +7,14 @@ a Read the Docs production build to spot performance differences.
 
 Two profiling tools are used:
 
-- :mod:`cProfile` — built-in deterministic CPU profiler
+- `pyinstrument <https://pyinstrument.readthedocs.io/>`_ — statistical CPU profiler with interactive HTML output
 - :mod:`tracemalloc` — built-in memory allocation tracker
 
-The generated ``.prof`` files can be visualised interactively with
-`snakeviz <https://jiffyclub.github.io/snakeviz/>`_ (included in
-``requirements.txt``)::
+Interactive HTML profiles are generated at build time and embedded below.
+You can also open them in a full tab:
 
-   snakeviz cpu_profile.prof
+- `CPU profile <cpu_profile.html>`_
+- `Memory profile <memory_profile.html>`_
 
 ----
 
@@ -48,25 +48,14 @@ CPU Profiling
 
 The :func:`~profiling_examples.fibonacci` (recursive, O(2ⁿ)) and
 :func:`~profiling_examples.bubble_sort` functions serve as CPU-intensive
-workloads. :mod:`cProfile` records every function call and its cumulative
-time so the hottest code paths are easy to spot.
+workloads. `pyinstrument <https://pyinstrument.readthedocs.io/>`_ generates a
+self-contained interactive HTML report that is embedded below.
 
-.. runblock:: pycon
+.. raw:: html
 
-   >>> import cProfile, pstats, io
-   >>> from profiling_examples import cpu_intensive_work
-   >>> profiler = cProfile.Profile()
-   >>> profiler.enable()
-   >>> cpu_intensive_work()
-   >>> profiler.disable()
-   >>> profiler.dump_stats('/tmp/cpu_profile.prof')
-   >>> stream = io.StringIO()
-   >>> stats = pstats.Stats(profiler, stream=stream).sort_stats('cumulative')
-   >>> _ = stats.print_stats(15)
-   >>> print(stream.getvalue())
-
-The ``/tmp/cpu_profile.prof`` file written above can be opened locally with
-``snakeviz /tmp/cpu_profile.prof`` to explore an interactive flame graph.
+   <iframe src="cpu_profile.html"
+           style="width:100%; height:600px; border:1px solid #ccc; border-radius:4px;">
+   </iframe>
 
 ----
 
@@ -74,9 +63,22 @@ Memory Profiling
 ----------------
 
 The :func:`~profiling_examples.memory_intensive_work` function allocates
-large lists, dicts, and nested structures. :mod:`tracemalloc` reports both
-the current and peak heap usage so memory-heavy allocations can be tracked
-across builds.
+large lists, dicts, and nested structures. The profile below shows the CPU
+execution path *during* those memory-intensive operations, making it easy to
+spot which allocation sites dominate build time.
+
+.. raw:: html
+
+   <iframe src="memory_profile.html"
+           style="width:100%; height:600px; border:1px solid #ccc; border-radius:4px;">
+   </iframe>
+
+----
+
+Memory Usage Summary
+--------------------
+
+:mod:`tracemalloc` also reports exact current and peak heap consumption:
 
 .. runblock:: pycon
 
