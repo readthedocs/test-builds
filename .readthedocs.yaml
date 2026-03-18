@@ -1,14 +1,20 @@
 version: 2
 
 build:
-  os: ubuntu-22.04
+  os: ubuntu-lts-latest
   jobs:
     post_checkout:
+      - echo "Post-checkout step"
       - env
     pre_build:
+      - echo "Pre-build step"
       - env
+    build:
+      html:
+        - echo "Build HTML step"
+        - env
   tools:
-    python: "3"
+    python: latest
 
 sphinx:
   configuration: docs/conf.py
