@@ -12,7 +12,10 @@ build:
     create_environment:
       - uv venv --python `asdf which python` $READTHEDOCS_VIRTUALENV_PATH
     install:
-      - uv sync
+      # NOTE: We need to set UV_PROJECT_ENVIRONMENT to make sure that uv sync uses the correct virtual environment path.
+      # The UV_PROJECT_ENVIRONMENT variable will be defined by default by Read the Docs
+      # and we won't need to prepend these commands with it.
+      - UV_PROJECT_ENVIRONMENT="$READTHEDOCS_VIRTUALENV_PATH" uv sync
     build:
       html:
         - sphinx-build -T -b html docs $READTHEDOCS_OUTPUT/html
