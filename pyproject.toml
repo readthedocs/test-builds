@@ -10,6 +10,7 @@ dependencies = [
     "sphinx-autorun",
     "sphinx-rtd-theme>=3.0.0rc2"
 ]
+requires-python = ">=3.14"
 
 [project.optional-dependencies]
 dev = [

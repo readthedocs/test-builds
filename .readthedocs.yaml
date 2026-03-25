@@ -18,5 +18,4 @@ build:
       - UV_PROJECT_ENVIRONMENT="$READTHEDOCS_VIRTUALENV_PATH" uv sync
     build:
       html:
-        - uv run python --version
         - sphinx-build -T -b html docs $READTHEDOCS_OUTPUT/html
