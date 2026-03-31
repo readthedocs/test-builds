@@ -13,4 +13,6 @@ latex_engine = 'xelatex'  # allow us to build Unicode chars
 html_theme = 'sphinx_rtd_theme'
 
 # Copy llms.txt to the HTML output
-html_extra_path = ['../llms.txt']
+html_extra_path = [
+    'static',
+]

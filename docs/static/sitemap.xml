@@ -1,0 +1,15 @@
+<urlset>
+	<url>
+		<loc>https://www.example.com/</loc>
+		<lastmod>2009-12-01</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1</priority>
+	</url>
+
+	<url>
+		<loc>https://www.example.com/page.html</loc>
+		<lastmod>2009-12-01</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+</urlset>
