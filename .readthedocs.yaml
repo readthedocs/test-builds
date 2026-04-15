@@ -5,8 +5,10 @@ build:
   tools:
     python: "3"
   commands:
-    - asdf plugin add pixi
-    - asdf install pixi latest
-    - asdf global pixi latest
-    - pixi run render
-    - mv _build/html $READTHEDOCS_OUTPUT/
+    # Install mystmd
+    - npm install -g mystmd
+    # Build the site
+    - myst build --html
+    # Copy the output to Read the Docs expected location
+    - mkdir -p $READTHEDOCS_OUTPUT/html/
+    - cp -r _build/html/* $READTHEDOCS_OUTPUT/html/
