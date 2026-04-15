@@ -1,12 +1,12 @@
 version: 2
 
 build:
-  os: ubuntu-22.04
+  os: ubuntu-lts-latest
   tools:
     python: "3"
   commands:
-    - pip install -r requirements.txt
-    - jupyter-book create book/
-    - jupyter-book build --all book/
-    - mkdir -p $READTHEDOCS_OUTPUT/html
-    - mv book/_build/html/* $READTHEDOCS_OUTPUT/html/
+    - asdf plugin add pixi
+    - asdf install pixi latest
+    - asdf global pixi latest
+    - pixi run render
+    - mv _build/html $READTHEDOCS_OUTPUT/
