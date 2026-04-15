@@ -3,7 +3,7 @@ version: 2
 build:
   os: ubuntu-lts-latest
   tools:
-    python: "3"
+    nodejs: latest
   commands:
     # Install mystmd
     - npm install -g mystmd
