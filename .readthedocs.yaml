@@ -2,6 +2,10 @@ version: 2
 
 build:
   os: ubuntu-lts-latest
+  environment:
+    STRING_VARIABLE: production
+    BOOL_VARIABLE: true
+    NUMBER_VARIABLE: 42
   jobs:
     post_checkout:
       - echo "Post-checkout step"
