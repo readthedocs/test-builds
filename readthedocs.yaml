@@ -1,7 +1,7 @@
 version: 2
 
 build:
-  os: ubuntu-22.04
+  os: ubuntu-26.04
   tools:
     python: "3"
 
@@ -11,4 +11,6 @@ mkdocs:
 
 python:
   install:
-    - requirements: requirements.txt
+    - method: uv
+      command: pip
+      requirements: requirements.txt
