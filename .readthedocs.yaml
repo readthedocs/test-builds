@@ -6,15 +6,4 @@ build:
     python: "3.12"
   commands:
     - mkdir -p _readthedocs/html/
-
-    # Runtime fingerprint — gVisor's Sentry kernel shows up in /proc/version.
-    - uname -a | tee -a _readthedocs/html/probe.txt
-    - cat /proc/version | tee -a _readthedocs/html/probe.txt
-    - grep -E '^(CapEff|Seccomp)' /proc/self/status | tee -a _readthedocs/html/probe.txt
-
-    # Network — gVisor's userspace netstack is a likely failure point.
-    - curl -sS -o /dev/null -w "pypi.org -> HTTP %{http_code} in %{time_total}s\n" https://pypi.org/ | tee -a _readthedocs/html/probe.txt
-
-    # Build the explanatory page.
-    - python3 -m pip install --quiet -r requirements.txt
-    - python3 -m sphinx -T -b html -d _build/doctrees docs _readthedocs/html
+    - uname -a > _readthedocs/html/index.html
