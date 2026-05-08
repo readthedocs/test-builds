@@ -7,62 +7,14 @@ build:
   commands:
     - mkdir -p _readthedocs/html/
 
-    # ---- Runtime fingerprint -------------------------------------------------
-    # gVisor's Sentry kernel reports itself in /proc/version and dmesg.
-    - echo "=== uname -a ==="                       | tee -a probe.txt
-    - uname -a                                      | tee -a probe.txt
-    - echo "=== /proc/version ==="                  | tee -a probe.txt
-    - cat /proc/version                             | tee -a probe.txt
-    - echo "=== dmesg (gVisor banner if present) ===" | tee -a probe.txt
-    - (dmesg 2>&1 | head -20)                       | tee -a probe.txt || true
-    - echo "=== /proc/1/comm and /proc/self/status ===" | tee -a probe.txt
-    - cat /proc/1/comm                              | tee -a probe.txt || true
-    - grep -E '^(Name|Pid|Uid|CapEff|Seccomp)' /proc/self/status | tee -a probe.txt || true
+    # Runtime fingerprint — gVisor's Sentry kernel shows up in /proc/version.
+    - uname -a | tee -a _readthedocs/html/probe.txt
+    - cat /proc/version | tee -a _readthedocs/html/probe.txt
+    - grep -E '^(CapEff|Seccomp)' /proc/self/status | tee -a _readthedocs/html/probe.txt
 
-    # ---- Filesystem / mounts -------------------------------------------------
-    - echo "=== mount ==="                          | tee -a probe.txt
-    - mount                                         | tee -a probe.txt || true
-    - echo "=== /proc/mounts (first 20) ==="        | tee -a probe.txt
-    - head -20 /proc/mounts                         | tee -a probe.txt || true
+    # Network — gVisor's userspace netstack is a likely failure point.
+    - curl -sS -o /dev/null -w "pypi.org -> HTTP %{http_code} in %{time_total}s\n" https://pypi.org/ | tee -a _readthedocs/html/probe.txt
 
-    # ---- CPU / memory --------------------------------------------------------
-    - echo "=== nproc / cpuinfo ==="                | tee -a probe.txt
-    - nproc                                         | tee -a probe.txt
-    - grep -E '^(model name|processor)' /proc/cpuinfo | head -8 | tee -a probe.txt || true
-    - echo "=== meminfo ==="                        | tee -a probe.txt
-    - head -5 /proc/meminfo                         | tee -a probe.txt || true
-
-    # ---- Networking (gVisor uses netstack — different TCP behavior) ---------
-    - echo "=== DNS + outbound HTTPS ==="           | tee -a probe.txt
-    - getent hosts pypi.org                         | tee -a probe.txt || true
-    - curl -sS -o /dev/null -w "pypi.org -> HTTP %{http_code} in %{time_total}s\n" https://pypi.org/ | tee -a probe.txt || true
-    - curl -sS -o /dev/null -w "github.com -> HTTP %{http_code} in %{time_total}s\n" https://github.com/ | tee -a probe.txt || true
-
-    # ---- Syscalls that historically differ under gVisor ---------------------
-    - echo "=== ptrace self ==="                    | tee -a probe.txt
-    - python3 -c "import ctypes,os; libc=ctypes.CDLL('libc.so.6',use_errno=True); r=libc.ptrace(0,0,0,0); print('ptrace(TRACEME) ->', r, 'errno', ctypes.get_errno())" 2>&1 | tee -a probe.txt || true
-    - echo "=== unshare user namespace ==="         | tee -a probe.txt
-    - (unshare -U true && echo "unshare -U: ok") 2>&1 | tee -a probe.txt || true
-    - echo "=== perf_event_open ==="                | tee -a probe.txt
-    - python3 -c "import ctypes,os; libc=ctypes.CDLL('libc.so.6',use_errno=True); SYS_perf_event_open=298; r=libc.syscall(SYS_perf_event_open,0,0,-1,-1,0); print('perf_event_open ->', r, 'errno', ctypes.get_errno())" 2>&1 | tee -a probe.txt || true
-
-    # ---- Sphinx build of the explanatory docs page --------------------------
+    # Build the explanatory page.
     - python3 -m pip install --quiet -r requirements.txt
     - python3 -m sphinx -T -b html -d _build/doctrees docs _readthedocs/html
-
-    # ---- Attach probe results so the published docs include them ------------
-    - cp probe.txt _readthedocs/html/probe.txt
-    - |
-      python3 - <<'PY'
-      import html, pathlib
-      probe = pathlib.Path("probe.txt").read_text()
-      out = pathlib.Path("_readthedocs/html/probe.html")
-      out.write_text(
-          "<!doctype html><meta charset=utf-8>"
-          "<title>gVisor probe results</title>"
-          "<h1>gVisor probe results</h1>"
-          "<p>Captured at build time. Compare against a known-good runc build "
-          "to spot gVisor-specific divergences.</p>"
-          f"<pre>{html.escape(probe)}</pre>"
-      )
-      PY
