@@ -1,2 +1,2 @@
 sphinx-autorun
-furo
+piccolo_theme

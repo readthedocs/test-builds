@@ -6,4 +6,4 @@ extensions = [
 
 
 # Include all your settings here
-html_theme = 'furo'
+html_theme = 'piccolo_theme'

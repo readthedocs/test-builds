@@ -1,11 +1,16 @@
 version: 2
 
 build:
-  os: ubuntu-22.04
+  os: ubuntu-lts-latest
   tools:
     python: "3"
-  apt_packages:
-    - tree
-  commands:
-    - pip install -r requirements.txt
-    - sphinx-build -b html docs/ $READTHEDOCS_OUTPUT/html
+  
+sphinx:
+  configuration: docs/conf.py
+
+python:
+  install:
+   - method: uv
+     command: pip
+     requirements: docs/requirements.txt
+  
