@@ -5,9 +5,10 @@ build:
   tools:
     python: latest
 
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+  # Create a pdf and a html file for testing,
+  # using shell only
+  commands:
+    - mkdir -p _readthedocs/html
+    - echo "Hello World" > _readthedocs/html/index.html
+    - mkdir -p _readthedocs/pdf
+    - echo "Hello World" > _readthedocs/pdf/index.pdf
