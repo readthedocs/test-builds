@@ -9,6 +9,6 @@ build:
   # using shell only
   commands:
     - mkdir -p _readthedocs/html
-    - echo "Hello World" > _readthedocs/html/index.html
+    - cp index.html _readthedocs/html/index.html
     - mkdir -p _readthedocs/pdf
-    - echo "Hello World" > _readthedocs/pdf/index.pdf
+    - cp index.html > _readthedocs/pdf/index.pdf
