@@ -3,6 +3,8 @@ test-builds
 
 GitHub repository to test different Read the Docs builds scenarios.
 
+Test PR
+
 ----
 
 Read the Docs configuration file used to build this docs:
