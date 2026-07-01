@@ -1,26 +1,21 @@
-test-builds
-===========
+Large Ethical Ad Placement
+==========================
 
-GitHub repository to test different Read the Docs builds scenarios.
+This is just a test for https://github.com/readthedocs/addons/pull/696
 
-----
+.. raw:: html
 
-Read the Docs configuration file used to build this docs:
+   <p>Possible second placement</p>
+   <div
+         id="ethical-ad-placement-2"
+         class="flat"
+         data-ea-publisher="readthedocs"
+         data-ea-type="logo-large-v1"
+         data-ea-campaign-types="house"
+         data-ea-priority="10"
+         data-ea-manual="true">
+   </div>
 
-.. literalinclude:: ../.readthedocs.yaml
-   :language: yaml
-   :linenos:
-
-----
-
-Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
-
-.. literalinclude:: conf.py
-   :language: python
-   :end-before: ###########################################################################
-   :linenos:
-
-----
 
 .. runblock:: pycon
 
