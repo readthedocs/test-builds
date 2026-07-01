@@ -1,9 +1,9 @@
 version: 2
 
 build:
-  os: "ubuntu-24.04"
+  os: ubuntu-lts-latest
   tools:
-    python: "3.10"
+    python: latest
     nodejs: latest
     ruby: latest
     rust: latest
