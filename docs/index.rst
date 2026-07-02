@@ -1,7 +1,7 @@
-test-builds
-===========
+Build with ``uv pip install``
+=============================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Test installing dependencies with ``uv pip install``.
 
 ----
 
@@ -9,15 +9,6 @@ Read the Docs configuration file used to build this docs:
 
 .. literalinclude:: ../.readthedocs.yaml
    :language: yaml
-   :linenos:
-
-----
-
-Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
-
-.. literalinclude:: conf.py
-   :language: python
-   :end-before: ###########################################################################
    :linenos:
 
 ----
