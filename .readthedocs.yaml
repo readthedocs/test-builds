@@ -5,8 +5,10 @@ build:
   tools:
     python: "3.12"
   apt_packages:
-    - cmatrix
-    - mysql-client
+    - cowsay
+  jobs:
+    post_system_dependencies:
+      - /usr/games/cowsay "apt_packages installed correctly"
 
 sphinx:
   configuration: docs/conf.py
