@@ -1,0 +1,20 @@
+[project]
+name = "test-builds"
+description = "Read the Docs scenarios to test builds"
+version = "0.1.0"
+authors = [
+    { name = "Manuel Kaufmann", email = "manuel@readthedocs.org" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+docs = [
+    "sphinx",
+    "sphinx-autorun",
+    "sphinx-rtd-theme",
+]
+
+[tool.uv]
+# Only dependency groups are needed, this project is not a package itself.
+package = false

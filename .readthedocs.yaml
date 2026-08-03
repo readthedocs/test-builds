@@ -1,13 +1,24 @@
 version: 2
 
 build:
-  os: ubuntu-24.04
+  os: ubuntu-lts-latest
   tools:
-    python: latest
-
-sphinx:
-  configuration: docs/conf.py
+    python: "3"
+  jobs:
+    # Overriding `build.html` without defining a `sphinx:`/`mkdocs:` key makes
+    # the config `doctype` become `generic`, and Read the Docs then skips
+    # `create_environment` and `install` completely.
+    # That's why `uv sync --group docs` below is never executed.
+    # See https://github.com/readthedocs/readthedocs.org/issues/13192
+    build:
+      html:
+        # `--no-sync` so `uv run` doesn't install the dependencies by itself
+        # and the missing `uv sync --group docs` becomes evident.
+        - uv run --no-sync sphinx-build -T -b html docs $READTHEDOCS_OUTPUT/html
 
 python:
   install:
-    - requirements: requirements.txt
+    - method: uv
+      command: sync
+      groups:
+        - docs

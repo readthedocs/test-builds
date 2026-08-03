@@ -1,7 +1,9 @@
-test-builds
-===========
+uv sync with group
+==================
 
-GitHub repository to test different Read the Docs builds scenarios.
+Reproduces `readthedocs.org#13192 <https://github.com/readthedocs/readthedocs.org/issues/13192>`_.
+
+Read the Docs should call ``uv sync --group docs`` before the ``build.html`` job.
 
 ----
 
@@ -13,11 +15,10 @@ Read the Docs configuration file used to build this docs:
 
 ----
 
-Sphinx configuration file used to build this docs (:doc:`see full file <conf>`),
+``pyproject.toml`` defining the ``docs`` dependency group:
 
-.. literalinclude:: conf.py
-   :language: python
-   :end-before: ###########################################################################
+.. literalinclude:: ../pyproject.toml
+   :language: toml
    :linenos:
 
 ----
