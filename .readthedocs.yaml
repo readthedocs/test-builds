@@ -6,13 +6,19 @@ build:
     post_checkout:
       - echo "Post-checkout step"
       - env
+      - id
+      - whoami
     pre_build:
       - echo "Pre-build step"
       - env
+      - id
+      - whoami
     build:
       html:
         - echo "Build HTML step"
         - env
+        - id
+        - whoami
   tools:
     python: latest
 
