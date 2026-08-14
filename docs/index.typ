@@ -41,6 +41,8 @@ The build is a success when:
 - This PDF is offered as a download for the version (flyout menu) and is
   linked from the HTML landing page.
 - The typesetting samples below render correctly.
+- Pull request builds pick up new commits: this line was added in a
+  later commit to verify the PR build rebuilds the PDF.
 
 = Typesetting samples
 
