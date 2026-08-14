@@ -4,10 +4,12 @@ build:
   os: ubuntu-24.04
   tools:
     python: latest
-
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+  commands:
+    # Prebuilt Typst binary, same install approach as the GitHub Actions
+    # workflow this scenario is based on
+    - curl -fsSL https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz | tar -xJf - -C $HOME
+    - mkdir -p $READTHEDOCS_OUTPUT/pdf/ $READTHEDOCS_OUTPUT/html/
+    - $HOME/typst-x86_64-unknown-linux-musl/typst compile docs/index.typ $READTHEDOCS_OUTPUT/pdf/test-builds.pdf
+    # Minimal HTML output with the PDF alongside it for easy access
+    - cp docs/index.html $READTHEDOCS_OUTPUT/html/index.html
+    - cp $READTHEDOCS_OUTPUT/pdf/test-builds.pdf $READTHEDOCS_OUTPUT/html/test-builds.pdf
