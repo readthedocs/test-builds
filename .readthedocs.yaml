@@ -1,13 +1,14 @@
 version: 2
 
 build:
-  os: ubuntu-24.04
+  os: ubuntu-lts-latest
   tools:
-    python: latest
-
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+    nodejs: "latest"
+  commands:
+    - npm ci
+    # The site was created by running `npm create astro@latest -- --template starlight`
+    # and following the official guide
+    # https://starlight.astro.build/getting-started/
+    - npm run build
+    - mkdir -p $READTHEDOCS_OUTPUT/
+    - mv dist $READTHEDOCS_OUTPUT/html
