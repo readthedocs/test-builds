@@ -2,7 +2,6 @@ sphinx-autorun
 sphinx-jinja2
 sphinx-immaterial
 sphinx-notfound-page
-sphinx-hoverxref
 sphinx-tabs
 shot-scraper
 
