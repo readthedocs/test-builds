@@ -1,0 +1,35 @@
+name: Upload docs to Read the Docs
+
+# Build the Starlight documentation and upload it to Read the Docs using the
+# readthedocs/upload-action. Limited to the upload-starlight branch.
+on:
+  push:
+    branches: [upload-starlight]
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build the Starlight docs
+        run: npm run build
+        env:
+          # Astro reads this to set the site base path so links and assets
+          # resolve under the version URL served by Read the Docs.
+          READTHEDOCS_CANONICAL_URL: https://test-builds.readthedocs.io/en/upload-starlight/
+
+      - name: Upload to Read the Docs
+        uses: readthedocs/upload-action@main
+        with:
+          token: ${{ secrets.READTHEDOCS_TOKEN }}
+          project-slug: test-builds
+          html-dir: dist
