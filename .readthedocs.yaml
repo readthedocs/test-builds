@@ -1,13 +1,10 @@
 version: 2
 
 build:
-  os: ubuntu-24.04
+  os: ubuntu-lts-latest
   tools:
-    python: latest
-
-sphinx:
-  configuration: docs/conf.py
-
-python:
-  install:
-    - requirements: requirements.txt
+    python: "latest"
+  commands:
+    - mkdir -p _readthedocs/html/
+    - echo "Build media size test" > _readthedocs/html/index.html
+    - head -c 1100M /dev/zero > _readthedocs/html/big.bin
