@@ -10,7 +10,7 @@ See https://github.com/readthedocs/addons/issues/528
 Paragraph
 ---------
 
-This paragraph is the one to edit in the pull request,
+This sentence? is the one to edit in the pull request,
 so there is at least one real change to show.
 
 Doctest block
@@ -23,8 +23,8 @@ The copy button hides the prompts here, as CPython does:
    >>> import math
    >>> math.sqrt(16)
    4.0
-   >>> math.pi
-   3.141592653589793
+   >>> int(math.pi)
+   3
 
 Code block
 ----------
@@ -39,14 +39,14 @@ Add a line here in the pull request:
 Math
 ----
 
-Inline math :math:`E = mc^2` and a display block:
+Inline math :math:`E = mc^2` and a ~~display~~ block:
 
 .. math::
 
    \int_0^\infty e^{-x^2} \, dx = \frac{\sqrt{\pi}}{2}
 
-Configuration
--------------
+Config
+------
 
 Read the Docs configuration file used to build this docs:
 
