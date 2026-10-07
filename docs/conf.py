@@ -3,10 +3,13 @@
 # Default settings
 project = 'Test Builds'
 extensions = [
-    'sphinx_autorun',
+    # Both generate DOM with JavaScript, see readthedocs/addons#528
+    'sphinx_copybutton',
+    'sphinx.ext.mathjax',
 ]
 
-latex_engine = 'xelatex'  # allow us to build Unicode chars
+# Hide ">>> " prompts via the copy button, like CPython does
+copybutton_prompt_text = '>>> '
 
 
 # Include all your settings here
