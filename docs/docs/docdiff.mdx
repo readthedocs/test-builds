@@ -1,0 +1,39 @@
+---
+sidebar_position: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# DocDiff test
+
+Page to test the DocDiff addon on a Docusaurus site.
+Docusaurus hydrates the page with React after load, so the DOM the user sees
+is not the static HTML. See https://github.com/readthedocs/addons/issues/528
+
+## Paragraph
+
+This paragraph is the one to edit in the pull request,
+so there is at least one real change to show.
+
+## Code block
+
+Add a line here in the pull request:
+
+```python
+def greet(name):
+    return f"Hello, {name}!"
+```
+
+## Tabs
+
+Tabs are rendered by React and remember the selection:
+
+<Tabs>
+  <TabItem value="apple" label="Apple" default>
+    This is an apple 🍎
+  </TabItem>
+  <TabItem value="orange" label="Orange">
+    This is an orange 🍊
+  </TabItem>
+</Tabs>

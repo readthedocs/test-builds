@@ -9,7 +9,10 @@ const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/en/docusaurus/',
+  // Pull request builds are served under /en/<PR number>/
+  baseUrl: process.env.READTHEDOCS_CANONICAL_URL
+    ? new URL(process.env.READTHEDOCS_CANONICAL_URL).pathname
+    : '/en/docusaurus/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
